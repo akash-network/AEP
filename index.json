@@ -4,10 +4,7 @@
     "title": "AEP Purpose and Guidelines",
     "status": "Final",
     "type": "Meta",
-    "author": [
-      "Greg Osuri (@gosuri)",
-      "Adam Bozanich (@boz)"
-    ],
+    "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
     "discussions-to": "https://github.com/ovrclk/aep/issues/1",
     "created": "2020-03-09T00:00:00.000Z",
     "updated": "2020-03-17T00:00:00.000Z"
@@ -24,10 +21,7 @@
   {
     "aep": 11,
     "title": "Managed Services Market",
-    "author": [
-      "Greg Osuri (@gosuri)",
-      "Adam Bozanich (@boz)"
-    ],
+    "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
     "status": "Draft",
     "type": "Standard",
     "category": "Core",
@@ -38,10 +32,7 @@
   {
     "aep": 12,
     "title": "Trusted Execution Environment (TEE)",
-    "author": [
-      "Adam Bozanich (@boz)",
-      "Greg Osuri (@gosuri)"
-    ],
+    "author": "Adam Bozanich (@boz) Greg Osuri (@gosuri)",
     "discussions-to": "https://github.com/orgs/akash-network/discussions/614",
     "status": "Draft",
     "type": "Standard",
@@ -54,10 +45,7 @@
   {
     "aep": 13,
     "title": "Mainnet 2: DCX Platform",
-    "author": [
-      "Kaustubh Patral (@kaustubhkapatral)",
-      "Greg Osuri (@gosuri)"
-    ],
+    "author": "Kaustubh Patral (@kaustubhkapatral) Greg Osuri (@gosuri)",
     "status": "Final",
     "type": "Standard",
     "category": "Core",
@@ -130,10 +118,7 @@
   {
     "aep": 19,
     "title": "Open Development Model",
-    "author": [
-      "Greg Osuri (@gosuri)",
-      "Anil Murty (@anilmurty)"
-    ],
+    "author": "Greg Osuri (@gosuri) Anil Murty (@anilmurty)",
     "status": "Final",
     "type": "Meta",
     "created": "2022-12-19T00:00:00.000Z",
@@ -424,10 +409,7 @@
   {
     "aep": 4,
     "title": "Testnet: Alpha",
-    "author": [
-      "Greg Osuri (@gosuri)",
-      "Adam Bozanich (@boz)"
-    ],
+    "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
     "status": "Final",
     "type": "Meta",
     "requires": [
@@ -561,10 +543,7 @@
   {
     "aep": 5,
     "title": "AKT: Akash Network Token & Mining Economics",
-    "author": [
-      "Greg Osuri (@gosuri)",
-      "Adam Bozanich (@boz)"
-    ],
+    "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
     "status": "Final",
     "type": "Standard",
     "category": "Economics",
@@ -718,10 +697,7 @@
   {
     "aep": 7,
     "title": "Incentivized Testnet 1: Akashian Challenge Phase 1",
-    "author": [
-      "Greg Osuri (@gosuri)",
-      "Chris Remus (@chris-remus)"
-    ],
+    "author": "Greg Osuri (@gosuri) Chris Remus (@chris-remus)",
     "status": "Final",
     "type": "Meta",
     "requires": 5,
@@ -734,10 +710,7 @@
   {
     "aep": 8,
     "title": "Mainnet 1: Security",
-    "author": [
-      "Greg Osuri (@gosuri)",
-      "Adam Bozanich (@boz)"
-    ],
+    "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
     "status": "Final",
     "type": "Standard",
     "category": "Core",
@@ -749,10 +722,7 @@
   {
     "aep": 9,
     "title": "Trusted Providers",
-    "author": [
-      "Greg Osuri (@gosuri)",
-      "Adam Bozanich (@boz)"
-    ],
+    "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
     "status": "Final",
     "type": "Standard",
     "category": "Core",
