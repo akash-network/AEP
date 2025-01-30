@@ -716,6 +716,18 @@
     "roadmap": "major"
   },
   {
+    "aep": 61,
+    "title": "Akash Network store optimizations",
+    "author": "Artur Troian (@troian)",
+    "status": "Last Call",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-01-30T00:00:00.000Z",
+    "updated": "2025-01-30T00:00:00.000Z",
+    "estimated-completion": "2025-02-28T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
     "aep": 7,
     "title": "Incentivized Testnet 1: Akashian Challenge Phase 1",
     "author": [
