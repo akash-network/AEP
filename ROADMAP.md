@@ -22,7 +22,7 @@
 | [57](spec/aep-57) | Automatic Escrow Top Up | 2025-01-30 | Minor |
 | [56](spec/aep-56) | Unified Akash Integration API | 2025-02-15 | Major |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-02-28 | Major |
-| [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-02-28 | Minor |
+| [33](spec/aep-33) | Escrow Balance Alerts via Akash Console | 2025-04-15 | Major |
 | [61](spec/aep-61) | Akash Network store optimizations | 2025-02-28 | Major |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2025-03-15 | Minor |
 | [59](spec/aep-59) | Provider Notifications | 2025-03-15 | Minor |
