@@ -301,9 +301,10 @@
     "type": "Standard",
     "category": "Core",
     "created": "2024-08-29T00:00:00.000Z",
-    "updated": "2024-01-11T00:00:00.000Z",
-    "estimated-completion": "2025-02-28T00:00:00.000Z",
+    "updated": "2024-02-18T00:00:00.000Z",
+    "completed": "2025-03-12T00:00:00.000Z",
     "roadmap": "major",
+    "requires": 61,
     "discussions-to": "https://github.com/orgs/akash-network/discussions/673",
     "resolution": "https://www.mintscan.io/akash/proposals/268"
   },
@@ -328,12 +329,12 @@
     "aep": 32,
     "title": "Akash Provider Console 1.0",
     "author": "Anil Murty (@anilmurty) Jigar Patel (@jigar-arc10) Deval Patel (devalpatel67)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-01-30T00:00:00.000Z",
+    "completed": "2025-02-18T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -345,9 +346,9 @@
     "type": "Standard",
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
-    "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-02-28T00:00:00.000Z",
-    "roadmap": "minor"
+    "updated": "2025-03-12T00:00:00.000Z",
+    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "roadmap": "major"
   },
   {
     "aep": 34,
@@ -653,7 +654,7 @@
     "category": "Interface",
     "created": "2025-01-10T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-02-15T00:00:00.000Z",
+    "estimated-completion": "2025-03-15T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -665,7 +666,7 @@
     "category": "Interface",
     "created": "2024-01-05T00:00:00.000Z",
     "updated": "2024-01-05T00:00:00.000Z",
-    "estimated-completion": "2025-01-30T00:00:00.000Z",
+    "completed": "2025-01-30T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -717,14 +718,14 @@
   },
   {
     "aep": 61,
-    "title": "Akash Network store optimizations",
+    "title": "Enhanced Read Performance Onchain Queries",
     "author": "Artur Troian (@troian)",
     "status": "Last Call",
     "type": "Standard",
     "category": "Core",
     "created": "2025-01-30T00:00:00.000Z",
-    "updated": "2025-01-30T00:00:00.000Z",
-    "estimated-completion": "2025-02-28T00:00:00.000Z",
+    "updated": "2025-02-18T00:00:00.000Z",
+    "completed": "2025-03-12T00:00:00.000Z",
     "roadmap": "major"
   },
   {

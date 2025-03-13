@@ -29,10 +29,10 @@
 | [27](spec/aep-27) | Opensource Praetor with a Merger | Final | Meta | 2024-03-28 | 2024-04-12 |  |
 | [28](spec/aep-28) | Auto Deployment from VCS | Final | Standard/Interface | 2024-05-01 | 2024-11-04 |  |
 | [29](spec/aep-29) | Verifiable Hardware Provisioning | Final | Standard/Core | 2024-06-27 |  | 2025-07-01 |
-| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | Final | Standard/Core | 2024-08-29 |  | 2025-02-28 |
+| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | Final | Standard/Core | 2024-08-29 | 2025-03-12 |  |
 | [31](spec/aep-31) | Credit Card Payments In Console | Final | Standard/Interface | 2024-08-29 | 2024-11-04 |  |
-| [32](spec/aep-32) | Akash Provider Console 1.0 | Draft | Standard/Interface | 2024-12-01 |  | 2025-01-30 |
-| [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2025-02-28 |
+| [32](spec/aep-32) | Akash Provider Console 1.0 | Final | Standard/Interface | 2024-12-01 | 2025-02-18 |  |
+| [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2025-04-30 |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2025-03-15 |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2025-03-30 |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2025-06-30 |
@@ -55,9 +55,9 @@
 | [53](spec/aep-53) | Onchain Provider Incentives | Draft | Standard/Interface | 2024-12-01 |  | 2025-05-30 |
 | [54](spec/aep-54) | NextGen AMD GPU support | Draft | Standard/Core | 2024-01-05 |  | 2025-05-15 |
 | [55](spec/aep-55) | Buy Back and Burn AKT | Draft | Standard/Economics | 2024-12-07 |  | 2025-06-30 |
-| [56](spec/aep-56) | Unified Akash Integration API | Draft | Standard/Interface | 2025-01-10 |  | 2025-02-15 |
-| [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 |  | 2025-01-30 |
+| [56](spec/aep-56) | Unified Akash Integration API | Draft | Standard/Interface | 2025-01-10 |  | 2025-03-15 |
+| [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2025-05-15 |
 | [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2025-03-15 |
 | [60](spec/aep-60) | Akash at Home | Draft | Meta | 2024-12-01 |  | 2026-03-30 |
-| [61](spec/aep-61) | Akash Network store optimizations | Last Call | Standard/Core | 2025-01-30 |  | 2025-02-28 |
+| [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | Last Call | Standard/Core | 2025-01-30 | 2025-03-12 |  |

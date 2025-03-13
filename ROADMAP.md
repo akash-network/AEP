@@ -18,15 +18,15 @@
 | [25](spec/aep-25) | Foundation Model Training | 2024-04-01 | Minor |
 | [28](spec/aep-28) | Auto Deployment from VCS | 2024-11-04 | Minor |
 | [31](spec/aep-31) | Credit Card Payments In Console | 2024-11-04 | Major |
-| [32](spec/aep-32) | Akash Provider Console 1.0 | 2025-01-30 | Major |
 | [57](spec/aep-57) | Automatic Escrow Top Up | 2025-01-30 | Minor |
-| [56](spec/aep-56) | Unified Akash Integration API | 2025-02-15 | Major |
-| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-02-28 | Major |
-| [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-02-28 | Minor |
-| [61](spec/aep-61) | Akash Network store optimizations | 2025-02-28 | Major |
+| [32](spec/aep-32) | Akash Provider Console 1.0 | 2025-02-18 | Major |
+| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-03-12 | Major |
+| [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | 2025-03-12 | Major |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2025-03-15 | Minor |
+| [56](spec/aep-56) | Unified Akash Integration API | 2025-03-15 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2025-03-15 | Minor |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2025-03-30 | Minor |
+| [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-04-30 | Major |
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-04-30 | Minor |
 | [41](spec/aep-41) | Standard Provider Attributes | 2025-04-30 | Minor |
 | [40](spec/aep-40) | Continuous Provider Audits | 2025-05-15 | Minor |
