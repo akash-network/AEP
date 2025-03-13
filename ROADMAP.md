@@ -22,7 +22,6 @@
 | [32](spec/aep-32) | Akash Provider Console 1.0 | 2025-02-18 | Major |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-03-12 | Major |
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | 2025-03-12 | Major |
-| [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2025-03-15 | Minor |
 | [56](spec/aep-56) | Unified Akash Integration API | 2025-03-15 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2025-03-15 | Minor |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2025-03-30 | Minor |
@@ -33,6 +32,7 @@
 | [54](spec/aep-54) | NextGen AMD GPU support | 2025-05-15 | Minor |
 | [58](spec/aep-58) | Per Node Resources in Console | 2025-05-15 | Minor |
 | [53](spec/aep-53) | Onchain Provider Incentives | 2025-05-30 | Major |
+| [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2025-06-15 | Minor |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-06-30 | Major |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2025-06-30 | Minor |
 | [39](spec/aep-39) | Lease Termination Reasons | 2025-06-30 | Minor |
