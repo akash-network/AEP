@@ -24,6 +24,7 @@
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | 2025-03-12 | Major |
 | [56](spec/aep-56) | Unified Akash Integration API | 2025-03-15 | Major |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2025-03-30 | Minor |
+| [62](spec/aep-62) | Add/ Remove Nodes Via Provider Console | 2025-04-15 | Minor |
 | [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-04-30 | Major |
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-04-30 | Minor |
 | [41](spec/aep-41) | Standard Provider Attributes | 2025-04-30 | Minor |

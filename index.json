@@ -729,6 +729,18 @@
     "roadmap": "major"
   },
   {
+    "aep": 62,
+    "title": "Add/ Remove Nodes Via Provider Console",
+    "author": "Anil Murty (@anilmurty) igar Patel (@jigar-arc10) Deval Patel (devalpatel67)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2024-03-15T00:00:00.000Z",
+    "updated": "2025-03-15T00:00:00.000Z",
+    "estimated-completion": "2025-04-15T00:00:00.000Z",
+    "roadmap": "minor"
+  },
+  {
     "aep": 7,
     "title": "Incentivized Testnet 1: Akashian Challenge Phase 1",
     "author": [
