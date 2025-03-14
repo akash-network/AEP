@@ -58,6 +58,6 @@
 | [56](spec/aep-56) | Unified Akash Integration API | Draft | Standard/Interface | 2025-01-10 |  | 2025-03-15 |
 | [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2025-05-15 |
-| [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2025-03-15 |
+| [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2025-06-15 |
 | [60](spec/aep-60) | Akash at Home | Draft | Meta | 2024-12-01 |  | 2026-03-30 |
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | Last Call | Standard/Core | 2025-01-30 | 2025-03-12 |  |
