@@ -83,7 +83,8 @@ Implementation tracked in [issue #767](https://github.com/akash-network/console/
 `GET /v1/deployments` (list all deployments)
 `GET /v1/deployments/{dseq}` (list deployment detail for a specific deployment)
 
-Implementation tracked in [issue #767](https://github.com/akash-network/console/issues/767)
+Implementation tracked in [issue 1042](https://github.com/akash-network/console/issues/1042)
+and [issue #767](https://github.com/akash-network/console/issues/767)
 
 #### Deployment Closure
 
@@ -95,7 +96,7 @@ Implementation tracked in [issue #767](https://github.com/akash-network/console/
 
 For viewing or adding funds to the escrow of a specific deployment
 
-`GET /v1/deployments/deposit{dseq}` (retrieve escrow balance details)
+`GET /v1/deployments/{dseq}` (retrieve escrow balance details)
 `POST /v1/deployments/deposit/{dseq}` (accepts `deposit` amount in the body)
 
 implementation tracked in [issue #989](https://github.com/akash-network/console/issues/989) and [issue #990](https://github.com/akash-network/console/issues/990)
