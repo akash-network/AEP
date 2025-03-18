@@ -302,7 +302,7 @@
     "category": "Core",
     "created": "2024-08-29T00:00:00.000Z",
     "updated": "2024-02-18T00:00:00.000Z",
-    "completed": "2025-03-12T00:00:00.000Z",
+    "estimated-completion": "2025-03-31T00:00:00.000Z",
     "roadmap": "major",
     "requires": 61,
     "discussions-to": "https://github.com/orgs/akash-network/discussions/673",
@@ -739,6 +739,18 @@
     "updated": "2025-03-15T00:00:00.000Z",
     "estimated-completion": "2025-04-15T00:00:00.000Z",
     "roadmap": "minor"
+  },
+  {
+    "aep": 63,
+    "title": "Console API for Managed Wallet Users - v1",
+    "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2024-03-14T00:00:00.000Z",
+    "updated": "2025-03-14T00:00:00.000Z",
+    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "roadmap": "major"
   },
   {
     "aep": 7,
