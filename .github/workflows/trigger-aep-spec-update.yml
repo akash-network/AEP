@@ -1,0 +1,32 @@
+name: Trigger AEP Spec Update
+
+on:
+  push:
+    branches:
+      - main
+
+# REPO_WEBSITE_ACCESS_TOKEN is a PAT token that allows akash-network/aep to trigger workflows in akash-network/website via repository dispatch.
+# PAT token repo access is limited to akash-network/website only with the following permissions necessary for triggering the workflow:
+# - Actions: Read & Write (Trigger workflows)
+# - Workflows: Read & Write (Dispatch events)
+# - Contents: Read & Write (Required for repository dispatch)
+# - Metadata: Read (Mandatory)
+
+jobs:
+  dispatch-update-specs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger AEP Spec Update in akash-network/website repo
+        run: |
+          repo_owner="akash-network"
+          repo_name="website"
+          event_type="aep-repo-trigger"
+
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.REPO_WEBSITE_ACCESS_TOKEN }}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/$repo_owner/$repo_name/dispatches \
+            -d "{\"event_type\": \"$event_type\"}")
+
+          [[ "$STATUS" -ge 200 && "$STATUS" -lt 300 ]] || { echo "Error: HTTP $STATUS"; exit 1; }
