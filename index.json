@@ -753,6 +753,17 @@
     "roadmap": "major"
   },
   {
+    "aep": 64,
+    "title": "JWT Authentication for Provider API",
+    "author": "Artur Troian (@troian)",
+    "status": "Last Call",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-04-03T00:00:00.000Z",
+    "updated": "2025-04-04T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
     "aep": 7,
     "title": "Incentivized Testnet 1: Akashian Challenge Phase 1",
     "author": [
