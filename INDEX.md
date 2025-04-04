@@ -63,4 +63,4 @@
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | Last Call | Standard/Core | 2025-01-30 | 2025-03-12 |  |
 | [62](spec/aep-62) | Add/ Remove Nodes Via Provider Console | Draft | Standard/Interface | 2024-03-15 |  | 2025-04-15 |
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | Draft | Standard/Interface | 2024-03-14 |  | 2025-04-30 |
-| [64](spec/aep-64) | JWT Authentication for Provider API | Last Call | Standard/Core | 2025-04-03 |  |  |
+| [64](spec/aep-64) | JWT Authentication for Provider API | Last Call | Standard/Core | 2025-04-03 |  | 2025-04-30 |
