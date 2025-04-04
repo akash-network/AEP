@@ -1,13 +1,13 @@
 ---
 aep: 57
 title: "Automatic Escrow Top Up"
-author: Iaroslav Gryshaiev (@ygryshajev) Maxime Beauchamp (@baktun14) Anil Murty (@anilmurty)
+author: Iaroslav Gryshaiev (@ygrishajev) Maxime Beauchamp (@baktun14) Anil Murty (@anilmurty)
 status: Draft
 type: Standard
 category: Interface
 created: 2024-01-05
 updated: 2024-01-05
-estimated-completion: 2025-01-30
+completed: 2025-01-30
 roadmap: minor
 ---
 
@@ -22,4 +22,4 @@ Implement a new UI setting in the existing settings page that allows users to en
 https://github.com/akash-network/console/issues/412
 
 Implement a worker CLI handler that automatically adds funds (top-ups) to Akash Network deployments when they are low on balance. This ensures deployments continue to run without requiring users to manually monitor and replenish funds, improving the user experience.
-https://github.com/akash-network/console/issues/395 
+https://github.com/akash-network/console/issues/395

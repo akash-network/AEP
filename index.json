@@ -286,9 +286,10 @@
     "type": "Standard",
     "category": "Core",
     "created": "2024-08-29T00:00:00.000Z",
-    "updated": "2024-01-11T00:00:00.000Z",
-    "estimated-completion": "2025-02-28T00:00:00.000Z",
+    "updated": "2024-02-18T00:00:00.000Z",
+    "estimated-completion": "2025-03-31T00:00:00.000Z",
     "roadmap": "major",
+    "requires": 61,
     "discussions-to": "https://github.com/orgs/akash-network/discussions/673",
     "resolution": "https://www.mintscan.io/akash/proposals/268"
   },
@@ -313,12 +314,12 @@
     "aep": 32,
     "title": "Akash Provider Console 1.0",
     "author": "Anil Murty (@anilmurty) Jigar Patel (@jigar-arc10) Deval Patel (devalpatel67)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-01-30T00:00:00.000Z",
+    "completed": "2025-02-18T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -330,9 +331,9 @@
     "type": "Standard",
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
-    "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-02-28T00:00:00.000Z",
-    "roadmap": "minor"
+    "updated": "2025-03-12T00:00:00.000Z",
+    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "roadmap": "major"
   },
   {
     "aep": 34,
@@ -343,7 +344,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-03-15T00:00:00.000Z",
+    "estimated-completion": "2025-06-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -354,8 +355,8 @@
     "type": "Standard",
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
-    "updated": "2024-12-06T00:00:00.000Z",
-    "estimated-completion": "2025-03-30T00:00:00.000Z",
+    "updated": "2024-03-19T00:00:00.000Z",
+    "estimated-completion": "2025-05-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -440,8 +441,8 @@
     "type": "Standard",
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
-    "updated": "2024-12-01T00:00:00.000Z",
-    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "updated": "2024-03-19T00:00:00.000Z",
+    "estimated-completion": "2025-06-30T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -631,8 +632,8 @@
     "type": "Standard",
     "category": "Interface",
     "created": "2025-01-10T00:00:00.000Z",
-    "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-02-15T00:00:00.000Z",
+    "updated": "2025-03-19T00:00:00.000Z",
+    "estimated-completion": "2025-04-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -644,7 +645,7 @@
     "category": "Interface",
     "created": "2024-01-05T00:00:00.000Z",
     "updated": "2024-01-05T00:00:00.000Z",
-    "estimated-completion": "2025-01-30T00:00:00.000Z",
+    "completed": "2025-01-30T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -667,8 +668,8 @@
     "type": "Standard",
     "category": "Interface",
     "created": "2024-01-05T00:00:00.000Z",
-    "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-03-15T00:00:00.000Z",
+    "updated": "2025-03-13T00:00:00.000Z",
+    "estimated-completion": "2025-06-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -692,6 +693,54 @@
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-12-06T00:00:00.000Z",
     "estimated-completion": "2026-03-30T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
+    "aep": 61,
+    "title": "Enhanced Read Performance Onchain Queries",
+    "author": "Artur Troian (@troian)",
+    "status": "Last Call",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-01-30T00:00:00.000Z",
+    "updated": "2025-02-18T00:00:00.000Z",
+    "completed": "2025-03-12T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
+    "aep": 62,
+    "title": "Add/ Remove Nodes Via Provider Console",
+    "author": "Anil Murty (@anilmurty) igar Patel (@jigar-arc10) Deval Patel (devalpatel67)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2024-03-15T00:00:00.000Z",
+    "updated": "2025-03-15T00:00:00.000Z",
+    "estimated-completion": "2025-04-15T00:00:00.000Z",
+    "roadmap": "minor"
+  },
+  {
+    "aep": 63,
+    "title": "Console API for Managed Wallet Users - v1",
+    "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2024-03-14T00:00:00.000Z",
+    "updated": "2025-03-14T00:00:00.000Z",
+    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
+    "aep": 64,
+    "title": "JWT Authentication for Provider API",
+    "author": "Artur Troian (@troian)",
+    "status": "Last Call",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-04-03T00:00:00.000Z",
+    "updated": "2025-04-04T00:00:00.000Z",
+    "estimated-completion": "2025-04-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
