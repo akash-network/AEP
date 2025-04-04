@@ -27,6 +27,7 @@
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-04-30 | Minor |
 | [56](spec/aep-56) | Unified Akash Integration API | 2025-04-30 | Major |
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | 2025-04-30 | Major |
+| [64](spec/aep-64) | JWT Authentication for Provider API | 2025-04-30 | Major |
 | [40](spec/aep-40) | Continuous Provider Audits | 2025-05-15 | Minor |
 | [54](spec/aep-54) | NextGen AMD GPU support | 2025-05-15 | Minor |
 | [58](spec/aep-58) | Per Node Resources in Console | 2025-05-15 | Minor |
