@@ -22,7 +22,7 @@
 | [32](spec/aep-32) | Akash Provider Console 1.0 | 2025-02-18 | Major |
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | 2025-03-12 | Major |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-03-31 | Major |
-| [62](spec/aep-62) | Add/ Remove Nodes Via Provider Console | 2025-04-15 | Minor |
+| [62](spec/aep-62) | Provider Console - Node Manager | 2025-04-15 | Minor |
 | [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-04-30 | Major |
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-04-30 | Minor |
 | [56](spec/aep-56) | Unified Akash Integration API | 2025-04-30 | Major |
