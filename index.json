@@ -715,8 +715,9 @@
     "type": "Standard",
     "category": "Interface",
     "created": "2024-03-15T00:00:00.000Z",
-    "updated": "2025-04-22T00:00:00.000Z",
-    "estimated-completion": "2025-04-15T00:00:00.000Z",
+    "updated": "2025-04-28T00:00:00.000Z",
+    "completed": "2025-04-17T00:00:00.000Z",
+    "resolution": "https://github.com/akash-network/console/milestone/17?closed=1",
     "roadmap": "minor"
   },
   {
