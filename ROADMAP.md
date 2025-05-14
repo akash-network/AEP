@@ -21,7 +21,6 @@
 | [57](spec/aep-57) | Automatic Escrow Top Up | 2025-01-30 | Minor |
 | [32](spec/aep-32) | Akash Provider Console 1.0 | 2025-02-18 | Major |
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | 2025-03-12 | Major |
-| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-03-31 | Major |
 | [62](spec/aep-62) | Provider Console - Node Manager | 2025-04-17 | Minor |
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-04-30 | Minor |
 | [56](spec/aep-56) | Unified Akash Integration API | 2025-04-30 | Major |
@@ -44,10 +43,12 @@
 | [55](spec/aep-55) | Buy Back and Burn AKT | 2025-06-30 | Minor |
 | [29](spec/aep-29) | Verifiable Hardware Provisioning | 2025-07-01 | Major |
 | [38](spec/aep-38) | Provider Content Moderation | 2025-07-30 | Minor |
+| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-08-31 | Major |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2025-11-30 | Minor |
 | [50](spec/aep-50) | Secrets Management | 2025-11-30 | Minor |
 | [42](spec/aep-42) | Workload Logs on Decentralized Storage | 2025-12-30 | Minor |
 | [47](spec/aep-47) | Long Standing Orders | 2025-12-31 | Minor |
+| [65](spec/aep-65) | Confidential Computing | 2025-12-31 | Major |
 | [11](spec/aep-11) | Managed Services Market | 2026-01-01 | Major |
 | [51](spec/aep-51) | Lease Change Request | 2026-01-30 | Minor |
 | [49](spec/aep-49) | Virtual Machines | 2026-02-20 | Major |
