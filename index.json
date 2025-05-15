@@ -286,8 +286,8 @@
     "type": "Standard",
     "category": "Core",
     "created": "2024-08-29T00:00:00.000Z",
-    "updated": "2024-02-18T00:00:00.000Z",
-    "estimated-completion": "2025-03-31T00:00:00.000Z",
+    "updated": "2024-04-22T00:00:00.000Z",
+    "estimated-completion": "2025-08-31T00:00:00.000Z",
     "roadmap": "major",
     "requires": 61,
     "discussions-to": "https://github.com/orgs/akash-network/discussions/673",
@@ -332,7 +332,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-03-12T00:00:00.000Z",
-    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "estimated-completion": "2025-05-23T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -709,14 +709,15 @@
   },
   {
     "aep": 62,
-    "title": "Add/ Remove Nodes Via Provider Console",
-    "author": "Anil Murty (@anilmurty) igar Patel (@jigar-arc10) Deval Patel (devalpatel67)",
-    "status": "Draft",
+    "title": "Provider Console - Node Manager",
+    "author": "Anil Murty (@anilmurty) Jigar Patel (@jigar-arc10) Deval Patel (devalpatel67)",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2024-03-15T00:00:00.000Z",
-    "updated": "2025-03-15T00:00:00.000Z",
-    "estimated-completion": "2025-04-15T00:00:00.000Z",
+    "updated": "2025-04-28T00:00:00.000Z",
+    "completed": "2025-04-17T00:00:00.000Z",
+    "resolution": "https://github.com/akash-network/console/milestone/17?closed=1",
     "roadmap": "minor"
   },
   {
@@ -728,19 +729,31 @@
     "category": "Interface",
     "created": "2024-03-14T00:00:00.000Z",
     "updated": "2025-03-14T00:00:00.000Z",
-    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "estimated-completion": "2025-05-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
     "aep": 64,
     "title": "JWT Authentication for Provider API",
     "author": "Artur Troian (@troian)",
-    "status": "Last Call",
+    "status": "Final",
     "type": "Standard",
     "category": "Core",
     "created": "2025-04-03T00:00:00.000Z",
-    "updated": "2025-04-04T00:00:00.000Z",
+    "updated": "2025-04-07T00:00:00.000Z",
     "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
+    "aep": 65,
+    "title": "Confidential Computing",
+    "author": "Anil Murty (@anilmurty)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-05-14T00:00:00.000Z",
+    "updated": "2025-05-14T00:00:00.000Z",
+    "estimated-completion": "2025-12-31T00:00:00.000Z",
     "roadmap": "major"
   },
   {
