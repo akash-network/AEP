@@ -286,8 +286,8 @@
     "type": "Standard",
     "category": "Core",
     "created": "2024-08-29T00:00:00.000Z",
-    "updated": "2024-02-18T00:00:00.000Z",
-    "estimated-completion": "2025-03-31T00:00:00.000Z",
+    "updated": "2024-04-22T00:00:00.000Z",
+    "estimated-completion": "2025-08-31T00:00:00.000Z",
     "roadmap": "major",
     "requires": 61,
     "discussions-to": "https://github.com/orgs/akash-network/discussions/673",
@@ -742,6 +742,18 @@
     "created": "2025-04-03T00:00:00.000Z",
     "updated": "2025-04-07T00:00:00.000Z",
     "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
+    "aep": 65,
+    "title": "Confidential Computing",
+    "author": "Anil Murty (@anilmurty)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-05-14T00:00:00.000Z",
+    "updated": "2025-05-14T00:00:00.000Z",
+    "estimated-completion": "2025-12-31T00:00:00.000Z",
     "roadmap": "major"
   },
   {
