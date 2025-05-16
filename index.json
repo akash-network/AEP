@@ -624,14 +624,14 @@
   },
   {
     "aep": 56,
-    "title": "Unified Akash Integration API",
-    "author": "Anil Murty (@anilmurty) Artur Troian (@troian) Iaroslav Gryshaiev (@ygrishajev) Maxime Beauchamp (@baktun14)",
+    "title": "Chain SDK",
+    "author": "Anil Murty (@anilmurty) Artur Troian (@troian) Serhii Stotsky (@baktun14) Maxime Beauchamp (@baktun14)",
     "status": "Draft",
     "type": "Standard",
     "category": "Interface",
     "created": "2025-01-10T00:00:00.000Z",
-    "updated": "2025-03-19T00:00:00.000Z",
-    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "updated": "2025-05-16T00:00:00.000Z",
+    "estimated-completion": "2025-06-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
