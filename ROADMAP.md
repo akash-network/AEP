@@ -27,6 +27,7 @@
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | 2025-05-30 | Major |
 | [29](spec/aep-29) | Hardware Verification (Via Attestation) | 2025-06-15 | Major |
 | [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-06-15 | Major |
+| [67](spec/aep-67) | Console Bid PreCheck | 2025-06-15 | Major |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-06-30 | Major |
 | [55](spec/aep-55) | Buy Back and Burn AKT | 2025-06-30 | Minor |
 | [56](spec/aep-56) | Chain SDK | 2025-06-30 | Major |
