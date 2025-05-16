@@ -32,6 +32,7 @@
 | [53](spec/aep-53) | Onchain Provider Incentives | 2025-05-30 | Major |
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | 2025-05-30 | Major |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2025-05-31 | Minor |
+| [29](spec/aep-29) | Hardware Verification (Via Attestation) | 2025-06-15 | Major |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2025-06-15 | Minor |
 | [59](spec/aep-59) | Provider Notifications | 2025-06-15 | Minor |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-06-30 | Major |
@@ -41,7 +42,6 @@
 | [43](spec/aep-43) | Workload Utilization Metrics | 2025-06-30 | Minor |
 | [52](spec/aep-52) | Rollover Provider | 2025-06-30 | Minor |
 | [55](spec/aep-55) | Buy Back and Burn AKT | 2025-06-30 | Minor |
-| [29](spec/aep-29) | Verifiable Hardware Provisioning | 2025-07-01 | Major |
 | [38](spec/aep-38) | Provider Content Moderation | 2025-07-30 | Minor |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-08-31 | Major |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2025-11-30 | Minor |

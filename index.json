@@ -254,17 +254,15 @@
   },
   {
     "aep": 29,
-    "title": "Verifiable Hardware Provisioning",
-    "author": "Sriram Vishwanath (@sriramvish) Artur Troian (@troian)",
+    "title": "Hardware Verification (Via Attestation)",
+    "author": "Anil Murty (@anilmurty) Artur Troian (@troian)",
     "status": "Final",
     "type": "Standard",
     "category": "Core",
     "created": "2024-06-27T00:00:00.000Z",
-    "updated": "2024-12-01T00:00:00.000Z",
-    "estimated-completion": "2025-07-01T00:00:00.000Z",
-    "roadmap": "major",
-    "discussions-to": "https://github.com/orgs/akash-network/discussions/614",
-    "resolution": "https://www.mintscan.io/akash/proposals/261"
+    "updated": "2025-05-15T00:00:00.000Z",
+    "estimated-completion": "2025-06-15T00:00:00.000Z",
+    "roadmap": "major"
   },
   {
     "aep": 3,
