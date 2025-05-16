@@ -55,7 +55,7 @@
 | [53](spec/aep-53) | Onchain Provider Incentives | Draft | Standard/Interface | 2024-12-01 |  | 2025-05-30 |
 | [54](spec/aep-54) | NextGen AMD GPU support | Draft | Standard/Core | 2024-01-05 |  | 2025-05-15 |
 | [55](spec/aep-55) | Buy Back and Burn AKT | Draft | Standard/Economics | 2024-12-07 |  | 2025-06-30 |
-| [56](spec/aep-56) | Unified Akash Integration API | Draft | Standard/Interface | 2025-01-10 |  | 2025-04-30 |
+| [56](spec/aep-56) | Chain SDK | Draft | Standard/Interface | 2025-01-10 |  | 2025-06-30 |
 | [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2025-05-15 |
 | [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2025-06-15 |

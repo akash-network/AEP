@@ -23,7 +23,6 @@
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | 2025-03-12 | Major |
 | [62](spec/aep-62) | Provider Console - Node Manager | 2025-04-17 | Minor |
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-04-30 | Minor |
-| [56](spec/aep-56) | Unified Akash Integration API | 2025-04-30 | Major |
 | [64](spec/aep-64) | JWT Authentication for Provider API | 2025-04-30 | Major |
 | [40](spec/aep-40) | Continuous Provider Audits | 2025-05-15 | Minor |
 | [54](spec/aep-54) | NextGen AMD GPU support | 2025-05-15 | Minor |
@@ -42,6 +41,7 @@
 | [43](spec/aep-43) | Workload Utilization Metrics | 2025-06-30 | Minor |
 | [52](spec/aep-52) | Rollover Provider | 2025-06-30 | Minor |
 | [55](spec/aep-55) | Buy Back and Burn AKT | 2025-06-30 | Minor |
+| [56](spec/aep-56) | Chain SDK | 2025-06-30 | Major |
 | [38](spec/aep-38) | Provider Content Moderation | 2025-07-30 | Minor |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-08-31 | Major |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2025-11-30 | Minor |
