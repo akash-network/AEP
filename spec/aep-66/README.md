@@ -7,7 +7,7 @@
  category: Core
  created: 2025-05-13
  updated: 2025-05-13
- estimated-completion: 2025-05-30
+ estimated-completion: 2025-06-30
  roadmap: major
  ---
 
@@ -65,4 +65,35 @@
 
 
 
- ### Implementation
+ ## Implementation
+
+An implementation leveraging `cert-manager` would simplify the whole solution by simply configuring the ingress with specific annotations that would trigger certificate issuing. A TLS configuration would also need to be added to the Ingress instance created by the hostname operator pointing to the TLS secret with the accepted domains.
+
+`cert-manager` watches Ingress resources across the Akash Provider cluster. If it observes an Ingress with annotations related to certificate issuing, it will ensure a Certificate resource with the name provided in the `tls.secretName` field and configured as described on the Ingress exists in the deployment namespace. An example Ingress:
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: nameOfClusterIssuer
+  name: myIngress
+  namespace: myIngress
+spec:
+  rules:
+  - host: example.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: myservice
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - custom.domain.my
+    secretName: myingress-cert
+```
+
+With this, user workloads will be provided a valid and automatically managed certificate for their custom domains.
