@@ -767,6 +767,30 @@
     "roadmap": "major"
   },
   {
+    "aep": 68,
+    "title": "Console - Billing & Usage",
+    "author": "Anil Murty (@anilmurty)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2025-05-20T00:00:00.000Z",
+    "updated": "2025-05-20T00:00:00.000Z",
+    "estimated-completion": "2025-06-30T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
+    "aep": 69,
+    "title": "Provider Console API - v1",
+    "author": "Anil Murty (@anilmurty) Jigar Patel (@jigar-arc10) Deval Patel (devalpatel67)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2025-05-22T00:00:00.000Z",
+    "updated": "2025-05-22T00:00:00.000Z",
+    "estimated-completion": "2025-07-15T00:00:00.000Z",
+    "roadmap": "minor"
+  },
+  {
     "aep": 7,
     "title": "Incentivized Testnet 1: Akashian Challenge Phase 1",
     "author": "Greg Osuri (@gosuri) Chris Remus (@chris-remus)",
