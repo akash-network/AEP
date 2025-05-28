@@ -804,6 +804,18 @@
     "roadmap": "major"
   },
   {
+    "aep": 70,
+    "title": "Console API - JWT and new features",
+    "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14)",
+    "status": "Final",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2024-05-28T00:00:00.000Z",
+    "updated": "2025-05-28T00:00:00.000Z",
+    "estimated completion": "2025-07-15T00:00:00.000Z",
+    "roadmap": "minor"
+  },
+  {
     "aep": 8,
     "title": "Mainnet 1: Security",
     "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
