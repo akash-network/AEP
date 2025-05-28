@@ -722,12 +722,12 @@
     "aep": 63,
     "title": "Console API for Managed Wallet Users - v1",
     "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2024-03-14T00:00:00.000Z",
-    "updated": "2025-03-14T00:00:00.000Z",
-    "estimated-completion": "2025-05-30T00:00:00.000Z",
+    "updated": "2025-05-28T00:00:00.000Z",
+    "completed": "2025-05-28T00:00:00.000Z",
     "roadmap": "major"
   },
   {
