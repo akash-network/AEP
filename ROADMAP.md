@@ -34,6 +34,7 @@
 | [68](spec/aep-68) | Console - Billing & Usage | 2025-06-30 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2025-07-15 | Minor |
 | [69](spec/aep-69) | Provider Console API - v1 | 2025-07-15 | Minor |
+| [70](spec/aep-70) | Console API - JWT and new features | 2025-07-15 | Minor |
 | [38](spec/aep-38) | Provider Content Moderation | 2025-07-30 | Minor |
 | [39](spec/aep-39) | Lease Termination Reasons | 2025-07-30 | Minor |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2025-08-15 | Minor |
