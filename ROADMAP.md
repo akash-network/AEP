@@ -22,15 +22,15 @@
 | [32](spec/aep-32) | Akash Provider Console 1.0 | 2025-02-18 | Major |
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | 2025-03-12 | Major |
 | [62](spec/aep-62) | Provider Console - Node Manager | 2025-04-17 | Minor |
-| [37](spec/aep-37) | Lease control API via GRPC | 2025-04-30 | Minor |
-| [64](spec/aep-64) | JWT Authentication for Provider API | 2025-04-30 | Major |
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | 2025-05-28 | Major |
 | [29](spec/aep-29) | Hardware Verification (Via Attestation) | 2025-06-15 | Major |
 | [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-06-15 | Major |
 | [67](spec/aep-67) | Console Bid PreCheck | 2025-06-15 | Major |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-06-30 | Major |
+| [37](spec/aep-37) | Lease control API via GRPC | 2025-06-30 | Minor |
 | [55](spec/aep-55) | Buy Back and Burn AKT | 2025-06-30 | Minor |
 | [56](spec/aep-56) | Chain SDK | 2025-06-30 | Major |
+| [64](spec/aep-64) | JWT Authentication for Provider API | 2025-06-30 | Major |
 | [68](spec/aep-68) | Console - Billing & Usage | 2025-06-30 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2025-07-15 | Minor |
 | [69](spec/aep-69) | Provider Console API - v1 | 2025-07-15 | Minor |
