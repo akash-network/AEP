@@ -65,6 +65,7 @@
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | Final | Standard/Interface | 2024-03-14 | 2025-05-28 |  |
 | [64](spec/aep-64) | JWT Authentication for Provider API | Final | Standard/Core | 2025-04-03 |  | 2025-06-30 |
 | [65](spec/aep-65) | Confidential Computing | Draft | Standard/Core | 2025-05-14 |  | 2025-12-31 |
+| [66](spec/aep-66) | Custom Domain Certificates | Draft | Standard/Core | 2025-05-13 |  | 2025-06-30 |
 | [67](spec/aep-67) | Console Bid PreCheck | Draft | Standard/Core | 2025-05-16 |  | 2025-06-15 |
 | [68](spec/aep-68) | Console - Billing & Usage | Draft | Standard/Interface | 2025-05-20 |  | 2025-06-30 |
 | [69](spec/aep-69) | Provider Console API - v1 | Draft | Standard/Interface | 2025-05-22 |  | 2025-07-15 |

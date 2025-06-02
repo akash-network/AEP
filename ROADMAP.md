@@ -31,6 +31,7 @@
 | [55](spec/aep-55) | Buy Back and Burn AKT | 2025-06-30 | Minor |
 | [56](spec/aep-56) | Chain SDK | 2025-06-30 | Major |
 | [64](spec/aep-64) | JWT Authentication for Provider API | 2025-06-30 | Major |
+| [66](spec/aep-66) | Custom Domain Certificates | 2025-06-30 | Major |
 | [68](spec/aep-68) | Console - Billing & Usage | 2025-06-30 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2025-07-15 | Minor |
 | [69](spec/aep-69) | Provider Console API - v1 | 2025-07-15 | Minor |
