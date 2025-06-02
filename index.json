@@ -757,6 +757,18 @@
     "roadmap": "major"
   },
   {
+    "aep": 66,
+    "title": "Custom Domain Certificates",
+    "author": "Joao Luna (@cloud-j-luna)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-05-13T00:00:00.000Z",
+    "updated": "2025-05-13T00:00:00.000Z",
+    "estimated-completion": "2025-06-30T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
     "aep": 7,
     "title": "Incentivized Testnet 1: Akashian Challenge Phase 1",
     "author": "Greg Osuri (@gosuri) Chris Remus (@chris-remus)",

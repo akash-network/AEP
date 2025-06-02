@@ -41,6 +41,7 @@
 | [43](spec/aep-43) | Workload Utilization Metrics | 2025-06-30 | Minor |
 | [52](spec/aep-52) | Rollover Provider | 2025-06-30 | Minor |
 | [55](spec/aep-55) | Buy Back and Burn AKT | 2025-06-30 | Minor |
+| [66](spec/aep-66) | Custom Domain Certificates | 2025-06-30 | Major |
 | [29](spec/aep-29) | Verifiable Hardware Provisioning | 2025-07-01 | Major |
 | [38](spec/aep-38) | Provider Content Moderation | 2025-07-30 | Minor |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-08-31 | Major |

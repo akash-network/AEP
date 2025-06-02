@@ -1,15 +1,15 @@
 ---
- aep: 66
- title: "Custom Domain Certificates"
- author: Joao Luna (@cloud-j-luna)
- status: Draft
- type: Standard
- category: Core
- created: 2025-05-13
- updated: 2025-05-13
- estimated-completion: 2025-06-30
- roadmap: major
- ---
+aep: 66
+title: "Custom Domain Certificates"
+author: Joao Luna (@cloud-j-luna)
+status: Draft
+type: Standard
+category: Core
+created: 2025-05-13
+updated: 2025-05-13
+estimated-completion: 2025-06-30
+roadmap: major
+---
 
  ## Abstract
 
