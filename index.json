@@ -254,17 +254,15 @@
   },
   {
     "aep": 29,
-    "title": "Verifiable Hardware Provisioning",
-    "author": "Sriram Vishwanath (@sriramvish) Artur Troian (@troian)",
+    "title": "Hardware Verification (Via Attestation)",
+    "author": "Anil Murty (@anilmurty) Artur Troian (@troian)",
     "status": "Final",
     "type": "Standard",
     "category": "Core",
     "created": "2024-06-27T00:00:00.000Z",
-    "updated": "2024-12-01T00:00:00.000Z",
-    "estimated-completion": "2025-07-01T00:00:00.000Z",
-    "roadmap": "major",
-    "discussions-to": "https://github.com/orgs/akash-network/discussions/614",
-    "resolution": "https://www.mintscan.io/akash/proposals/261"
+    "updated": "2025-05-15T00:00:00.000Z",
+    "estimated-completion": "2025-06-15T00:00:00.000Z",
+    "roadmap": "major"
   },
   {
     "aep": 3,
@@ -332,7 +330,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-03-12T00:00:00.000Z",
-    "estimated-completion": "2025-05-23T00:00:00.000Z",
+    "estimated-completion": "2025-06-15T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -344,7 +342,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-06-15T00:00:00.000Z",
+    "estimated-completion": "2025-08-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -356,7 +354,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-03-19T00:00:00.000Z",
-    "estimated-completion": "2025-05-31T00:00:00.000Z",
+    "estimated-completion": "2025-09-30T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -368,7 +366,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-12-01T00:00:00.000Z",
-    "estimated-completion": "2025-06-30T00:00:00.000Z",
+    "estimated-completion": "2025-10-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -379,8 +377,8 @@
     "type": "Standard",
     "category": "Core",
     "created": "2024-12-01T00:00:00.000Z",
-    "updated": "2024-12-09T00:00:00.000Z",
-    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "updated": "2024-05-29T00:00:00.000Z",
+    "estimated-completion": "2025-06-30T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -404,7 +402,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-11T00:00:00.000Z",
-    "estimated-completion": "2025-06-30T00:00:00.000Z",
+    "estimated-completion": "2025-07-30T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -430,7 +428,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-05-15T00:00:00.000Z",
+    "estimated-completion": "2026-02-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -442,7 +440,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-03-19T00:00:00.000Z",
-    "estimated-completion": "2025-06-30T00:00:00.000Z",
+    "estimated-completion": "2025-08-30T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -466,7 +464,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-01-11T00:00:00.000Z",
-    "estimated-completion": "2025-06-30T00:00:00.000Z",
+    "estimated-completion": "2025-09-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -585,7 +583,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-12-01T00:00:00.000Z",
-    "estimated-completion": "2025-06-30T00:00:00.000Z",
+    "estimated-completion": "2026-01-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -597,7 +595,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-05-30T00:00:00.000Z",
+    "estimated-completion": "2025-08-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -609,7 +607,7 @@
     "category": "Core",
     "created": "2024-01-05T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-05-15T00:00:00.000Z",
+    "estimated-completion": "2025-12-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -626,14 +624,14 @@
   },
   {
     "aep": 56,
-    "title": "Unified Akash Integration API",
-    "author": "Anil Murty (@anilmurty) Artur Troian (@troian) Iaroslav Gryshaiev (@ygrishajev) Maxime Beauchamp (@baktun14)",
+    "title": "Chain SDK",
+    "author": "Anil Murty (@anilmurty) Artur Troian (@troian) Serhii Stotsky (@baktun14) Maxime Beauchamp (@baktun14)",
     "status": "Draft",
     "type": "Standard",
     "category": "Interface",
     "created": "2025-01-10T00:00:00.000Z",
-    "updated": "2025-03-19T00:00:00.000Z",
-    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "updated": "2025-05-16T00:00:00.000Z",
+    "estimated-completion": "2025-06-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -657,7 +655,7 @@
     "category": "Interface",
     "created": "2024-01-05T00:00:00.000Z",
     "updated": "2024-01-05T00:00:00.000Z",
-    "estimated-completion": "2025-05-15T00:00:00.000Z",
+    "estimated-completion": "2025-08-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -669,7 +667,7 @@
     "category": "Interface",
     "created": "2024-01-05T00:00:00.000Z",
     "updated": "2025-03-13T00:00:00.000Z",
-    "estimated-completion": "2025-06-15T00:00:00.000Z",
+    "estimated-completion": "2025-07-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -724,12 +722,12 @@
     "aep": 63,
     "title": "Console API for Managed Wallet Users - v1",
     "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2024-03-14T00:00:00.000Z",
-    "updated": "2025-03-14T00:00:00.000Z",
-    "estimated-completion": "2025-05-30T00:00:00.000Z",
+    "updated": "2025-05-28T00:00:00.000Z",
+    "completed": "2025-05-28T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -740,8 +738,8 @@
     "type": "Standard",
     "category": "Core",
     "created": "2025-04-03T00:00:00.000Z",
-    "updated": "2025-04-07T00:00:00.000Z",
-    "estimated-completion": "2025-04-30T00:00:00.000Z",
+    "updated": "2025-05-29T00:00:00.000Z",
+    "estimated-completion": "2025-06-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -769,6 +767,42 @@
     "roadmap": "major"
   },
   {
+    "aep": 67,
+    "title": "Console Bid PreCheck",
+    "author": "Anil Murty (@anilmurty)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-05-16T00:00:00.000Z",
+    "updated": "2025-05-16T00:00:00.000Z",
+    "estimated-completion": "2025-06-15T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
+    "aep": 68,
+    "title": "Console - Billing & Usage",
+    "author": "Anil Murty (@anilmurty)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2025-05-20T00:00:00.000Z",
+    "updated": "2025-05-20T00:00:00.000Z",
+    "estimated-completion": "2025-06-30T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
+    "aep": 69,
+    "title": "Provider Console API - v1",
+    "author": "Anil Murty (@anilmurty) Jigar Patel (@jigar-arc10) Deval Patel (devalpatel67)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2025-05-22T00:00:00.000Z",
+    "updated": "2025-05-22T00:00:00.000Z",
+    "estimated-completion": "2025-07-15T00:00:00.000Z",
+    "roadmap": "minor"
+  },
+  {
     "aep": 7,
     "title": "Incentivized Testnet 1: Akashian Challenge Phase 1",
     "author": "Greg Osuri (@gosuri) Chris Remus (@chris-remus)",
@@ -780,6 +814,18 @@
     "completed": "2020-05-22T00:00:00.000Z",
     "updated": "2024-12-01T00:00:00.000Z",
     "roadmap": "major"
+  },
+  {
+    "aep": 70,
+    "title": "Console API - JWT and new features",
+    "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14)",
+    "status": "draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2025-05-28T00:00:00.000Z",
+    "updated": "2025-05-28T00:00:00.000Z",
+    "estimated-completion": "2025-07-15T00:00:00.000Z",
+    "roadmap": "minor"
   },
   {
     "aep": 8,
