@@ -29,10 +29,9 @@
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-06-30 | Major |
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-06-30 | Minor |
 | [55](spec/aep-55) | Buy Back and Burn AKT | 2025-06-30 | Minor |
-| [66](spec/aep-66) | Custom Domain Certificates | 2025-06-30 | Major |
-| [29](spec/aep-29) | Verifiable Hardware Provisioning | 2025-07-01 | Major |
 | [56](spec/aep-56) | Chain SDK | 2025-06-30 | Major |
 | [64](spec/aep-64) | JWT Authentication for Provider API | 2025-06-30 | Major |
+| [66](spec/aep-66) | Custom Domain Certificates | 2025-06-30 | Major |
 | [68](spec/aep-68) | Console - Billing & Usage | 2025-06-30 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2025-07-15 | Minor |
 | [69](spec/aep-69) | Provider Console API - v1 | 2025-07-15 | Minor |
