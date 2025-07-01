@@ -32,7 +32,7 @@
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | Final | Standard/Core | 2024-08-29 |  | 2025-08-31 |
 | [31](spec/aep-31) | Credit Card Payments In Console | Final | Standard/Interface | 2024-08-29 | 2024-11-04 |  |
 | [32](spec/aep-32) | Akash Provider Console 1.0 | Final | Standard/Interface | 2024-12-01 | 2025-02-18 |  |
-| [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2025-06-15 |
+| [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | Final | Standard/Interface | 2024-12-01 | 2025-06-30 |  |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2025-08-15 |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2025-09-30 |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2025-10-15 |
