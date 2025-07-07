@@ -23,36 +23,36 @@
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | 2025-03-12 | Major |
 | [62](spec/aep-62) | Provider Console - Node Manager | 2025-04-17 | Minor |
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | 2025-05-28 | Major |
-| [29](spec/aep-29) | Hardware Verification (Via Attestation) | 2025-06-15 | Major |
-| [67](spec/aep-67) | Console Bid PreCheck | 2025-06-15 | Major |
-| [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-06-30 | Major |
 | [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-06-30 | Major |
-| [37](spec/aep-37) | Lease control API via GRPC | 2025-06-30 | Minor |
-| [55](spec/aep-55) | Buy Back and Burn AKT | 2025-06-30 | Minor |
-| [56](spec/aep-56) | Chain SDK | 2025-06-30 | Major |
-| [64](spec/aep-64) | JWT Authentication for Provider API | 2025-06-30 | Major |
-| [66](spec/aep-66) | Custom Domain Certificates | 2025-06-30 | Major |
-| [68](spec/aep-68) | Console - Billing & Usage | 2025-06-30 | Major |
-| [59](spec/aep-59) | Provider Notifications | 2025-07-15 | Minor |
+| [68](spec/aep-68) | Console - Billing & Usage | 2025-07-15 | Major |
 | [69](spec/aep-69) | Provider Console API - v1 | 2025-07-15 | Minor |
-| [70](spec/aep-70) | Console API - JWT and new features | 2025-07-15 | Minor |
-| [38](spec/aep-38) | Provider Content Moderation | 2025-07-30 | Minor |
-| [39](spec/aep-39) | Lease Termination Reasons | 2025-07-30 | Minor |
+| [64](spec/aep-64) | JWT Authentication for Provider API | 2025-07-30 | Major |
+| [67](spec/aep-67) | Console Bid PreCheck | 2025-07-30 | Major |
+| [29](spec/aep-29) | Hardware Verification (Via Attestation) | 2025-08-15 | Major |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2025-08-15 | Minor |
-| [58](spec/aep-58) | Per Node Resources in Console | 2025-08-15 | Minor |
+| [56](spec/aep-56) | Chain SDK | 2025-08-15 | Major |
+| [59](spec/aep-59) | Provider Notifications | 2025-08-15 | Minor |
+| [70](spec/aep-70) | Console API - JWT and new features | 2025-08-15 | Minor |
+| [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-08-30 | Major |
 | [41](spec/aep-41) | Standard Provider Attributes | 2025-08-30 | Minor |
 | [53](spec/aep-53) | Onchain Provider Incentives | 2025-08-30 | Major |
+| [58](spec/aep-58) | Per Node Resources in Console | 2025-08-30 | Minor |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-08-31 | Major |
+| [37](spec/aep-37) | Lease control API via GRPC | 2025-09-15 | Minor |
 | [43](spec/aep-43) | Workload Utilization Metrics | 2025-09-15 | Minor |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2025-09-30 | Minor |
-| [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2025-10-15 | Minor |
+| [55](spec/aep-55) | Buy Back and Burn AKT | 2025-10-30 | Minor |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2025-11-30 | Minor |
 | [50](spec/aep-50) | Secrets Management | 2025-11-30 | Minor |
+| [66](spec/aep-66) | Custom Domain Certificates | 2025-11-30 | Major |
 | [54](spec/aep-54) | NextGen AMD GPU support | 2025-12-15 | Minor |
-| [42](spec/aep-42) | Workload Logs on Decentralized Storage | 2025-12-30 | Minor |
+| [38](spec/aep-38) | Provider Content Moderation | 2025-12-31 | Minor |
+| [39](spec/aep-39) | Lease Termination Reasons | 2025-12-31 | Minor |
 | [47](spec/aep-47) | Long Standing Orders | 2025-12-31 | Minor |
 | [65](spec/aep-65) | Confidential Computing | 2025-12-31 | Major |
 | [11](spec/aep-11) | Managed Services Market | 2026-01-01 | Major |
+| [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-01-15 | Minor |
+| [42](spec/aep-42) | Workload Logs on Decentralized Storage | 2026-01-30 | Minor |
 | [51](spec/aep-51) | Lease Change Request | 2026-01-30 | Minor |
 | [52](spec/aep-52) | Rollover Provider | 2026-01-31 | Minor |
 | [40](spec/aep-40) | Continuous Provider Audits | 2026-02-15 | Minor |
