@@ -684,13 +684,13 @@
   },
   {
     "aep": 60,
-    "title": "Akash at Home",
-    "author": "Greg Osuri (@gosuri)",
+    "title": "Akash at Home - MVP",
+    "author": "Anil Murty (@anilmurty) Damir Simpovic (@shimpa1) Jigar Patel (@jigar-arc10) Deval Patel (@devalpatel67) Greg Osuri (@gosuri)",
     "status": "Draft",
     "type": "Meta",
     "created": "2024-12-01T00:00:00.000Z",
-    "updated": "2024-12-06T00:00:00.000Z",
-    "estimated-completion": "2026-03-30T00:00:00.000Z",
+    "updated": "2025-07-24T00:00:00.000Z",
+    "estimated-completion": "2025-12-31T00:00:00.000Z",
     "roadmap": "major"
   },
   {
