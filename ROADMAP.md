@@ -49,6 +49,7 @@
 | [38](spec/aep-38) | Provider Content Moderation | 2025-12-31 | Minor |
 | [39](spec/aep-39) | Lease Termination Reasons | 2025-12-31 | Minor |
 | [47](spec/aep-47) | Long Standing Orders | 2025-12-31 | Minor |
+| [60](spec/aep-60) | Akash at Home - MVP | 2025-12-31 | Major |
 | [65](spec/aep-65) | Confidential Computing | 2025-12-31 | Major |
 | [11](spec/aep-11) | Managed Services Market | 2026-01-01 | Major |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-01-15 | Minor |
@@ -57,7 +58,6 @@
 | [52](spec/aep-52) | Rollover Provider | 2026-01-31 | Minor |
 | [40](spec/aep-40) | Continuous Provider Audits | 2026-02-15 | Minor |
 | [49](spec/aep-49) | Virtual Machines | 2026-02-20 | Major |
-| [60](spec/aep-60) | Akash at Home | 2026-03-30 | Major |
 | [48](spec/aep-48) | Private Overlay Networking | 2026-05-30 | Major |
 | [44](spec/aep-44) | Reserved Instances | 2026-08-30 | Minor |
 | [46](spec/aep-46) | Spot Instances | 2026-08-30 | Minor |
