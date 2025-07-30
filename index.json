@@ -798,8 +798,9 @@
     "type": "Standard",
     "category": "Interface",
     "created": "2025-05-22T00:00:00.000Z",
-    "updated": "2025-05-22T00:00:00.000Z",
-    "estimated-completion": "2025-07-15T00:00:00.000Z",
+    "updated": "2025-07-30T00:00:00.000Z",
+    "completed": "2025-07-25T00:00:00.000Z",
+    "resolution": "https://github.com/akash-network/console/milestone/22",
     "roadmap": "minor"
   },
   {
