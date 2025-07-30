@@ -25,7 +25,7 @@
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | 2025-05-28 | Major |
 | [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-06-30 | Major |
 | [68](spec/aep-68) | Console - Billing & Usage | 2025-07-15 | Major |
-| [69](spec/aep-69) | Provider Console API - v1 | 2025-07-15 | Minor |
+| [69](spec/aep-69) | Provider Console API - v1 | 2025-07-25 | Minor |
 | [64](spec/aep-64) | JWT Authentication for Provider API | 2025-07-30 | Major |
 | [67](spec/aep-67) | Console Bid PreCheck | 2025-07-30 | Major |
 | [29](spec/aep-29) | Hardware Verification (Via Attestation) | 2025-08-15 | Major |
