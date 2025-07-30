@@ -70,3 +70,4 @@
 | [68](spec/aep-68) | Console - Billing & Usage | Draft | Standard/Interface | 2025-05-20 |  | 2025-07-15 |
 | [69](spec/aep-69) | Provider Console API - v1 | Draft | Standard/Interface | 2025-05-22 | 2025-07-25 |  |
 | [70](spec/aep-70) | Console API - JWT and new features | draft | Standard/Interface | 2025-05-28 |  | 2025-08-15 |
+| [71](spec/aep-71) | Deployment Closure Alert in Console | Final | Standard/Interface | 2025-07-30 | 2025-07-17 |  |
