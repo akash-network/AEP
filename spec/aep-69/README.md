@@ -6,8 +6,9 @@ status: Draft
 type: Standard
 category: Interface
 created: 2025-05-22
-updated: 2025-05-22
-estimated-completion: 2025-07-15
+completed: 2025-07-25
+updated: 2025-07-30
+resolution: https://github.com/akash-network/console/milestone/22
 roadmap: minor
 ---
 
@@ -48,4 +49,4 @@ Offer a set of APIs to provide revenue and GPU/resources utilization metrics to 
 
 ### API Spec
 
-TBD (will be added soon)
+https://console-api.akash.network/v1/swagger
