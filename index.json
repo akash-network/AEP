@@ -786,8 +786,9 @@
     "type": "Standard",
     "category": "Interface",
     "created": "2025-05-20T00:00:00.000Z",
-    "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2025-08-08T00:00:00.000Z",
+    "updated": "2025-07-31T00:00:00.000Z",
+    "completed": "2025-07-31T00:00:00.000Z",
+    "resolution": "https://github.com/akash-network/console/milestone/20",
     "roadmap": "major"
   },
   {
