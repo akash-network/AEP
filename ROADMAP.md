@@ -26,7 +26,7 @@
 | [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | 2025-06-30 | Major |
 | [71](spec/aep-71) | Deployment Closure Alert in Console | 2025-07-17 | Minor |
 | [69](spec/aep-69) | Provider Console API - v1 | 2025-07-25 | Minor |
-| [68](spec/aep-68) | Console - Billing & Usage | 2025-08-08 | Major |
+| [68](spec/aep-68) | Console - Billing & Usage | 2025-07-31 | Major |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2025-08-15 | Minor |
 | [64](spec/aep-64) | JWT Authentication for Provider API | 2025-08-15 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2025-08-30 | Major |
