@@ -11,7 +11,7 @@
 | [9](spec/aep-9) | Trusted Providers | Final | Standard/Core | 2020-03-09 | 2021-02-17 |  |
 | [10](spec/aep-10) | Subsidized Computing Incentive | Draft | Standard/Economics | 2020-04-01 |  |  |
 | [11](spec/aep-11) | Managed Services Market | Draft | Standard/Core | 2020-03-09 |  | 2026-01-01 |
-| [12](spec/aep-12) | Trusted Execution Environment (TEE) | Draft | Standard/Core | 2020-03-17 |  | 2025-08-30 |
+| [12](spec/aep-12) | Trusted Execution Environment (TEE) | Draft | Standard/Core | 2020-03-17 |  | 2025-09-30 |
 | [13](spec/aep-13) | Mainnet 2: DCX Platform | Final | Standard/Core | 2021-02-03 | 2021-02-17 |  |
 | [14](spec/aep-14) | IBC Interoperability | Final | Standard/Core | 2021-04-10 | 2021-04-24 |  |
 | [15](spec/aep-15) | Persistent Storage | Final | Standard/Core | 2021-04-16 | 2021-04-23 |  |
@@ -28,7 +28,7 @@
 | [26](spec/aep-26) | Provider Incentives Pilot (PIP) | Final | Meta | 2024-01-08 | 2024-02-09 |  |
 | [27](spec/aep-27) | Opensource Praetor with a Merger | Final | Meta | 2024-03-28 | 2024-04-12 |  |
 | [28](spec/aep-28) | Auto Deployment from VCS | Final | Standard/Interface | 2024-05-01 | 2024-11-04 |  |
-| [29](spec/aep-29) | Hardware Verification (Via Attestation) | Final | Standard/Core | 2024-06-27 |  | 2025-08-15 |
+| [29](spec/aep-29) | Hardware Verification (Via Attestation) | Final | Standard/Core | 2024-06-27 |  | 2025-09-15 |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | Final | Standard/Core | 2024-08-29 |  | 2025-08-31 |
 | [31](spec/aep-31) | Credit Card Payments In Console | Final | Standard/Interface | 2024-08-29 | 2024-11-04 |  |
 | [32](spec/aep-32) | Akash Provider Console 1.0 | Final | Standard/Interface | 2024-12-01 | 2025-02-18 |  |
@@ -40,9 +40,9 @@
 | [38](spec/aep-38) | Provider Content Moderation | Draft | Standard/Interface | 2024-12-01 |  | 2025-12-31 |
 | [39](spec/aep-39) | Lease Termination Reasons | Draft | Standard/Interface | 2024-12-01 |  | 2025-12-31 |
 | [40](spec/aep-40) | Continuous Provider Audits | Draft | Standard/Interface | 2024-12-01 |  | 2026-02-15 |
-| [41](spec/aep-41) | Standard Provider Attributes | Draft | Standard/Interface | 2024-12-01 |  | 2025-08-30 |
+| [41](spec/aep-41) | Standard Provider Attributes | Draft | Standard/Interface | 2024-12-01 |  | 2025-10-30 |
 | [42](spec/aep-42) | Workload Logs on Decentralized Storage | Draft | Standard/Interface | 2024-12-01 |  | 2026-01-30 |
-| [43](spec/aep-43) | Workload Utilization Metrics | Draft | Standard/Interface | 2024-12-01 |  | 2025-09-15 |
+| [43](spec/aep-43) | Workload Utilization Metrics | Draft | Standard/Interface | 2024-12-01 |  | 2025-11-15 |
 | [44](spec/aep-44) | Reserved Instances | Draft | Standard/Core | 2024-12-01 |  | 2026-08-30 |
 | [45](spec/aep-45) | Offchain Compute Inventory | Draft | Standard/Interface | 2024-12-01 |  | 2025-11-30 |
 | [46](spec/aep-46) | Spot Instances | Draft | Standard/Interface | 2024-12-01 |  | 2026-08-30 |
@@ -52,22 +52,22 @@
 | [50](spec/aep-50) | Secrets Management | Draft | Standard/Core | 2024-12-01 |  | 2025-11-30 |
 | [51](spec/aep-51) | Lease Change Request | Draft | Standard/Core | 2024-12-01 |  | 2026-01-30 |
 | [52](spec/aep-52) | Rollover Provider | Draft | Core/Interface | 2024-12-01 |  | 2026-01-31 |
-| [53](spec/aep-53) | Onchain Provider Incentives | Draft | Standard/Interface | 2024-12-01 |  | 2025-08-30 |
+| [53](spec/aep-53) | Onchain Provider Incentives | Draft | Standard/Interface | 2024-12-01 |  | 2026-01-31 |
 | [54](spec/aep-54) | NextGen AMD GPU support | Draft | Standard/Core | 2024-01-05 |  | 2025-12-15 |
 | [55](spec/aep-55) | Buy Back and Burn AKT | Draft | Standard/Economics | 2024-12-07 |  | 2025-10-30 |
-| [56](spec/aep-56) | Chain SDK | Draft | Standard/Interface | 2025-01-10 |  | 2025-08-15 |
+| [56](spec/aep-56) | Chain SDK | Draft | Standard/Interface | 2025-01-10 |  | 2025-09-15 |
 | [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
-| [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2025-08-30 |
-| [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2025-08-15 |
+| [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2026-01-30 |
+| [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2025-08-30 |
 | [60](spec/aep-60) | Akash at Home - MVP | Draft | Meta | 2024-12-01 |  | 2025-12-31 |
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | Last Call | Standard/Core | 2025-01-30 | 2025-03-12 |  |
 | [62](spec/aep-62) | Provider Console - Node Manager | Final | Standard/Interface | 2024-03-15 | 2025-04-17 |  |
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | Final | Standard/Interface | 2024-03-14 | 2025-05-28 |  |
-| [64](spec/aep-64) | JWT Authentication for Provider API | Final | Standard/Core | 2025-04-03 |  | 2025-07-30 |
+| [64](spec/aep-64) | JWT Authentication for Provider API | Final | Standard/Core | 2025-04-03 |  | 2025-08-15 |
 | [65](spec/aep-65) | Confidential Computing | Draft | Standard/Core | 2025-05-14 |  | 2025-12-31 |
 | [66](spec/aep-66) | Custom Domain Certificates | Draft | Standard/Core | 2025-05-13 |  | 2025-11-30 |
-| [67](spec/aep-67) | Console Bid PreCheck | Draft | Standard/Core | 2025-05-16 |  | 2025-07-30 |
-| [68](spec/aep-68) | Console - Billing & Usage | Draft | Standard/Interface | 2025-05-20 |  | 2025-07-15 |
+| [67](spec/aep-67) | Console Bid PreCheck | Draft | Standard/Core | 2025-05-16 |  | 2025-08-30 |
+| [68](spec/aep-68) | Console - Billing & Usage | Draft | Standard/Interface | 2025-05-20 |  | 2025-08-08 |
 | [69](spec/aep-69) | Provider Console API - v1 | Draft | Standard/Interface | 2025-05-22 | 2025-07-25 |  |
-| [70](spec/aep-70) | Console API - JWT and new features | draft | Standard/Interface | 2025-05-28 |  | 2025-08-15 |
+| [70](spec/aep-70) | Console API - JWT,Events & Logs | draft | Standard/Interface | 2025-05-28 |  | 2025-08-30 |
 | [71](spec/aep-71) | Deployment Closure Alert in Console | Final | Standard/Interface | 2025-07-30 | 2025-07-17 |  |
