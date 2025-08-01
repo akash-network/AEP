@@ -73,3 +73,4 @@
 | [71](spec/aep-71) | Deployment Closure Alert in Console | Final | Standard/Interface | 2025-07-30 | 2025-07-17 |  |
 | [72](spec/aep-72) | Console - Improved User Onboarding | Draft | Standard/Interface | 2025-07-31 |  | 2025-08-30 |
 | [73](spec/aep-73) | Console - New Product Announcement feature | Draft | Standard/Interface | 2025-07-31 |  | 2025-08-31 |
+| [74](spec/aep-74) | Console - Auto Credit Reload | Draft | Standard/Interface | 2025-07-31 |  | 2025-09-30 |

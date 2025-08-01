@@ -872,6 +872,19 @@
     "roadmap": "major"
   },
   {
+    "aep": 74,
+    "title": "Console - Auto Credit Reload",
+    "description": "Make it easier for customers to keep their deployments running",
+    "author": "Anil Murty (@anilmurty)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2025-07-31T00:00:00.000Z",
+    "updated": "2025-08-01T00:00:00.000Z",
+    "estimated-completion": "2025-09-30T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
     "aep": 8,
     "title": "Mainnet 1: Security",
     "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
