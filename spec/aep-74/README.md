@@ -9,7 +9,7 @@ category: Interface
 created: 2025-07-31
 updated: 2025-08-01
 estimated-completion: 2025-09-30
-roadmap: major
+roadmap: minor
 ---
 
 ## Motivation
