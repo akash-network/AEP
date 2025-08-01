@@ -32,7 +32,9 @@
 | [59](spec/aep-59) | Provider Notifications | 2025-08-30 | Major |
 | [67](spec/aep-67) | Console Bid PreCheck | 2025-08-30 | Major |
 | [70](spec/aep-70) | Console API - JWT,Events & Logs | 2025-08-30 | Minor |
+| [72](spec/aep-72) | Console - Improved User Onboarding | 2025-08-30 | Major |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-08-31 | Major |
+| [73](spec/aep-73) | Console - New Product Announcement feature | 2025-08-31 | Major |
 | [29](spec/aep-29) | Hardware Verification (Via Attestation) | 2025-09-15 | Major |
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-09-15 | Minor |
 | [56](spec/aep-56) | Chain SDK | 2025-09-15 | Major |

@@ -71,3 +71,5 @@
 | [69](spec/aep-69) | Provider Console API - v1 | Draft | Standard/Interface | 2025-05-22 | 2025-07-25 |  |
 | [70](spec/aep-70) | Console API - JWT,Events & Logs | draft | Standard/Interface | 2025-05-28 |  | 2025-08-30 |
 | [71](spec/aep-71) | Deployment Closure Alert in Console | Final | Standard/Interface | 2025-07-30 | 2025-07-17 |  |
+| [72](spec/aep-72) | Console - Improved User Onboarding | Draft | Standard/Interface | 2025-07-31 |  | 2025-08-30 |
+| [73](spec/aep-73) | Console - New Product Announcement feature | Draft | Standard/Interface | 2025-07-31 |  | 2025-08-31 |
