@@ -882,6 +882,18 @@
     "created": "2025-07-31T00:00:00.000Z",
     "updated": "2025-08-01T00:00:00.000Z",
     "estimated-completion": "2025-09-30T00:00:00.000Z",
+    "roadmap": "minor"
+  },
+  {
+    "aep": 75,
+    "title": "Multi-depositor escrow account",
+    "author": "Artur Troian (@troian)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-08-18T00:00:00.000Z",
+    "updated": "2025-08-18T00:00:00.000Z",
+    "estimated-completion": "2025-08-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
