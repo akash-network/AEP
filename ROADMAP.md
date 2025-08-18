@@ -33,6 +33,7 @@
 | [67](spec/aep-67) | Console Bid PreCheck | 2025-08-30 | Major |
 | [70](spec/aep-70) | Console API - JWT,Events & Logs | 2025-08-30 | Minor |
 | [72](spec/aep-72) | Console - Improved User Onboarding | 2025-08-30 | Major |
+| [75](spec/aep-75) | Multi-depositor escrow account | 2025-08-30 | Major |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-08-31 | Major |
 | [73](spec/aep-73) | Console - New Product Announcement feature | 2025-08-31 | Major |
 | [29](spec/aep-29) | Hardware Verification (Via Attestation) | 2025-09-15 | Major |
@@ -40,7 +41,7 @@
 | [56](spec/aep-56) | Chain SDK | 2025-09-15 | Major |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-09-30 | Major |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2025-09-30 | Minor |
-| [74](spec/aep-74) | Console - Auto Credit Reload | 2025-09-30 | Major |
+| [74](spec/aep-74) | Console - Auto Credit Reload | 2025-09-30 | Minor |
 | [41](spec/aep-41) | Standard Provider Attributes | 2025-10-30 | Minor |
 | [55](spec/aep-55) | Buy Back and Burn AKT | 2025-10-30 | Minor |
 | [43](spec/aep-43) | Workload Utilization Metrics | 2025-11-15 | Minor |
