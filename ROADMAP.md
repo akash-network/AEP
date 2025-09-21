@@ -43,12 +43,12 @@
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2025-09-30 | Minor |
 | [74](spec/aep-74) | Console - Auto Credit Reload | 2025-09-30 | Minor |
 | [41](spec/aep-41) | Standard Provider Attributes | 2025-10-30 | Minor |
-| [55](spec/aep-55) | Buy Back and Burn AKT | 2025-10-30 | Minor |
 | [43](spec/aep-43) | Workload Utilization Metrics | 2025-11-15 | Minor |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2025-11-30 | Minor |
 | [50](spec/aep-50) | Secrets Management | 2025-11-30 | Minor |
 | [66](spec/aep-66) | Custom Domain Certificates | 2025-11-30 | Major |
 | [54](spec/aep-54) | NextGen AMD GPU support | 2025-12-15 | Minor |
+| [76](spec/aep-76) | Burn Mint Equilibrium On Akash | 2025-12-30 | Major |
 | [38](spec/aep-38) | Provider Content Moderation | 2025-12-31 | Minor |
 | [39](spec/aep-39) | Lease Termination Reasons | 2025-12-31 | Minor |
 | [47](spec/aep-47) | Long Standing Orders | 2025-12-31 | Minor |

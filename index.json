@@ -619,8 +619,7 @@
     "category": "Economics",
     "created": "2024-12-07T00:00:00.000Z",
     "updated": "2025-07-07T00:00:00.000Z",
-    "estimated-completion": "2025-10-30T00:00:00.000Z",
-    "roadmap": "minor"
+    "superseeded-by": 76
   },
   {
     "aep": 56,
@@ -895,6 +894,19 @@
     "updated": "2025-09-02T00:00:00.000Z",
     "estimated-completion": "2025-08-30T00:00:00.000Z",
     "roadmap": "major"
+  },
+  {
+    "aep": 76,
+    "title": "Burn Mint Equilibrium On Akash",
+    "author": "Greg Osuri (@gosuri)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Economics",
+    "created": "2025-09-21T00:00:00.000Z",
+    "updated": "2025-09-21T00:00:00.000Z",
+    "estimated-completion": "2025-12-30T00:00:00.000Z",
+    "roadmap": "major",
+    "replaces": 55
   },
   {
     "aep": 8,
