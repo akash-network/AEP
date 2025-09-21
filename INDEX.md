@@ -54,7 +54,7 @@
 | [52](spec/aep-52) | Rollover Provider | Draft | Core/Interface | 2024-12-01 |  | 2026-01-31 |
 | [53](spec/aep-53) | Onchain Provider Incentives | Draft | Standard/Interface | 2024-12-01 |  | 2026-01-31 |
 | [54](spec/aep-54) | NextGen AMD GPU support | Draft | Standard/Core | 2024-01-05 |  | 2025-12-15 |
-| [55](spec/aep-55) | Buy Back and Burn AKT | Draft | Standard/Economics | 2024-12-07 |  | 2025-10-30 |
+| [55](spec/aep-55) | Buy Back and Burn AKT | Draft | Standard/Economics | 2024-12-07 |  |  |
 | [56](spec/aep-56) | Chain SDK | Draft | Standard/Interface | 2025-01-10 |  | 2025-09-15 |
 | [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2026-01-30 |
@@ -75,3 +75,4 @@
 | [73](spec/aep-73) | Console - New Product Announcement feature | Draft | Standard/Interface | 2025-07-31 |  | 2025-08-31 |
 | [74](spec/aep-74) | Console - Auto Credit Reload | Draft | Standard/Interface | 2025-07-31 |  | 2025-09-30 |
 | [75](spec/aep-75) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 |  | 2025-08-30 |
+| [76](spec/aep-76) | Burn Mint Equilibrium On Akash | Draft | Standard/Economics | 2025-09-21 |  | 2025-12-30 |
