@@ -36,19 +36,19 @@
 | [75](spec/aep-75) | Multi-depositor escrow account | 2025-08-30 | Major |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-08-31 | Major |
 | [73](spec/aep-73) | Console - New Product Announcement feature | 2025-08-31 | Major |
-| [29](spec/aep-29) | Hardware Verification (Via Attestation) | 2025-09-15 | Major |
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-09-15 | Minor |
 | [56](spec/aep-56) | Chain SDK | 2025-09-15 | Major |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-09-30 | Major |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2025-09-30 | Minor |
 | [74](spec/aep-74) | Console - Auto Credit Reload | 2025-09-30 | Minor |
+| [77](spec/aep-77) | Multi-depositor escrow account | 2025-10-21 | Major |
 | [41](spec/aep-41) | Standard Provider Attributes | 2025-10-30 | Minor |
 | [43](spec/aep-43) | Workload Utilization Metrics | 2025-11-15 | Minor |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2025-11-30 | Minor |
 | [50](spec/aep-50) | Secrets Management | 2025-11-30 | Minor |
 | [66](spec/aep-66) | Custom Domain Certificates | 2025-11-30 | Major |
+| [76](spec/aep-76) | Burn Mint Equilibrium On Akash | 2025-11-30 | Major |
 | [54](spec/aep-54) | NextGen AMD GPU support | 2025-12-15 | Minor |
-| [76](spec/aep-76) | Burn Mint Equilibrium On Akash | 2025-12-30 | Major |
 | [38](spec/aep-38) | Provider Content Moderation | 2025-12-31 | Minor |
 | [39](spec/aep-39) | Lease Termination Reasons | 2025-12-31 | Minor |
 | [47](spec/aep-47) | Long Standing Orders | 2025-12-31 | Minor |
@@ -56,6 +56,7 @@
 | [65](spec/aep-65) | Confidential Computing | 2025-12-31 | Major |
 | [11](spec/aep-11) | Managed Services Market | 2026-01-01 | Major |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-01-15 | Minor |
+| [29](spec/aep-29) | Hardware Verification using Trusted Execution | 2026-01-30 | Major |
 | [42](spec/aep-42) | Workload Logs on Decentralized Storage | 2026-01-30 | Minor |
 | [51](spec/aep-51) | Lease Change Request | 2026-01-30 | Minor |
 | [58](spec/aep-58) | Per Node Resources in Console | 2026-01-30 | Minor |
