@@ -28,7 +28,7 @@
 | [26](spec/aep-26) | Provider Incentives Pilot (PIP) | Final | Meta | 2024-01-08 | 2024-02-09 |  |
 | [27](spec/aep-27) | Opensource Praetor with a Merger | Final | Meta | 2024-03-28 | 2024-04-12 |  |
 | [28](spec/aep-28) | Auto Deployment from VCS | Final | Standard/Interface | 2024-05-01 | 2024-11-04 |  |
-| [29](spec/aep-29) | Hardware Verification (Via Attestation) | Final | Standard/Core | 2024-06-27 |  | 2025-09-15 |
+| [29](spec/aep-29) | Hardware Verification using Trusted Execution | Final | Standard/Core | 2024-06-27 |  | 2026-01-30 |
 | [30](spec/aep-30) | Cosmos SDK v0.47 Migration | Final | Standard/Core | 2024-08-29 |  | 2025-08-31 |
 | [31](spec/aep-31) | Credit Card Payments In Console | Final | Standard/Interface | 2024-08-29 | 2024-11-04 |  |
 | [32](spec/aep-32) | Akash Provider Console 1.0 | Final | Standard/Interface | 2024-12-01 | 2025-02-18 |  |
@@ -75,4 +75,5 @@
 | [73](spec/aep-73) | Console - New Product Announcement feature | Draft | Standard/Interface | 2025-07-31 |  | 2025-08-31 |
 | [74](spec/aep-74) | Console - Auto Credit Reload | Draft | Standard/Interface | 2025-07-31 |  | 2025-09-30 |
 | [75](spec/aep-75) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 |  | 2025-08-30 |
-| [76](spec/aep-76) | Burn Mint Equilibrium On Akash | Draft | Standard/Economics | 2025-09-21 |  | 2025-12-30 |
+| [76](spec/aep-76) | Burn Mint Equilibrium On Akash | Draft | Standard/Economics | 2025-09-21 |  | 2025-11-30 |
+| [77](spec/aep-77) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 |  | 2025-10-21 |

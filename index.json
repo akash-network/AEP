@@ -254,14 +254,14 @@
   },
   {
     "aep": 29,
-    "title": "Hardware Verification (Via Attestation)",
+    "title": "Hardware Verification using Trusted Execution",
     "author": "Anil Murty (@anilmurty) Artur Troian (@troian)",
     "status": "Final",
     "type": "Standard",
     "category": "Core",
     "created": "2024-06-27T00:00:00.000Z",
-    "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2025-09-15T00:00:00.000Z",
+    "updated": "2025-10-09T00:00:00.000Z",
+    "estimated-completion": "2026-01-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -904,9 +904,21 @@
     "category": "Economics",
     "created": "2025-09-21T00:00:00.000Z",
     "updated": "2025-09-21T00:00:00.000Z",
-    "estimated-completion": "2025-12-30T00:00:00.000Z",
+    "estimated-completion": "2025-11-30T00:00:00.000Z",
     "roadmap": "major",
     "replaces": 55
+  },
+  {
+    "aep": 77,
+    "title": "Multi-depositor escrow account",
+    "author": "Artur Troian (@troian)",
+    "status": "Final",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-08-18T00:00:00.000Z",
+    "updated": "2025-09-02T00:00:00.000Z",
+    "estimated-completion": "2025-10-21T00:00:00.000Z",
+    "roadmap": "major"
   },
   {
     "aep": 8,
