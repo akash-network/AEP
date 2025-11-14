@@ -921,6 +921,17 @@
     "roadmap": "major"
   },
   {
+    "aep": 78,
+    "title": "Enable CosmWasm Smart Contracts on Akash Network",
+    "author": "Artur Troian (@troian)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "roadmap": "major",
+    "created": "2025-11-14T00:00:00.000Z",
+    "estimated-completion": "2025-11-30T00:00:00.000Z"
+  },
+  {
     "aep": 8,
     "title": "Mainnet 1: Security",
     "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
