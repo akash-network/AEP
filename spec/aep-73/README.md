@@ -3,7 +3,7 @@ aep: 73
 title: "Console - New Product Announcement feature"
 description: "A way to inform customers and users about what's new in Akash"
 author: Anil Murty (@anilmurty)
-status: Draft
+status: Final
 type: Standard
 category: Interface
 created: 2025-07-31
