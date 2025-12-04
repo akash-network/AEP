@@ -2,7 +2,7 @@
 aep: 59
 title: "Provider Notifications"
 author: Anil Murty (@anilmurty)
-status: Draft
+status: Final
 type: Standard
 category: Interface
 created: 2024-01-05
