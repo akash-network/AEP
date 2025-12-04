@@ -3,7 +3,7 @@ aep: 72
 title: "Console - Improved User Onboarding"
 description: "Console User Onboarding on par with leading SaaS and CSPs"
 author: Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14)
-status: Draft
+status: Final
 type: Standard
 category: Interface
 created: 2025-07-31
