@@ -8,7 +8,7 @@ type: Standard
 category: Interface
 created: 2025-07-31
 updated: 2025-07-31
-estimated-completion: 2025-08-30
+completed: 2025-09-24
 roadmap: major
 ---
 
