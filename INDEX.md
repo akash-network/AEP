@@ -77,3 +77,4 @@
 | [75](spec/aep-75) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 |  | 2025-08-30 |
 | [76](spec/aep-76) | Burn Mint Equilibrium On Akash | Draft | Standard/Economics | 2025-09-21 |  | 2025-11-30 |
 | [77](spec/aep-77) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 |  | 2025-10-21 |
+| [78](spec/aep-78) | Enable CosmWasm Smart Contracts on Akash Network | Draft | Standard/Core | 2025-11-14 |  | 2025-11-30 |
