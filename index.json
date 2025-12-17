@@ -285,7 +285,7 @@
     "category": "Core",
     "created": "2024-08-29T00:00:00.000Z",
     "updated": "2024-04-22T00:00:00.000Z",
-    "estimated-completion": "2025-08-31T00:00:00.000Z",
+    "completed": "2025-10-28T00:00:00.000Z",
     "roadmap": "major",
     "requires": 61,
     "discussions-to": "https://github.com/orgs/akash-network/discussions/673",
@@ -625,7 +625,7 @@
     "aep": 56,
     "title": "Chain SDK",
     "author": "Anil Murty (@anilmurty) Artur Troian (@troian) Serhii Stotsky (@baktun14) Maxime Beauchamp (@baktun14)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2025-01-10T00:00:00.000Z",
@@ -738,7 +738,7 @@
     "category": "Core",
     "created": "2025-04-03T00:00:00.000Z",
     "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2025-08-15T00:00:00.000Z",
+    "completed": "2025-10-28T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -750,7 +750,7 @@
     "category": "Core",
     "created": "2025-05-14T00:00:00.000Z",
     "updated": "2025-05-14T00:00:00.000Z",
-    "estimated-completion": "2025-12-31T00:00:00.000Z",
+    "estimated-completion": "2026-2-31",
     "roadmap": "major"
   },
   {
@@ -769,7 +769,7 @@
     "aep": 67,
     "title": "Console Bid PreCheck",
     "author": "Anil Murty (@anilmurty)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Core",
     "created": "2025-05-16T00:00:00.000Z",
@@ -849,12 +849,12 @@
     "title": "Console - Improved User Onboarding",
     "description": "Console User Onboarding on par with leading SaaS and CSPs",
     "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2025-07-31T00:00:00.000Z",
     "updated": "2025-07-31T00:00:00.000Z",
-    "estimated-completion": "2025-08-30T00:00:00.000Z",
+    "completed": "2025-09-24T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -892,7 +892,7 @@
     "category": "Core",
     "created": "2025-08-18T00:00:00.000Z",
     "updated": "2025-09-02T00:00:00.000Z",
-    "estimated-completion": "2025-08-30T00:00:00.000Z",
+    "completed": "2025-08-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -917,7 +917,7 @@
     "category": "Core",
     "created": "2025-08-18T00:00:00.000Z",
     "updated": "2025-09-02T00:00:00.000Z",
-    "estimated-completion": "2025-10-21T00:00:00.000Z",
+    "completed": "2025-10-21T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -930,6 +930,18 @@
     "roadmap": "major",
     "created": "2025-11-14T00:00:00.000Z",
     "estimated-completion": "2025-11-30T00:00:00.000Z"
+  },
+  {
+    "aep": 79,
+    "title": "Akash on Shared Security",
+    "author": "Greg Osuri (@gosuri)",
+    "status": "Final",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-12-15T00:00:00.000Z",
+    "updated": "2025-12-15T00:00:00.000Z",
+    "estimated-completion": "2026-12-31T00:00:00.000Z",
+    "roadmap": "major"
   },
   {
     "aep": 8,

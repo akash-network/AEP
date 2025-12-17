@@ -29,7 +29,7 @@
 | [27](spec/aep-27) | Opensource Praetor with a Merger | Final | Meta | 2024-03-28 | 2024-04-12 |  |
 | [28](spec/aep-28) | Auto Deployment from VCS | Final | Standard/Interface | 2024-05-01 | 2024-11-04 |  |
 | [29](spec/aep-29) | Hardware Verification using Trusted Execution | Final | Standard/Core | 2024-06-27 |  | 2026-01-30 |
-| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | Final | Standard/Core | 2024-08-29 |  | 2025-08-31 |
+| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | Final | Standard/Core | 2024-08-29 | 2025-10-28 |  |
 | [31](spec/aep-31) | Credit Card Payments In Console | Final | Standard/Interface | 2024-08-29 | 2024-11-04 |  |
 | [32](spec/aep-32) | Akash Provider Console 1.0 | Final | Standard/Interface | 2024-12-01 | 2025-02-18 |  |
 | [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | Final | Standard/Interface | 2024-12-01 | 2025-06-30 |  |
@@ -55,7 +55,7 @@
 | [53](spec/aep-53) | Onchain Provider Incentives | Draft | Standard/Interface | 2024-12-01 |  | 2026-01-31 |
 | [54](spec/aep-54) | NextGen AMD GPU support | Draft | Standard/Core | 2024-01-05 |  | 2025-12-15 |
 | [55](spec/aep-55) | Buy Back and Burn AKT | Draft | Standard/Economics | 2024-12-07 |  |  |
-| [56](spec/aep-56) | Chain SDK | Draft | Standard/Interface | 2025-01-10 |  | 2025-09-15 |
+| [56](spec/aep-56) | Chain SDK | Final | Standard/Interface | 2025-01-10 |  | 2025-09-15 |
 | [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2026-01-30 |
 | [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2025-08-30 |
@@ -63,18 +63,19 @@
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | Last Call | Standard/Core | 2025-01-30 | 2025-03-12 |  |
 | [62](spec/aep-62) | Provider Console - Node Manager | Final | Standard/Interface | 2024-03-15 | 2025-04-17 |  |
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | Final | Standard/Interface | 2024-03-14 | 2025-05-28 |  |
-| [64](spec/aep-64) | JWT Authentication for Provider API | Final | Standard/Core | 2025-04-03 |  | 2025-08-15 |
-| [65](spec/aep-65) | Confidential Computing | Draft | Standard/Core | 2025-05-14 |  | 2025-12-31 |
+| [64](spec/aep-64) | JWT Authentication for Provider API | Final | Standard/Core | 2025-04-03 | 2025-10-28 |  |
+| [65](spec/aep-65) | Confidential Computing | Draft | Standard/Core | 2025-05-14 |  | 2026-03-03 |
 | [66](spec/aep-66) | Custom Domain Certificates | Draft | Standard/Core | 2025-05-13 |  | 2025-11-30 |
-| [67](spec/aep-67) | Console Bid PreCheck | Draft | Standard/Core | 2025-05-16 |  | 2025-08-30 |
+| [67](spec/aep-67) | Console Bid PreCheck | Final | Standard/Core | 2025-05-16 |  | 2025-08-30 |
 | [68](spec/aep-68) | Console - Billing & Usage | Draft | Standard/Interface | 2025-05-20 | 2025-07-31 |  |
 | [69](spec/aep-69) | Provider Console API - v1 | Draft | Standard/Interface | 2025-05-22 | 2025-07-25 |  |
 | [70](spec/aep-70) | Console API - JWT,Events & Logs | draft | Standard/Interface | 2025-05-28 |  | 2025-08-30 |
 | [71](spec/aep-71) | Deployment Closure Alert in Console | Final | Standard/Interface | 2025-07-30 | 2025-07-17 |  |
-| [72](spec/aep-72) | Console - Improved User Onboarding | Draft | Standard/Interface | 2025-07-31 |  | 2025-08-30 |
+| [72](spec/aep-72) | Console - Improved User Onboarding | Final | Standard/Interface | 2025-07-31 | 2025-09-24 |  |
 | [73](spec/aep-73) | Console - New Product Announcement feature | Draft | Standard/Interface | 2025-07-31 |  | 2025-08-31 |
 | [74](spec/aep-74) | Console - Auto Credit Reload | Draft | Standard/Interface | 2025-07-31 |  | 2025-09-30 |
-| [75](spec/aep-75) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 |  | 2025-08-30 |
+| [75](spec/aep-75) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 | 2025-08-30 |  |
 | [76](spec/aep-76) | Burn Mint Equilibrium On Akash | Draft | Standard/Economics | 2025-09-21 |  | 2025-11-30 |
-| [77](spec/aep-77) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 |  | 2025-10-21 |
+| [77](spec/aep-77) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 | 2025-10-21 |  |
 | [78](spec/aep-78) | Enable CosmWasm Smart Contracts on Akash Network | Draft | Standard/Core | 2025-11-14 |  | 2025-11-30 |
+| [79](spec/aep-79) | Akash on Shared Security | Final | Standard/Core | 2025-12-15 |  | 2026-12-31 |

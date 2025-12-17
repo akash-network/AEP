@@ -28,20 +28,20 @@
 | [69](spec/aep-69) | Provider Console API - v1 | 2025-07-25 | Minor |
 | [68](spec/aep-68) | Console - Billing & Usage | 2025-07-31 | Major |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2025-08-15 | Minor |
-| [64](spec/aep-64) | JWT Authentication for Provider API | 2025-08-15 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2025-08-30 | Major |
 | [67](spec/aep-67) | Console Bid PreCheck | 2025-08-30 | Major |
 | [70](spec/aep-70) | Console API - JWT,Events & Logs | 2025-08-30 | Minor |
-| [72](spec/aep-72) | Console - Improved User Onboarding | 2025-08-30 | Major |
 | [75](spec/aep-75) | Multi-depositor escrow account | 2025-08-30 | Major |
-| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-08-31 | Major |
 | [73](spec/aep-73) | Console - New Product Announcement feature | 2025-08-31 | Major |
 | [37](spec/aep-37) | Lease control API via GRPC | 2025-09-15 | Minor |
 | [56](spec/aep-56) | Chain SDK | 2025-09-15 | Major |
+| [72](spec/aep-72) | Console - Improved User Onboarding | 2025-09-24 | Major |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-09-30 | Major |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2025-09-30 | Minor |
 | [74](spec/aep-74) | Console - Auto Credit Reload | 2025-09-30 | Minor |
 | [77](spec/aep-77) | Multi-depositor escrow account | 2025-10-21 | Major |
+| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-10-28 | Major |
+| [64](spec/aep-64) | JWT Authentication for Provider API | 2025-10-28 | Major |
 | [41](spec/aep-41) | Standard Provider Attributes | 2025-10-30 | Minor |
 | [43](spec/aep-43) | Workload Utilization Metrics | 2025-11-15 | Minor |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2025-11-30 | Minor |
@@ -54,7 +54,6 @@
 | [39](spec/aep-39) | Lease Termination Reasons | 2025-12-31 | Minor |
 | [47](spec/aep-47) | Long Standing Orders | 2025-12-31 | Minor |
 | [60](spec/aep-60) | Akash at Home - MVP | 2025-12-31 | Major |
-| [65](spec/aep-65) | Confidential Computing | 2025-12-31 | Major |
 | [11](spec/aep-11) | Managed Services Market | 2026-01-01 | Major |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-01-15 | Minor |
 | [29](spec/aep-29) | Hardware Verification using Trusted Execution | 2026-01-30 | Major |
@@ -65,6 +64,8 @@
 | [53](spec/aep-53) | Onchain Provider Incentives | 2026-01-31 | Major |
 | [40](spec/aep-40) | Continuous Provider Audits | 2026-02-15 | Minor |
 | [49](spec/aep-49) | Virtual Machines | 2026-02-20 | Major |
+| [65](spec/aep-65) | Confidential Computing | 2026-03-03 | Major |
 | [48](spec/aep-48) | Private Overlay Networking | 2026-05-30 | Major |
 | [44](spec/aep-44) | Reserved Instances | 2026-08-30 | Minor |
 | [46](spec/aep-46) | Spot Instances | 2026-08-30 | Minor |
+| [79](spec/aep-79) | Akash on Shared Security | 2026-12-31 | Major |
