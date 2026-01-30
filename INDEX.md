@@ -10,7 +10,7 @@
 | [8](spec/aep-8) | Mainnet 1: Security | Final | Standard/Core | 2020-03-10 | 2020-09-25 |  |
 | [9](spec/aep-9) | Trusted Providers | Final | Standard/Core | 2020-03-09 | 2021-02-17 |  |
 | [10](spec/aep-10) | Subsidized Computing Incentive | Draft | Standard/Economics | 2020-04-01 |  |  |
-| [11](spec/aep-11) | Managed Services Market | Draft | Standard/Core | 2020-03-09 |  | 2026-01-01 |
+| [11](spec/aep-11) | Managed Services Market | Draft | Standard/Core | 2020-03-09 |  | 2026-12-15 |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | Draft | Standard/Core | 2020-03-17 |  | 2025-09-30 |
 | [13](spec/aep-13) | Mainnet 2: DCX Platform | Final | Standard/Core | 2021-02-03 | 2021-02-17 |  |
 | [14](spec/aep-14) | IBC Interoperability | Final | Standard/Core | 2021-04-10 | 2021-04-24 |  |
@@ -29,7 +29,7 @@
 | [27](spec/aep-27) | Opensource Praetor with a Merger | Final | Meta | 2024-03-28 | 2024-04-12 |  |
 | [28](spec/aep-28) | Auto Deployment from VCS | Final | Standard/Interface | 2024-05-01 | 2024-11-04 |  |
 | [29](spec/aep-29) | Hardware Verification using Trusted Execution | Final | Standard/Core | 2024-06-27 |  | 2026-05-30 |
-| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | Final | Standard/Core | 2024-08-29 | 2025-10-28 |  |
+| [30](spec/aep-30) | Cosmos SDK v0.53 Migration | Final | Standard/Core | 2024-08-29 | 2025-10-28 |  |
 | [31](spec/aep-31) | Credit Card Payments In Console | Final | Standard/Interface | 2024-08-29 | 2024-11-04 |  |
 | [32](spec/aep-32) | Akash Provider Console 1.0 | Final | Standard/Interface | 2024-12-01 | 2025-02-18 |  |
 | [33](spec/aep-33) | Escrow Balance Alerts in Akash Console | Final | Standard/Interface | 2024-12-01 | 2025-06-30 |  |
@@ -55,7 +55,7 @@
 | [53](spec/aep-53) | Onchain Provider Incentives | Draft | Standard/Interface | 2024-12-01 |  | 2026-12-31 |
 | [54](spec/aep-54) | NextGen AMD GPU support | Draft | Standard/Core | 2024-01-05 |  | 2026-12-15 |
 | [55](spec/aep-55) | Buy Back and Burn AKT | Draft | Standard/Economics | 2024-12-07 |  |  |
-| [56](spec/aep-56) | Chain SDK | Final | Standard/Interface | 2025-01-10 |  | 2025-10-28 |
+| [56](spec/aep-56) | Chain SDK | Final | Standard/Interface | 2025-01-10 | 2025-10-30 |  |
 | [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2026-07-31 |
 | [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2026-05-31 |
