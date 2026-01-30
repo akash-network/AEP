@@ -31,12 +31,11 @@
 | [75](spec/aep-75) | Multi-depositor escrow account | 2025-08-30 | Major |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-09-30 | Major |
 | [77](spec/aep-77) | Multi-depositor escrow account | 2025-10-21 | Major |
-| [30](spec/aep-30) | Cosmos SDK v0.47 Migration | 2025-10-28 | Major |
-| [56](spec/aep-56) | Chain SDK | 2025-10-28 | Major |
+| [30](spec/aep-30) | Cosmos SDK v0.53 Migration | 2025-10-28 | Major |
 | [64](spec/aep-64) | JWT Authentication for Provider API | 2025-10-28 | Major |
+| [56](spec/aep-56) | Chain SDK | 2025-10-30 | Major |
 | [72](spec/aep-72) | Console - Improved User Onboarding | 2025-11-07 | Major |
 | [74](spec/aep-74) | Console - Auto Credit Reload | 2025-12-31 | Minor |
-| [11](spec/aep-11) | Managed Services Market | 2026-01-01 | Major |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2026-02-28 | Minor |
 | [37](spec/aep-37) | Lease control API via GRPC | 2026-02-28 | Minor |
 | [39](spec/aep-39) | Lease Termination Reasons | 2026-03-15 | Minor |
@@ -63,6 +62,7 @@
 | [45](spec/aep-45) | Offchain Compute Inventory | 2026-08-31 | Minor |
 | [44](spec/aep-44) | Reserved Instances | 2026-10-31 | Minor |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-11-15 | Minor |
+| [11](spec/aep-11) | Managed Services Market | 2026-12-15 | Major |
 | [54](spec/aep-54) | NextGen AMD GPU support | 2026-12-15 | Minor |
 | [38](spec/aep-38) | Provider Content Moderation | 2026-12-31 | Minor |
 | [42](spec/aep-42) | Workload Logs on Decentralized Storage | 2026-12-31 | Minor |
