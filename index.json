@@ -261,7 +261,7 @@
     "category": "Core",
     "created": "2024-06-27T00:00:00.000Z",
     "updated": "2025-10-09T00:00:00.000Z",
-    "estimated-completion": "2026-01-30T00:00:00.000Z",
+    "estimated-completion": "2026-05-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -342,7 +342,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-08-15T00:00:00.000Z",
+    "estimated-completion": "2026-02-28T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -354,7 +354,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-03-19T00:00:00.000Z",
-    "estimated-completion": "2025-09-30T00:00:00.000Z",
+    "estimated-completion": "2026-05-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -366,7 +366,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-07-07T00:00:00.000Z",
-    "estimated-completion": "2026-01-15T00:00:00.000Z",
+    "estimated-completion": "2026-11-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -378,7 +378,7 @@
     "category": "Core",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-07-07T00:00:00.000Z",
-    "estimated-completion": "2025-09-15T00:00:00.000Z",
+    "estimated-completion": "2026-02-28T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -390,7 +390,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-07-07T00:00:00.000Z",
-    "estimated-completion": "2025-12-31T00:00:00.000Z",
+    "estimated-completion": "2026-12-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -402,7 +402,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-07-07T00:00:00.000Z",
-    "estimated-completion": "2025-12-31T00:00:00.000Z",
+    "estimated-completion": "2026-03-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -428,7 +428,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2026-02-15T00:00:00.000Z",
+    "estimated-completion": "2026-06-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -440,7 +440,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-07-30T00:00:00.000Z",
-    "estimated-completion": "2025-10-30T00:00:00.000Z",
+    "estimated-completion": "2026-07-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -452,7 +452,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-07-07T00:00:00.000Z",
-    "estimated-completion": "2026-01-30T00:00:00.000Z",
+    "estimated-completion": "2026-12-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -464,7 +464,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2025-11-15T00:00:00.000Z",
+    "estimated-completion": "2026-07-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -476,7 +476,7 @@
     "category": "Core",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-11T00:00:00.000Z",
-    "estimated-completion": "2026-08-30T00:00:00.000Z",
+    "estimated-completion": "2026-10-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -488,7 +488,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-12-01T00:00:00.000Z",
-    "estimated-completion": "2025-11-30T00:00:00.000Z",
+    "estimated-completion": "2026-08-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -512,7 +512,7 @@
     "category": "Core",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-12-10T00:00:00.000Z",
-    "estimated-completion": "2025-12-31T00:00:00.000Z",
+    "estimated-completion": "2026-12-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -524,7 +524,7 @@
     "category": "Core",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-11T00:00:00.000Z",
-    "estimated-completion": "2026-05-30T00:00:00.000Z",
+    "estimated-completion": "2026-07-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -536,7 +536,7 @@
     "category": "Core",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-11T00:00:00.000Z",
-    "estimated-completion": "2026-02-20T00:00:00.000Z",
+    "estimated-completion": "2026-03-31T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -559,7 +559,7 @@
     "category": "Core",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-11-30T00:00:00.000Z",
+    "estimated-completion": "2026-06-30T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -571,7 +571,7 @@
     "category": "Core",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2026-01-30T00:00:00.000Z",
+    "estimated-completion": "2026-07-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -583,7 +583,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2024-12-01T00:00:00.000Z",
-    "estimated-completion": "2026-01-31T00:00:00.000Z",
+    "estimated-completion": "2026-08-30T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -595,7 +595,7 @@
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2026-01-31T00:00:00.000Z",
+    "estimated-completion": "2026-12-31T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -607,7 +607,7 @@
     "category": "Core",
     "created": "2024-01-05T00:00:00.000Z",
     "updated": "2025-01-10T00:00:00.000Z",
-    "estimated-completion": "2025-12-15T00:00:00.000Z",
+    "estimated-completion": "2026-12-15T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -630,7 +630,7 @@
     "category": "Interface",
     "created": "2025-01-10T00:00:00.000Z",
     "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2025-09-15T00:00:00.000Z",
+    "estimated-completion": "2025-10-28T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -654,7 +654,7 @@
     "category": "Interface",
     "created": "2024-01-05T00:00:00.000Z",
     "updated": "2025-07-07T00:00:00.000Z",
-    "estimated-completion": "2026-01-30T00:00:00.000Z",
+    "estimated-completion": "2026-07-31T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -666,7 +666,7 @@
     "category": "Interface",
     "created": "2024-01-05T00:00:00.000Z",
     "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2025-08-30T00:00:00.000Z",
+    "estimated-completion": "2026-05-31T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -683,13 +683,13 @@
   },
   {
     "aep": 60,
-    "title": "Akash at Home - MVP",
+    "title": "Akash HomeNode - MVP",
     "author": "Anil Murty (@anilmurty) Damir Simpovic (@shimpa1) Jigar Patel (@jigar-arc10) Deval Patel (@devalpatel67) Greg Osuri (@gosuri)",
     "status": "Draft",
     "type": "Meta",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-07-24T00:00:00.000Z",
-    "estimated-completion": "2025-12-31T00:00:00.000Z",
+    "estimated-completion": "2026-03-31T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -750,7 +750,7 @@
     "category": "Core",
     "created": "2025-05-14T00:00:00.000Z",
     "updated": "2025-05-14T00:00:00.000Z",
-    "estimated-completion": "2026-2-31",
+    "estimated-completion": "2026-7-31",
     "roadmap": "major"
   },
   {
@@ -762,7 +762,7 @@
     "category": "Core",
     "created": "2025-05-13T00:00:00.000Z",
     "updated": "2025-07-07T00:00:00.000Z",
-    "estimated-completion": "2025-11-30T00:00:00.000Z",
+    "estimated-completion": "2026-06-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -774,7 +774,7 @@
     "category": "Core",
     "created": "2025-05-16T00:00:00.000Z",
     "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2025-08-30T00:00:00.000Z",
+    "estimated-completion": "2026-04-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -818,17 +818,15 @@
   },
   {
     "aep": 70,
-    "title": [
-      "Console API - JWT",
-      "Events & Logs"
-    ],
+    "title": "Console API using JWT",
     "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14)",
     "status": "draft",
     "type": "Standard",
     "category": "Interface",
     "created": "2025-05-28T00:00:00.000Z",
     "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2025-08-30T00:00:00.000Z",
+    "completed": "2025-08-30T00:00:00.000Z",
+    "resolution": "https://github.com/akash-network/console/milestone/21?closed=1",
     "roadmap": "minor"
   },
   {
@@ -854,7 +852,8 @@
     "category": "Interface",
     "created": "2025-07-31T00:00:00.000Z",
     "updated": "2025-07-31T00:00:00.000Z",
-    "completed": "2025-09-24T00:00:00.000Z",
+    "completed": "2025-11-07T00:00:00.000Z",
+    "resolution": "https://github.com/akash-network/console/milestone/18?closed=1",
     "roadmap": "major"
   },
   {
@@ -867,8 +866,8 @@
     "category": "Interface",
     "created": "2025-07-31T00:00:00.000Z",
     "updated": "2025-07-31T00:00:00.000Z",
-    "estimated-completion": "2025-08-31T00:00:00.000Z",
-    "roadmap": "major"
+    "estimated-completion": "2026-05-31T00:00:00.000Z",
+    "roadmap": "minor"
   },
   {
     "aep": 74,
@@ -880,7 +879,8 @@
     "category": "Interface",
     "created": "2025-07-31T00:00:00.000Z",
     "updated": "2025-08-01T00:00:00.000Z",
-    "estimated-completion": "2025-09-30T00:00:00.000Z",
+    "completed": "2025-12-31T00:00:00.000Z",
+    "resolution": "https://github.com/akash-network/console/milestone/27?closed=1",
     "roadmap": "minor"
   },
   {
@@ -904,7 +904,7 @@
     "category": "Economics",
     "created": "2025-09-21T00:00:00.000Z",
     "updated": "2025-09-21T00:00:00.000Z",
-    "estimated-completion": "2025-11-30T00:00:00.000Z",
+    "estimated-completion": "2026-03-30T00:00:00.000Z",
     "roadmap": "major",
     "replaces": 55
   },
@@ -929,7 +929,7 @@
     "category": "Core",
     "roadmap": "major",
     "created": "2025-11-14T00:00:00.000Z",
-    "estimated-completion": "2025-11-30T00:00:00.000Z"
+    "estimated-completion": "2026-03-30T00:00:00.000Z"
   },
   {
     "aep": 79,
