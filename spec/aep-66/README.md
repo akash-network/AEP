@@ -25,17 +25,16 @@ roadmap: major
  ### Certificate Management (cert-manager)
  - `cert-manager` is a Kubernetes controller used to automate the management and issuance of TLS certificates.
  - It supports Let's Encrypt and other certificate authorities.
- - On Akash, `cert-manager` runs as part of the provider infrastructure and handles certificate issuance for ingress resources.
+ - On Akash, `cert-manager` runs as part of the provider infrastructure and handles certificate issuance for Gateway API resources and associated routes
  - It uses HTTP-01 challenges to validate domain ownership.
- - Users do not directly interact with cert-manager, but it powers the automatic issuance of certs based on deployment configuration and DNS records.
+ - Users do not directly interact with cert-manager, but it powers the automatic issuance of certs based on deployment configuration, HTTPRoutes and DNS records.
 
- ### Ingress Controllers
- - Akash uses Kubernetes Ingress controllers (e.g., NGINX Ingress) to route external HTTP(S) traffic to tenant workloads.
- - Ingress resources define rules for routing and TLS termination.
- - The Akash provider manages ingress creation based on the deploy.yml service definitions (expose section).
- - HTTPS routing is enabled by specifying ports 443 and a custom domain in the manifest.
-
- ### Deployment Manifest
+### Gateway API
+- Akash uses the Kubernetes Gateway API to route external HTTP(S) traffic to tenant workloads instead of the legacy Ingress API.
+- Gateway resources define listeners (entry points) for HTTP and HTTPS, while HTTPRoute resources define rules for routing traffic to services.
+- The Akash provider manages Gateway/HTTPRoute creation based on the deploy.yml service definitions (expose section).
+- HTTPS routing is enabled by specifying ports 443 and a custom domain in the manifest, which is translated into Gateway listeners and HTTPRoutes configured for TLS termination. 
+### Deployment Manifest
  - The manifest file allows defining services, ports and accepted domains.
  - To use a custom domain:
  ```
@@ -49,17 +48,17 @@ roadmap: major
      accept:
        - "www.example.com"
  ```
- - This instructs the provider to create an ingress rule and attempt TLS certificate issuance for the domain.
+ - This instructs the provider to configure Gateway API resources (Gateway listeners and HTTPRoutes) and attempt TLS certificate issuance for the domain via cert-manager.
 
  ### DNS Configuration
  - DNS setup is critical for domain validation and traffic routing.
- - Tenants must create a CNAME record pointing to their deployment’s ingress endpoint.
+ - Tenants must create a CNAME record pointing to their deployment’s HTTPS endpoint exposed by the provider’s Gateway implementation.
    - Example:
    - `www.example.com` -> `deployment123.ingress.provider.akash.network`
  - DNS propagation must complete before certificate issuance via Let's Encrypt can succeed.
 
  ### Certificate Lifecycle
- - Certificates are automatically requested, issued, and renewed via `cert-manager`.
+ - Certificates are automatically requested, issued, and renewed via `cert-manager` based on the Gateway's TLS configuration.
  - Tenants do not manually manage TLS certs.
  - Failure to configure DNS correctly will prevent certificate issuance and may fall back to untrusted/self-signed certs.
 
@@ -67,33 +66,30 @@ roadmap: major
 
  ## Implementation
 
-An implementation leveraging `cert-manager` would simplify the whole solution by simply configuring the ingress with specific annotations that would trigger certificate issuing. A TLS configuration would also need to be added to the Ingress instance created by the hostname operator pointing to the TLS secret with the accepted domains.
+An implementation leveraging  cert-manager  would simplify the whole solution by configuring the Gateway with specific annotations that trigger certificate issuing and by wiring HTTPRoutes to the HTTPS listener for the desired hostnames. A TLS configuration would also need to be added to the Gateway listener, pointing to the TLS secret referenced by  certificateRefs , which will be populated with the accepted domains.
+ cert-manager  watches Gateway resources across the Akash Provider cluster when Gateway API support is enabled. If it observes a Gateway with annotations related to certificate issuing, it will ensure a Certificate resource exists that matches the hostnames configured on HTTPS listeners and that the generated TLS Secret is referenced in the listener’s  certificateRefs . An example Gateway:
 
-`cert-manager` watches Ingress resources across the Akash Provider cluster. If it observes an Ingress with annotations related to certificate issuing, it will ensure a Certificate resource with the name provided in the `tls.secretName` field and configured as described on the Ingress exists in the deployment namespace. An example Ingress:
 ```yaml
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+meta
+  name: my-gateway
   annotations:
     cert-manager.io/cluster-issuer: nameOfClusterIssuer
-  name: myIngress
-  namespace: myIngress
 spec:
-  rules:
-  - host: example.com
-    http:
-      paths:
-      - pathType: Prefix
-        path: /
-        backend:
-          service:
-            name: myservice
-            port:
-              number: 80
-  tls:
-  - hosts:
-    - custom.domain.my
-    secretName: myingress-cert
+  gatewayClassName: akash-gateway
+  listeners:
+    - name: http
+      protocol: HTTP
+      port: 80
+    - name: https
+      protocol: HTTPS
+      port: 443
+      hostname: example.com
+      tls:
+        mode: Terminate
+        certificateRefs:
+          - name: my-gateway-cert
 ```
 
-With this, user workloads will be provided a valid and automatically managed certificate for their custom domains.
+With this, user workloads will be provided a valid and automatically managed certificate for their custom domains through the provider’s Gateway API data plane.
