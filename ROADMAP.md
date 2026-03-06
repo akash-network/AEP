@@ -39,8 +39,10 @@
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2026-02-28 | Minor |
 | [37](spec/aep-37) | Lease control API via GRPC | 2026-02-28 | Minor |
 | [39](spec/aep-39) | Lease Termination Reasons | 2026-03-15 | Minor |
-| [76](spec/aep-76) | Burn Mint Equilibrium On Akash | 2026-03-30 | Major |
-| [78](spec/aep-78) | Enable CosmWasm Smart Contracts on Akash Network | 2026-03-30 | Major |
+| [76](spec/aep-76) | Burn Mint Equilibrium On Akash | 2026-03-23 | Major |
+| [78](spec/aep-78) | Enable CosmWasm Smart Contracts on Akash Network | 2026-03-23 | Major |
+| [80](spec/aep-80) | On-Chain Oracle Module | 2026-03-23 | Major |
+| [81](spec/aep-81) | Pyth Price feed Integration | 2026-03-23 | Major |
 | [49](spec/aep-49) | Virtual Machines | 2026-03-31 | Major |
 | [60](spec/aep-60) | Akash HomeNode - MVP | 2026-03-31 | Major |
 | [67](spec/aep-67) | Console Bid PreCheck | 2026-04-30 | Major |
