@@ -904,8 +904,8 @@
     "type": "Standard",
     "category": "Economics",
     "created": "2025-09-21T00:00:00.000Z",
-    "updated": "2025-09-21T00:00:00.000Z",
-    "estimated-completion": "2026-03-30T00:00:00.000Z",
+    "updated": "2026-03-06T00:00:00.000Z",
+    "estimated-completion": "2026-03-23T00:00:00.000Z",
     "roadmap": "major",
     "replaces": 55
   },
@@ -925,12 +925,12 @@
     "aep": 78,
     "title": "Enable CosmWasm Smart Contracts on Akash Network",
     "author": "Artur Troian (@troian)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Core",
     "roadmap": "major",
     "created": "2025-11-14T00:00:00.000Z",
-    "estimated-completion": "2026-03-30T00:00:00.000Z"
+    "estimated-completion": "2026-03-23T00:00:00.000Z"
   },
   {
     "aep": 79,
@@ -955,6 +955,33 @@
     "created": "2020-03-10T00:00:00.000Z",
     "completed": "2020-09-25T00:00:00.000Z",
     "roadmap": "major"
+  },
+  {
+    "aep": 80,
+    "title": "On-Chain Oracle Module",
+    "author": "Artur Troian (@troian)",
+    "status": "Final",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2026-03-06T00:00:00.000Z",
+    "estimated-completion": "2026-03-23T00:00:00.000Z",
+    "roadmap": "major",
+    "requires": 76
+  },
+  {
+    "aep": 81,
+    "title": "Pyth Price feed Integration",
+    "author": "Artur Troian (@troian)",
+    "status": "Final",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2026-03-06T00:00:00.000Z",
+    "estimated-completion": "2026-03-23T00:00:00.000Z",
+    "roadmap": "major",
+    "requires": [
+      "76",
+      "80"
+    ]
   },
   {
     "aep": 9,
