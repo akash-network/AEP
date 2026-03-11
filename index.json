@@ -900,7 +900,7 @@
     "aep": 76,
     "title": "Burn Mint Equilibrium On Akash",
     "author": "Greg Osuri (@gosuri)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Economics",
     "created": "2025-09-21T00:00:00.000Z",
@@ -908,18 +908,6 @@
     "estimated-completion": "2026-03-23T00:00:00.000Z",
     "roadmap": "major",
     "replaces": 55
-  },
-  {
-    "aep": 77,
-    "title": "Multi-depositor escrow account",
-    "author": "Artur Troian (@troian)",
-    "status": "Final",
-    "type": "Standard",
-    "category": "Core",
-    "created": "2025-08-18T00:00:00.000Z",
-    "updated": "2025-09-02T00:00:00.000Z",
-    "completed": "2025-10-21T00:00:00.000Z",
-    "roadmap": "major"
   },
   {
     "aep": 78,

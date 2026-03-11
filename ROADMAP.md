@@ -30,7 +30,6 @@
 | [70](spec/aep-70) | Console API using JWT | 2025-08-30 | Minor |
 | [75](spec/aep-75) | Multi-depositor escrow account | 2025-08-30 | Major |
 | [12](spec/aep-12) | Trusted Execution Environment (TEE) | 2025-09-30 | Major |
-| [77](spec/aep-77) | Multi-depositor escrow account | 2025-10-21 | Major |
 | [30](spec/aep-30) | Cosmos SDK v0.53 Migration | 2025-10-28 | Major |
 | [64](spec/aep-64) | JWT Authentication for Provider API | 2025-10-28 | Major |
 | [56](spec/aep-56) | Chain SDK | 2025-10-30 | Major |
