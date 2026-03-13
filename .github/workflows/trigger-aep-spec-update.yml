@@ -14,7 +14,7 @@ on:
 
 jobs:
   dispatch-update-specs:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, akash]
     steps:
       - name: Trigger AEP Spec Update in akash-network/website repo
         run: |
