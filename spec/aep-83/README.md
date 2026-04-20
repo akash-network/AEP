@@ -1,5 +1,5 @@
 ---
-aep: 82
+aep: 83
 title: "Confidential Compute via Kata Containers"
 author: Joao Luna (@cloud-j-luna)
 status: Draft
@@ -321,6 +321,3 @@ This proposal is fully backward compatible:
 - **Device passthrough scope**: TEE device nodes and GPUs are passed through to the Kata VM boundary, not directly to the host. This maintains host isolation while enabling attestation and GPU compute within the enclave.
 - **NVLink**: On Hopper GPUs, data transmitted over NVLink between GPUs is not encrypted. Multi-GPU confidential workloads on NVLink-connected systems should consider this. NVLink encryption is introduced with Blackwell.
 
-## Copyright
-
-All content herein is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).
