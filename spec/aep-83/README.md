@@ -151,17 +151,22 @@ GPU confidential capability is not advertised as a separate attribute. Instead, 
 
 When a provider receives a lease for an order with `confidential-compute: true`, the provider software must select the appropriate Kata runtime class based on whether the order includes GPU resources.
 
-NVIDIA's GPU Operator provides pre-built runtime classes for each TEE combination:
+The Confidential Containers Operator and NVIDIA GPU Operator provide pre-built runtime classes for TEE combinations:
 
-| RuntimeClass | CPU TEE | GPU | Use Case |
-|---|---|---|---|
-| `kata-qemu-tdx` | Intel TDX | No | CPU-only confidential workloads on Intel |
-| `kata-qemu-nvidia-gpu-snp` | AMD SEV-SNP | Yes | GPU confidential workloads on AMD |
+| RuntimeClass | CPU TEE | GPU | Source | Status |
+|---|---|---|---|---|
+| `kata-qemu-tdx` | Intel TDX | No | CoCo Operator | Available |
+| `kata-qemu-snp` | AMD SEV-SNP | No | CoCo Operator | Available |
+| `kata-qemu-nvidia-gpu` | None | Yes | GPU Operator | Available |
+| `kata-qemu-nvidia-gpu-snp` | AMD SEV-SNP | Yes | GPU Operator | Available |
+| `kata-qemu-nvidia-gpu-tdx` | Intel TDX | Yes | GPU Operator | Not yet shipped (as of GPU Operator v25.3.1) |
+
+Intel TDX + GPU passthrough is technically feasible — the SPDM/bounce buffer mechanism is identical to the SEV-SNP path, and NVIDIA documents TDX GPU confidential computing in their standalone SecureAI deployment guide. However, the NVIDIA GPU Operator does not yet ship the `kata-qemu-nvidia-gpu-tdx` runtime class. Some NVIDIA documentation references it by name, suggesting it is in progress. Until it ships, providers with Intel TDX + GPU hardware would need to configure the runtime class manually.
 
 The provider software selects the runtime class based on the lease:
 
-1. `confidential-compute: true` + no GPU in compute profile: use the CPU-only class (e.g., `kata-qemu-tdx`).
-2. `confidential-compute: true` + GPU in compute profile: use the combined class (e.g., `kata-qemu-nvidia-gpu-snp`).
+1. `confidential-compute: true` + no GPU in compute profile: use the CPU-only class (`kata-qemu-tdx` or `kata-qemu-snp`).
+2. `confidential-compute: true` + GPU in compute profile: use the combined class (`kata-qemu-nvidia-gpu-snp`, or `kata-qemu-nvidia-gpu-tdx` when available).
 
 The provider injects the `runtimeClassName` into the pod spec:
 
@@ -321,3 +326,26 @@ This proposal is fully backward compatible:
 - **Device passthrough scope**: TEE device nodes and GPUs are passed through to the Kata VM boundary, not directly to the host. This maintains host isolation while enabling attestation and GPU compute within the enclave.
 - **NVLink**: On Hopper GPUs, data transmitted over NVLink between GPUs is not encrypted. Multi-GPU confidential workloads on NVLink-connected systems should consider this. NVLink encryption is introduced with Blackwell.
 
+---
+
+## Upstream Tracking Notes
+
+The following upstream issues and PRs are relevant to the implementation of this AEP and should be monitored:
+
+### Intel TDX + GPU Runtime Class (`kata-qemu-nvidia-gpu-tdx`)
+
+The Kata Containers runtime has experimental support for TDX+GPU, but the NVIDIA GPU Operator does not yet ship the runtime class. The active blocker is CDI spec generation for TDX's iommufd device paths.
+
+| Item | Status | Link |
+|---|---|---|
+| Kata PR #10867: GPU QEMU SNP+TDX experimental updates | Merged (Feb 2025) | https://github.com/kata-containers/kata-containers/pull/10867 |
+| Kata PR #10868: QEMU TDX experimental workflow | Merged (Feb 2025) | https://github.com/kata-containers/kata-containers/pull/10868 |
+| Kata PR #11568: Add proper TDX config path for GPU | Merged (Jul 2025) | https://github.com/kata-containers/kata-containers/pull/11568 |
+| Kata Issue #11721: TDX VM + GPU VFIO_MAP_DMA failure | Closed (redirected to k8s-kata-manager) | https://github.com/kata-containers/kata-containers/issues/11721 |
+| **k8s-kata-manager Issue #133: CDI spec for TDX+GPU (blocker)** | **Open** | https://github.com/NVIDIA/k8s-kata-manager/issues/133 |
+
+### Confidential Containers + GPU Roadmap
+
+| Item | Status | Link |
+|---|---|---|
+| CoCo Issue #278: Road to Confidential Containers with GPUs | Open (umbrella tracker) | https://github.com/confidential-containers/confidential-containers/issues/278 |
