@@ -972,6 +972,15 @@
     ]
   },
   {
+    "aep": 82,
+    "title": "Resource Reclamation",
+    "author": "Artur Troian (@troian)",
+    "status": "Last Call",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2026-04-22T00:00:00.000Z"
+  },
+  {
     "aep": 84,
     "title": "Console Split: Managed Platform and Self-Custodial Air",
     "description": "Split Akash Console into a fully-managed platform (console.akash.network) and a dedicated self-custodial app (Console Air)",
