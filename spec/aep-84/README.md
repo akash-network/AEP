@@ -1,5 +1,5 @@
 ---
-aep: 82
+aep: 84
 title: "Console Split: Managed Platform and Self-Custodial Air"
 description: "Split Akash Console into a fully-managed platform (console.akash.network) and a dedicated self-custodial app (Console Air)"
 author: Maxime Beauchamp (@baktun14) Greg Osuri (@gosuri)
