@@ -80,3 +80,4 @@
 | [79](spec/aep-79) | Akash on Shared Security | Final | Standard/Core | 2025-12-15 |  | 2026-12-31 |
 | [80](spec/aep-80) | On-Chain Oracle Module | Final | Standard/Core | 2026-03-06 |  | 2026-03-23 |
 | [81](spec/aep-81) | Pyth Price feed Integration | Final | Standard/Core | 2026-03-06 |  | 2026-03-23 |
+| [82](spec/aep-82) | Console Split: Managed Platform and Self-Custodial Air | Draft | Standard/Interface | 2026-04-24 |  | 2026-05-31 |

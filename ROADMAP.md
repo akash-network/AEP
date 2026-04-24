@@ -49,6 +49,7 @@
 | [29](spec/aep-29) | Hardware Verification using Trusted Execution | 2026-05-30 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2026-05-31 | Major |
 | [73](spec/aep-73) | Console - New Product Announcement feature | 2026-05-31 | Minor |
+| [82](spec/aep-82) | Console Split: Managed Platform and Self-Custodial Air | 2026-05-31 | Major |
 | [40](spec/aep-40) | Continuous Provider Audits | 2026-06-15 | Minor |
 | [50](spec/aep-50) | Secrets Management | 2026-06-30 | Minor |
 | [66](spec/aep-66) | Custom Domain Certificates | 2026-06-30 | Major |

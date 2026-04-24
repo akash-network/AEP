@@ -972,6 +972,18 @@
     ]
   },
   {
+    "aep": 82,
+    "title": "Console Split: Managed Platform and Self-Custodial Air",
+    "description": "Split Akash Console into a fully-managed platform (console.akash.network) and a dedicated self-custodial app (Console Air)",
+    "author": "Maxime Beauchamp (@baktun14) Greg Osuri (@gosuri)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2026-04-24T00:00:00.000Z",
+    "estimated-completion": "2026-05-31T00:00:00.000Z",
+    "roadmap": "major"
+  },
+  {
     "aep": 9,
     "title": "Trusted Providers",
     "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
