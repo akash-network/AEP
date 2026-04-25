@@ -1,6 +1,6 @@
 ---
 aep: 85
-title: "Console - Buildpacks-Powered Deployments"
+title: "Console: Buildpacks-Powered Deployments"
 description: "Replace the broken Build & Deploy feature with a Cloud Native Buildpacks pipeline that supports any language"
 author: Maxime Beauchamp (@baktun14)
 status: Draft
