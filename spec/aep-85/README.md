@@ -7,6 +7,7 @@ status: Draft
 type: Standard
 category: Interface
 created: 2026-04-24
+estimated-completion: 2026-09-30
 discussions-to: https://github.com/orgs/akash-network/discussions
 roadmap: major
 replaces: 28
