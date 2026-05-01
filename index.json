@@ -536,8 +536,8 @@
     "type": "Standard",
     "category": "Core",
     "created": "2024-12-01T00:00:00.000Z",
-    "updated": "2025-01-11T00:00:00.000Z",
-    "estimated-completion": "2026-03-31T00:00:00.000Z",
+    "updated": "2026-05-01T00:00:00.000Z",
+    "estimated-completion": "2026-08-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -686,11 +686,11 @@
     "aep": 60,
     "title": "Akash HomeNode - MVP",
     "author": "Anil Murty (@anilmurty) Damir Simpovic (@shimpa1) Jigar Patel (@jigar-arc10) Deval Patel (@devalpatel67) Greg Osuri (@gosuri)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Meta",
     "created": "2024-12-01T00:00:00.000Z",
-    "updated": "2025-07-24T00:00:00.000Z",
-    "estimated-completion": "2026-03-31T00:00:00.000Z",
+    "updated": "2026-05-01T00:00:00.000Z",
+    "completed": "2026-04-30T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -993,6 +993,8 @@
     "type": "Standard",
     "category": "Core",
     "created": "2026-04-14T00:00:00.000Z",
+    "updated": "2026-05-01T00:00:00.000Z",
+    "estimated-completion": "2026-07-31T00:00:00.000Z",
     "requires": [
       "29",
       "65"
