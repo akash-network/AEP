@@ -83,3 +83,4 @@
 | [82](spec/aep-82) | Resource Reclamation | Last Call | Standard/Core | 2026-04-22 |  | 2026-05-31 |
 | [83](spec/aep-83) | Confidential Compute via Kata Containers | Draft | Standard/Core | 2026-04-14 |  |  |
 | [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | Final | Standard/Interface | 2026-04-24 |  | 2026-05-31 |
+| [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | Draft | Standard/Interface | 2026-04-24 |  | 2026-09-30 |

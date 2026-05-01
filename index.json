@@ -1012,6 +1012,20 @@
     "roadmap": "major"
   },
   {
+    "aep": 85,
+    "title": "Console: Buildpacks-Powered Deployments",
+    "description": "Replace the broken Build & Deploy feature with a Cloud Native Buildpacks pipeline that supports any language",
+    "author": "Maxime Beauchamp (@baktun14)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2026-04-24T00:00:00.000Z",
+    "estimated-completion": "2026-09-30T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
+    "roadmap": "major",
+    "replaces": 28
+  },
+  {
     "aep": 9,
     "title": "Trusted Providers",
     "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
