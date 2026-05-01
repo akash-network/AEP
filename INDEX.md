@@ -48,7 +48,7 @@
 | [46](spec/aep-46) | Spot Instances | Draft | Standard/Interface | 2024-12-01 |  | 2026-08-30 |
 | [47](spec/aep-47) | Long Standing Orders | Draft | Standard/Core | 2024-12-01 |  | 2026-12-31 |
 | [48](spec/aep-48) | Private Overlay Networking | Draft | Standard/Core | 2024-12-01 |  | 2026-07-30 |
-| [49](spec/aep-49) | Virtual Machines | Draft | Standard/Core | 2024-12-01 |  | 2026-03-31 |
+| [49](spec/aep-49) | Virtual Machines | Draft | Standard/Core | 2024-12-01 |  | 2026-08-30 |
 | [50](spec/aep-50) | Secrets Management | Draft | Standard/Core | 2024-12-01 |  | 2026-06-30 |
 | [51](spec/aep-51) | Lease Change Request | Draft | Standard/Core | 2024-12-01 |  | 2026-07-31 |
 | [52](spec/aep-52) | Rollover Provider | Draft | Core/Interface | 2024-12-01 |  | 2026-08-30 |
@@ -59,7 +59,7 @@
 | [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2026-07-31 |
 | [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2026-05-31 |
-| [60](spec/aep-60) | Akash HomeNode - MVP | Draft | Meta | 2024-12-01 |  | 2026-03-31 |
+| [60](spec/aep-60) | Akash HomeNode - MVP | Final | Meta | 2024-12-01 | 2026-04-30 |  |
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | Last Call | Standard/Core | 2025-01-30 | 2025-03-12 |  |
 | [62](spec/aep-62) | Provider Console - Node Manager | Final | Standard/Interface | 2024-03-15 | 2025-04-17 |  |
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | Final | Standard/Interface | 2024-03-14 | 2025-05-28 |  |
@@ -81,6 +81,6 @@
 | [80](spec/aep-80) | On-Chain Oracle Module | Final | Standard/Core | 2026-03-06 | 2026-03-23 |  |
 | [81](spec/aep-81) | Pyth Price feed Integration | Final | Standard/Core | 2026-03-06 | 2026-03-23 |  |
 | [82](spec/aep-82) | Resource Reclamation | Last Call | Standard/Core | 2026-04-22 |  | 2026-05-31 |
-| [83](spec/aep-83) | Confidential Compute via Kata Containers | Draft | Standard/Core | 2026-04-14 |  |  |
+| [83](spec/aep-83) | Confidential Compute via Kata Containers | Draft | Standard/Core | 2026-04-14 |  | 2026-07-31 |
 | [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | Final | Standard/Interface | 2026-04-24 |  | 2026-05-31 |
 | [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | Draft | Standard/Interface | 2026-04-24 |  | 2026-09-30 |
