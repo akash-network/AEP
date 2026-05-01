@@ -904,8 +904,8 @@
     "type": "Standard",
     "category": "Economics",
     "created": "2025-09-21T00:00:00.000Z",
-    "updated": "2026-03-06T00:00:00.000Z",
-    "estimated-completion": "2026-03-23T00:00:00.000Z",
+    "updated": "2026-03-23T00:00:00.000Z",
+    "completed": "2026-03-23T00:00:00.000Z",
     "roadmap": "major",
     "replaces": 55
   },
@@ -918,7 +918,8 @@
     "category": "Core",
     "roadmap": "major",
     "created": "2025-11-14T00:00:00.000Z",
-    "estimated-completion": "2026-03-23T00:00:00.000Z"
+    "updated": "2026-03-23T00:00:00.000Z",
+    "completed": "2026-03-23T00:00:00.000Z"
   },
   {
     "aep": 79,
@@ -952,7 +953,8 @@
     "type": "Standard",
     "category": "Core",
     "created": "2026-03-06T00:00:00.000Z",
-    "estimated-completion": "2026-03-23T00:00:00.000Z",
+    "updated": "2026-03-23T00:00:00.000Z",
+    "completed": "2026-03-23T00:00:00.000Z",
     "roadmap": "major",
     "requires": 76
   },
@@ -964,7 +966,8 @@
     "type": "Standard",
     "category": "Core",
     "created": "2026-03-06T00:00:00.000Z",
-    "estimated-completion": "2026-03-23T00:00:00.000Z",
+    "updated": "2026-03-23T00:00:00.000Z",
+    "completed": "2026-03-23T00:00:00.000Z",
     "roadmap": "major",
     "requires": [
       "76",
