@@ -58,7 +58,6 @@
 | [56](spec/aep-56) | Chain SDK | Final | Standard/Interface | 2025-01-10 | 2025-10-30 |  |
 | [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2026-07-31 |
-| [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2026-05-31 |
 | [60](spec/aep-60) | Akash HomeNode - MVP | Final | Meta | 2024-12-01 | 2026-04-30 |  |
 | [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | Last Call | Standard/Core | 2025-01-30 | 2025-03-12 |  |
 | [62](spec/aep-62) | Provider Console - Node Manager | Final | Standard/Interface | 2024-03-15 | 2025-04-17 |  |
