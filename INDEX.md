@@ -84,3 +84,4 @@
 | [83](spec/aep-83) | Confidential Compute via Kata Containers | Draft | Standard/Core | 2026-04-14 |  | 2026-07-31 |
 | [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | Final | Standard/Interface | 2026-04-24 |  | 2026-05-31 |
 | [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | Draft | Standard/Interface | 2026-04-24 |  | 2026-09-30 |
+| [86](spec/aep-86) | Provider Verifications | Draft | Standard/Core | 2026-04-04 |  |  |

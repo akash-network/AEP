@@ -1028,6 +1028,19 @@
     "replaces": 28
   },
   {
+    "aep": 86,
+    "title": "Provider Verifications",
+    "author": "Artur Troian (@troian)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2026-04-04T00:00:00.000Z",
+    "supersedes": [
+      "9",
+      "40"
+    ]
+  },
+  {
     "aep": 9,
     "title": "Trusted Providers",
     "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
