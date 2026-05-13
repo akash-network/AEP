@@ -424,23 +424,19 @@ type LeaseStats struct {
 
 ### 3.2 Tier Comparison Convention
 
-> **WARNING: Inverted numeric ordering**. The `VerificationTier` enum uses lower numeric values for higher trust:
-> `TierTrusted=1` (L0, highest trust) through `TierIdentified=4` (L3, lowest trust). This means `tier <= threshold`
-> checks "is this tier at least as good as the threshold", which reads counter-intuitively. All tier comparisons
-> MUST use the helper functions below to prevent off-by-one errors.
+Tier enum values are ordered by trust (`TierIdentified=1` is the lowest attested tier, `TierTrusted=4` is the
+highest). Use these helpers rather than raw operators so call sites stay consistent and `TierUnspecified` is handled.
 
 ```go
 // TierAtLeast returns true if 'have' is at least as trusted as 'need'.
 // Both must be valid tiers (not TierUnspecified).
-// Example: TierAtLeast(TierVerified, TierEstablished) returns false (L2 < L1)
-// Example: TierAtLeast(TierTrusted, TierVerified) returns true (L0 >= L2)
 func TierAtLeast(have, need VerificationTier) bool {
-    return have != TierUnspecified && have <= need
+    return have != TierUnspecified && have >= need
 }
 
 // TierBetter returns true if 'a' is strictly more trusted than 'b'.
 func TierBetter(a, b VerificationTier) bool {
-    return a != TierUnspecified && a < b
+    return a != TierUnspecified && a > b
 }
 ```
 
@@ -458,10 +454,10 @@ type VerificationKeeper interface {
     GetProviderValidAttestations(ctx sdk.Context, provider sdk.Address) ([]AttestationRecord, bool)
 
     // IsProviderSnapshotCompliant returns true if the provider is NOT snapshot-suspended.
-    // Returns true if the provider has no snapshot record (L4 providers don't need one).
+    // Returns true if the provider has no snapshot record (L0 providers don't need one).
     IsProviderSnapshotCompliant(ctx sdk.Context, provider sdk.Address) bool
 
-    // GetProviderBestTier returns the best (lowest numeric enum value = highest trust) tier
+    // GetProviderBestTier returns the best (highest numeric enum value = highest trust) tier
     // from valid attestations. Returns TierUnspecified if no valid attestations exist.
     GetProviderBestTier(ctx sdk.Context, provider sdk.Address) VerificationTier
 
@@ -589,20 +585,20 @@ import "gogoproto/gogo.proto";
 option go_package = "pkg.akt.dev/go/node/verification/v1";
 
 // VerificationTier represents provider verification levels.
-// Lower numeric value = higher trust. L4 (Permissionless) has no attestation.
+// Higher numeric value = higher trust. TierUnspecified (L0, Permissionless) means no attestation.
 enum VerificationTier {
     option (gogoproto.goproto_enum_prefix) = false;
 
     verification_tier_unspecified = 0
-        [(gogoproto.enumvalue_customname) = "TierUnspecified"];
-    verification_tier_trusted = 1
-        [(gogoproto.enumvalue_customname) = "TierTrusted"];       // L0
-    verification_tier_established = 2
-        [(gogoproto.enumvalue_customname) = "TierEstablished"];   // L1
-    verification_tier_verified = 3
+        [(gogoproto.enumvalue_customname) = "TierUnspecified"];   // L0
+    verification_tier_identified = 1
+        [(gogoproto.enumvalue_customname) = "TierIdentified"];    // L1
+    verification_tier_verified = 2
         [(gogoproto.enumvalue_customname) = "TierVerified"];      // L2
-    verification_tier_identified = 4
-        [(gogoproto.enumvalue_customname) = "TierIdentified"];    // L3
+    verification_tier_established = 3
+        [(gogoproto.enumvalue_customname) = "TierEstablished"];   // L3
+    verification_tier_trusted = 4
+        [(gogoproto.enumvalue_customname) = "TierTrusted"];       // L4
 }
 
 enum AuditorStatus {
@@ -1057,37 +1053,37 @@ import "google/protobuf/duration.proto";
 option go_package = "pkg.akt.dev/go/node/verification/v1";
 
 message Params {
-    cosmos.base.v1beta1.Coin bond_l3 = 1 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_l1 = 1 [(gogoproto.nullable) = false];
     cosmos.base.v1beta1.Coin bond_l2 = 2 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_l1 = 3 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_l0 = 4 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_l3 = 3 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_l4 = 4 [(gogoproto.nullable) = false];
 
-    google.protobuf.Duration ttl_l3 = 5
+    google.protobuf.Duration ttl_l1 = 5
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
     google.protobuf.Duration ttl_l2 = 6
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration ttl_l1 = 7
+    google.protobuf.Duration ttl_l3 = 7
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration ttl_l0 = 8
+    google.protobuf.Duration ttl_l4 = 8
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
 
-    cosmos.base.v1beta1.Coin min_fee_l3 = 9 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin min_fee_l1 = 9 [(gogoproto.nullable) = false];
     cosmos.base.v1beta1.Coin min_fee_l2 = 10 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin min_fee_l1 = 11 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin min_fee_l0 = 12 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin min_fee_l3 = 11 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin min_fee_l4 = 12 [(gogoproto.nullable) = false];
 
     uint32 discrepancy_threshold = 13;
 
     google.protobuf.Duration auditor_unbonding_period = 14
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
 
-    google.protobuf.Duration renewal_period_l3 = 15
+    google.protobuf.Duration renewal_period_l1 = 15
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
     google.protobuf.Duration renewal_period_l2 = 16
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration renewal_period_l1 = 17
+    google.protobuf.Duration renewal_period_l3 = 17
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration renewal_period_l0 = 18
+    google.protobuf.Duration renewal_period_l4 = 18
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
 
     google.protobuf.Duration snapshot_hash_interval = 19
@@ -1096,34 +1092,34 @@ message Params {
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
 
     cosmos.base.v1beta1.Coin bond_gpu_l2 = 21 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_gpu_l1 = 22 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_gpu_l0 = 23 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_gpu_l3 = 22 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_gpu_l4 = 23 [(gogoproto.nullable) = false];
     cosmos.base.v1beta1.Coin bond_vcpu_l2 = 24 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_vcpu_l1 = 25 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_vcpu_l0 = 26 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_vcpu_l3 = 25 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_vcpu_l4 = 26 [(gogoproto.nullable) = false];
     cosmos.base.v1beta1.Coin bond_mem_gb_l2 = 27 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_mem_gb_l1 = 28 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_mem_gb_l0 = 29 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_mem_gb_l3 = 28 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_mem_gb_l4 = 29 [(gogoproto.nullable) = false];
     cosmos.base.v1beta1.Coin bond_storage_tb_l2 = 30 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_storage_tb_l1 = 31 [(gogoproto.nullable) = false];
-    cosmos.base.v1beta1.Coin bond_storage_tb_l0 = 32 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_storage_tb_l3 = 31 [(gogoproto.nullable) = false];
+    cosmos.base.v1beta1.Coin bond_storage_tb_l4 = 32 [(gogoproto.nullable) = false];
 
     google.protobuf.Duration provider_bond_unbonding_period = 33
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
 
     google.protobuf.Duration min_age_l2 = 34
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration min_age_l1 = 35
+    google.protobuf.Duration min_age_l3 = 35
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration min_age_l0 = 36
+    google.protobuf.Duration min_age_l4 = 36
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    uint32 min_lease_completion_bps_l1 = 37;
-    uint32 min_lease_completion_bps_l0 = 38;
-    google.protobuf.Duration clean_history_window_l1 = 39
+    uint32 min_lease_completion_bps_l3 = 37;
+    uint32 min_lease_completion_bps_l4 = 38;
+    google.protobuf.Duration clean_history_window_l3 = 39
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration clean_history_window_l0 = 40
+    google.protobuf.Duration clean_history_window_l4 = 40
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration min_l1_duration_for_l0 = 41
+    google.protobuf.Duration min_l3_duration_for_l4 = 41
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
     uint32 min_leases_for_completion_rate = 42;
 
@@ -1143,21 +1139,21 @@ message Params {
 
     bool verification_module_active = 53;
 
-    google.protobuf.Duration contact_response_critical_l3 = 54
+    google.protobuf.Duration contact_response_critical_l1 = 54
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
     google.protobuf.Duration contact_response_critical_l2 = 55
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration contact_response_critical_l1 = 56
+    google.protobuf.Duration contact_response_critical_l3 = 56
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration contact_response_critical_l0 = 57
+    google.protobuf.Duration contact_response_critical_l4 = 57
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration contact_response_standard_l3 = 58
+    google.protobuf.Duration contact_response_standard_l1 = 58
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
     google.protobuf.Duration contact_response_standard_l2 = 59
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration contact_response_standard_l1 = 60
+    google.protobuf.Duration contact_response_standard_l3 = 60
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
-    google.protobuf.Duration contact_response_standard_l0 = 61
+    google.protobuf.Duration contact_response_standard_l4 = 61
         [(gogoproto.nullable) = false, (gogoproto.stdduration) = true];
 }
 ```
@@ -1833,7 +1829,7 @@ message GenesisState {
 | `ErrInsufficientProviderAge`         | 10   | `FAILED_PRECONDITION`    | Provider registration too recent for attested tier         |
 | `ErrInsufficientLeaseCompletionRate` | 11   | `FAILED_PRECONDITION`    | Lease completion rate below threshold                      |
 | `ErrSlashingHistoryViolation`        | 12   | `FAILED_PRECONDITION`    | Provider has slashing events within lookback window        |
-| `ErrInsufficientL1History`           | 13   | `FAILED_PRECONDITION`    | Provider lacks required continuous L1+ attestation for L0  |
+| `ErrInsufficientL3History`           | 13   | `FAILED_PRECONDITION`    | Provider lacks required continuous L3+ attestation for L4  |
 | `ErrAttestationNotFound`             | 14   | `NOT_FOUND`              | Attestation (provider, auditor) not found                  |
 | `ErrDiscrepancyNotFound`             | 15   | `NOT_FOUND`              | Discrepancy ID not found                                   |
 | `ErrBondWithdrawalExceedsMinimum`    | 16   | `FAILED_PRECONDITION`    | Withdrawal would leave bond below minimum for active tiers |

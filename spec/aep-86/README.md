@@ -33,7 +33,7 @@ This AEP defines:
 
 1. **[Verification Tiers](./README.md#verification-tiers)** -- Five levels (Level 0 through Level 4) representing
    progressively deeper verification of a provider's infrastructure, performance, reliability, and operational maturity.
-   Level 0 is the highest trust; Level 4 is permissionless (unverified).
+   Level 0 is permissionless (unverified); Level 4 is the highest trust.
 
 2. **[Auditor Role](./README.md#auditor-role)** -- Governance-approved entities that evaluate providers and submit
    on-chain attestations. Auditors post bonds that scale with the highest tier they are authorized to attest and charge
@@ -72,7 +72,7 @@ Tiers represent the depth of verification a provider has undergone. The chain st
 provider; it does not compute a single effective tier. Interpretation of attestations is the responsibility of the
 application layer (Console, SDL matching, incentive modules).
 
-#### Level 4 -- Permissionless
+#### Level 0 -- Permissionless
 
 Trust statement: _"This provider is registered on the network."_
 
@@ -84,7 +84,7 @@ Requirements:
 - Valid on-chain provider registration (`MsgCreateProvider`)
 - Provider daemon is reachable (status endpoint responds)
 
-#### Level 3 -- Identified
+#### Level 1 -- Identified
 
 Trust statement: _"The provider reports its software identity, and we know who operates it."_
 
@@ -93,7 +93,7 @@ trust boundary.
 
 Requirements:
 
-- All Level 4 requirements
+- All Level 0 requirements
 - Signed code (phase 2 enforcement target) -- the provider should run an officially signed release of the provider
   software. The software version, binary digest, and observed signature are recorded in auditor evidence for AEP-86 v1.
   Signature enforcement is deferred to a separate signing-key AEP or phase 2.
@@ -101,17 +101,17 @@ Requirements:
 
   | Tier             | Acceptable Identity Types                                                              |
   | ---------------- | -------------------------------------------------------------------------------------- |
-  | L3 (Identified)  | Business registration, domain ownership, or DID-based credential                       |
+  | L1 (Identified)  | Business registration, domain ownership, or DID-based credential                       |
   | L2 (Verified)    | Business registration or DID-based credential (domain ownership alone is insufficient) |
-  | L1 (Established) | Business registration or DID-based credential                                          |
-  | L0 (Trusted)     | Business registration required                                                         |
+  | L3 (Established) | Business registration or DID-based credential                                          |
+  | L4 (Trusted)     | Business registration required                                                         |
 
   The auditor records the identity type verified in their off-chain evidence (referenced by `evidence_hash`).
   Signed identity attestation stored on-chain.
 
 - Contact channel -- verified communication endpoint for incident response. Provider must respond to
-  critical incidents within `contact_response_critical_l3` and standard provider-operational inquiries within
-  `contact_response_standard_l3` (governance parameters). See
+  critical incidents within `contact_response_critical_l1` and standard provider-operational inquiries within
+  `contact_response_standard_l1` (governance parameters). See
   [Contact Responsiveness](./README.md#contact-responsiveness).
 - Stated location -- claimed geographic region/jurisdiction (self-reported; verified at higher tiers)
 
@@ -124,7 +124,7 @@ network quality, and physical location have been verified.
 
 Requirements:
 
-- All Level 3 requirements
+- All Level 1 requirements
 - Resource delivery accuracy -- provisioned CPU, RAM, GPU memory, and storage match bid quantities. Validated via
   automated resource audit (deploy test workload, measure actual vs. claimed).
 - Network quality baseline -- bandwidth and latency meet minimum thresholds. Validated via automated benchmarks from
@@ -134,7 +134,7 @@ Requirements:
 - Inventory consistency -- on-chain attributes match the provider's
   [Inventory Service](./README.md#inventory-service) snapshots. Auditors reconcile snapshot data against on-chain
   attributes; discrepancies flag downgrade.
-- Contact responsiveness -- stricter response windows than Level 3. Provider must respond to critical incidents
+- Contact responsiveness -- stricter response windows than Level 1. Provider must respond to critical incidents
   within `contact_response_critical_l2` and standard provider-operational inquiries within
   `contact_response_standard_l2`. See
   [Contact Responsiveness](./README.md#contact-responsiveness).
@@ -148,7 +148,7 @@ Requirements:
 - Snapshot hash compliance -- provider must be actively posting inventory snapshot hashes on-chain and must not be
   in suspended state. See [Snapshot Hash Enforcement](./README.md#snapshot-hash-enforcement).
 
-#### Level 1 -- Established
+#### Level 3 -- Established
 
 Trust statement: _"This provider is reliably available and consistently performs."_
 
@@ -166,30 +166,30 @@ Requirements:
 - Resource delivery under load -- audit probes run while provider has active leases to detect overcommitment.
 - Data isolation verification -- automated cross-tenant isolation tests (network namespace, filesystem, process isolation).
 - Contact responsiveness -- stricter response windows than Level 2. Provider must respond to critical incidents
-  within `contact_response_critical_l1` and standard provider-operational inquiries within
-  `contact_response_standard_l1`. See
+  within `contact_response_critical_l3` and standard provider-operational inquiries within
+  `contact_response_standard_l3`. See
   [Contact Responsiveness](./README.md#contact-responsiveness).
 - Higher economic bond -- increased AKT collateral scaled to capacity; longer unbonding period.
 - Clean history -- no slashing events or unresolved disputes in lookback window.
 
-**Application-layer policy**: Level 1 should require 2+ independent auditor attestations at Level 1 or better.
+**Application-layer policy**: Level 3 should require 2+ independent auditor attestations at Level 3 or better.
 Tenants can enforce this with `verification.min_auditor_count: 2`. If they also need attestations from specific named
 auditors, they can set `verification.auditors` and choose `verification.auditor_mode: any` or
 `verification.auditor_mode: all` (see [SDL Syntax](./README.md#sdl-syntax)).
 
-#### Level 0 -- Trusted
+#### Level 4 -- Trusted
 
 Trust statement: _"This provider is externally audited and offers maximum assurance."_
 
-The highest level of provider assurance. Requires everything from Level 1 plus independent third-party validation of
+The highest level of provider assurance. Requires everything from Level 3 plus independent third-party validation of
 physical infrastructure and operational practices.
 
 Requirements:
 
-- All Level 1 requirements
+- All Level 3 requirements
 - Third-party infrastructure audit -- independent verification of physical data center, power redundancy, cooling, and
   physical security. Audit by governance-approved auditor; audit report hash stored on-chain. Periodic re-audit required.
-- Extended compliance history -- minimum governance-configurable continuous Level 1 compliance (e.g., 180 days).
+- Extended compliance history -- minimum governance-configurable continuous Level 3 compliance (e.g., 180 days).
 - Maximum economic bond -- highest AKT collateral tier, scaled to capacity.
 - SLA commitment -- provider publishes availability and performance SLA parameters. The SLA document hash is
   included in the auditor's off-chain evidence (referenced by `evidence_hash`). The auditor verifies that the
@@ -197,18 +197,18 @@ Requirements:
   enforced via the existing [`SlashProviderBond`](./README.md#slashproviderbond) governance action when reported
   by auditors or tenants.
 - Contact responsiveness -- strictest response windows. Provider must respond to critical incidents within
-  `contact_response_critical_l0` and standard provider-operational inquiries within
-  `contact_response_standard_l0`. See
+  `contact_response_critical_l4` and standard provider-operational inquiries within
+  `contact_response_standard_l4`. See
   [Contact Responsiveness](./README.md#contact-responsiveness).
 - Governance endorsement (optional, supplementary) -- positive attestation from established network participants.
 
-**Application-layer policy**: Level 0 should require 2+ independent auditor attestations at Level 0.
+**Application-layer policy**: Level 4 should require 2+ independent auditor attestations at Level 4.
 This can be enforced with `verification.min_auditor_count: 2`, optionally combined with named auditor requirements as
-described in [Level 1](./README.md#level-1----established).
+described in [Level 3](./README.md#level-1----established).
 
 ### Verification Tier Summary
 
-| Dimension                  | L4 (Permissionless) |           L3 (Identified)           |             L2 (Verified)             |           L1 (Established)           |            L0 (Trusted)            |
+| Dimension                  | L0 (Permissionless) |           L1 (Identified)           |             L2 (Verified)             |           L3 (Established)           |            L4 (Trusted)            |
 | -------------------------- | :-----------------: | :---------------------------------: | :-----------------------------------: | :----------------------------------: | :--------------------------------: |
 | Signed code                |         --          |              Required               |               Required                |               Required               |              Required              |
 | Operator identity          |         --          |              Required               |               Required                |               Required               |              Required              |
@@ -249,10 +249,10 @@ lowering a provider's verification tier.
 
 | Tier             |       Critical Incident        |   Standard Provider Inquiry    |
 | ---------------- | :----------------------------: | :----------------------------: |
-| L3 (Identified)  | `contact_response_critical_l3` | `contact_response_standard_l3` |
+| L1 (Identified)  | `contact_response_critical_l1` | `contact_response_standard_l1` |
 | L2 (Verified)    | `contact_response_critical_l2` | `contact_response_standard_l2` |
-| L1 (Established) | `contact_response_critical_l1` | `contact_response_standard_l1` |
-| L0 (Trusted)     | `contact_response_critical_l0` | `contact_response_standard_l0` |
+| L3 (Established) | `contact_response_critical_l3` | `contact_response_standard_l3` |
+| L4 (Trusted)     | `contact_response_critical_l4` | `contact_response_standard_l4` |
 
 All response time thresholds are [governance parameters](./README.md#governance-parameters). See
 [Initial Governance Parameter Values](./README.md#initial-governance-parameter-values) for suggested defaults.
@@ -1025,7 +1025,7 @@ Canonical v1 schema:
     },
     "tier": {
       "type": "string",
-      "enum": ["L0", "L1", "L2", "L3"]
+      "enum": ["L1", "L2", "L3", "L4"]
     },
     "capability": {
       "type": "string",
@@ -1181,14 +1181,14 @@ Auditors are added exclusively via [governance proposals](./README.md#governance
 auditor includes:
 
 - Auditor address
-- Maximum attestation tier -- the highest tier this auditor is authorized to attest. An auditor approved for Level 1
-  can attest Levels 3, 2, and 1, but not Level 0.
+- Maximum attestation tier -- the highest tier this auditor is authorized to attest. An auditor approved for Level 3
+  can attest Levels 3, 2, and 1, but not Level 4.
 - Organization name and credentials (metadata hash referencing off-chain documentation)
 
 On governance approval, the module derives the required bond from `max_attestation_tier` and the current auditor bond
 parameters. The auditor must post at least that amount via `MsgPostAuditorBond` to become Active.
 
-To upgrade an auditor's maximum attestation tier (e.g., from Level 2 to Level 0), a new governance proposal is required.
+To upgrade an auditor's maximum attestation tier (e.g., from Level 2 to Level 4), a new governance proposal is required.
 The auditor must post additional bond to cover the difference.
 
 #### Auditor Bond
@@ -1197,10 +1197,10 @@ The bond is held in an escrow account and scales with the auditor's maximum atte
 
 | Max Attestation Authority | Bond Requirement                          |
 | ------------------------- | ----------------------------------------- |
-| Level 3 (Identified)      | `bond_l3` (governance parameter, lowest)  |
-| Level 2 (Verified)        | `bond_l2` > `bond_l3`                     |
-| Level 1 (Established)     | `bond_l1` > `bond_l2`                     |
-| Level 0 (Trusted)         | `bond_l0` (governance parameter, highest) |
+| Level 1 (Identified)      | `bond_l1` (governance parameter, lowest)  |
+| Level 2 (Verified)        | `bond_l2` > `bond_l1`                     |
+| Level 3 (Established)     | `bond_l3` > `bond_l2`                     |
+| Level 4 (Trusted)         | `bond_l4` (governance parameter, highest) |
 
 Bond states: `Bonded`, `Frozen`, `Unbonding`.
 
@@ -1343,7 +1343,7 @@ On submission, the module:
 ### On-Chain Prerequisite Enforcement
 
 The chain enforces a subset of tier prerequisites that are objectively verifiable from on-chain state. This
-prevents obviously invalid attestations from being stored (e.g., a Level 1 attestation for a provider registered
+prevents obviously invalid attestations from being stored (e.g., a Level 3 attestation for a provider registered
 yesterday) and reduces the burden on the [cross-validation](./README.md#cross-validation) mechanism for catching
 clear violations.
 
@@ -1352,26 +1352,26 @@ network quality, physical location, performance benchmarks, data isolation, etc.
 
 #### Enforceable Prerequisites by Tier
 
-| Prerequisite                           | Data Source                                                                |    L3    |      L2       |              L1               |                   L0                   |
+| Prerequisite                           | Data Source                                                                |    L1    |      L2       |              L3               |                   L4                   |
 | -------------------------------------- | -------------------------------------------------------------------------- | :------: | :-----------: | :---------------------------: | :------------------------------------: |
 | Provider registered on-chain           | `x/provider` store                                                         | Required |   Required    |           Required            |                Required                |
 | Provider bond posted at tier-minimum   | `x/verification` [provider bond](./README.md#provider-economic-bond) store |    --    |   Required    |           Required            |                Required                |
-| Provider registration age >= threshold | `x/provider` registration timestamp                                        |    --    | `min_age_l2`  |         `min_age_l1`          |              `min_age_l0`              |
-| Lease completion rate >= threshold     | `x/market` lease state counters                                            |    --    |      --       | `min_lease_completion_bps_l1` |     `min_lease_completion_bps_l0`      |
-| No active slashing events in window    | `x/verification` provider bond store                                       |    --    |      --       |   `clean_history_window_l1`   |       `clean_history_window_l0`        |
+| Provider registration age >= threshold | `x/provider` registration timestamp                                        |    --    | `min_age_l2`  |         `min_age_l3`          |              `min_age_l4`              |
+| Lease completion rate >= threshold     | `x/market` lease state counters                                            |    --    |      --       | `min_lease_completion_bps_l3` |     `min_lease_completion_bps_l4`      |
+| No active slashing events in window    | `x/verification` provider bond store                                       |    --    |      --       |   `clean_history_window_l3`   |       `clean_history_window_l4`        |
 | Snapshot hash compliance               | `x/verification` [snapshot](./README.md#snapshot-hash-enforcement) store   |    --    | Not suspended |         Not suspended         |             Not suspended              |
-| Continuous prior-tier attestation      | `x/verification` attestation history                                       |    --    |      --       |              --               | Valid L1+ for `min_l1_duration_for_l0` |
+| Continuous prior-tier attestation      | `x/verification` attestation history                                       |    --    |      --       |              --               | Valid L3+ for `min_l3_duration_for_l4` |
 
 #### Validation Flow
 
 When [`MsgSubmitAttestation`](./README.md#attestation-submission) is processed, step 4 performs the following checks
 based on the attested tier:
 
-**For all tiers (L3 through L0):**
+**For all tiers (L1 through L4):**
 
 - Query `x/provider` to confirm the provider is registered on-chain. Reject with `ErrProviderNotRegistered` if not found.
 
-**For Level 2 and above (L2, L1, L0):**
+**For Level 2 and above (L2, L3, L4):**
 
 - Query the [provider bond](./README.md#provider-economic-bond) record. Reject with `ErrInsufficientProviderBond` if
   the bonded amount is less than the tier-required minimum (calculated from the provider's `ResourceSummary` and the
@@ -1381,7 +1381,7 @@ based on the attested tier:
 - Compute the provider's registration age as `block_time - registration_time`. Reject with `ErrProviderTooNew` if
   the age is less than the tier's `min_age` parameter.
 
-**For Level 1 and above (L1, L0):**
+**For Level 3 and above (L3, L4):**
 
 - Query `x/market` for the provider's lease completion stats over the lookback window. If the provider has at least
   `min_leases_for_completion_rate` total leases in the window, compute the completion rate as
@@ -1391,12 +1391,12 @@ based on the attested tier:
 - Check the provider bond record for slashing events. Reject with `ErrSlashingHistory` if `last_slash_time` is within
   the tier's `clean_history_window`.
 
-**For Level 0 only:**
+**For Level 4 only:**
 
-- Scan the provider's attestation history to verify that the provider has had a continuous valid attestation at Level 1
-  or better for at least `min_l1_duration_for_l0`. "Continuous" means there exists at least one valid L1+ attestation
+- Scan the provider's attestation history to verify that the provider has had a continuous valid attestation at Level 3
+  or better for at least `min_l3_duration_for_l4`. "Continuous" means there exists at least one valid L3+ attestation
   at all times during the lookback period, considering attestation creation and expiry timestamps. Reject with
-  `ErrInsufficientL1History` if not met.
+  `ErrInsufficientL3History` if not met.
 
 #### Cross-Module Keeper Interfaces
 
@@ -1431,10 +1431,10 @@ Attestations expire automatically. Higher tiers require more frequent re-audit:
 
 | Tier    | TTL                                                 |
 | ------- | --------------------------------------------------- |
-| Level 3 | Longest (governance parameter, e.g., 365 days)      |
+| Level 1 | Longest (governance parameter, e.g., 365 days)      |
 | Level 2 | Shorter (governance parameter, e.g., 180 days)      |
-| Level 1 | Shorter still (governance parameter, e.g., 90 days) |
-| Level 0 | Shortest (governance parameter, e.g., 90 days)      |
+| Level 3 | Shorter still (governance parameter, e.g., 90 days) |
+| Level 4 | Shortest (governance parameter, e.g., 90 days)      |
 
 On expiry, the attestation status becomes `Expired`, the escrowed fee is released to the auditor, the auditor deposit is
 returned, and the attestation is no longer considered valid. Expiry is processed by the
@@ -1598,7 +1598,7 @@ the cross-validation rule triggers:
 3. **Escrowed fees remain escrowed and auditor deposits become `PendingDiscrepancy`**, so neither party gets an
    immediate payout before fault is known
 4. **Provider receives a bounded discrepancy grace period** if no provider fault is known yet. During the grace period,
-   bid filtering may use the provider's pre-discrepancy effective tier so a provider is not immediately dropped to L4
+   bid filtering may use the provider's pre-discrepancy effective tier so a provider is not immediately dropped to L0
    for an auditor conflict they may not have caused.
 5. A `DiscrepancyEvent` is emitted on-chain recording both auditor addresses, both tier claims, the provider, and
    a timestamp.
@@ -1736,10 +1736,10 @@ auditor's maximum attestation authority: higher authority requires more frequent
 
 | Max Attestation Authority | Renewal Period                                                       |
 | ------------------------- | -------------------------------------------------------------------- |
-| Level 3 (Identified)      | `renewal_period_l3` (governance parameter, longest, e.g., 24 months) |
+| Level 1 (Identified)      | `renewal_period_l1` (governance parameter, longest, e.g., 24 months) |
 | Level 2 (Verified)        | `renewal_period_l2` (governance parameter, e.g., 18 months)          |
-| Level 1 (Established)     | `renewal_period_l1` (governance parameter, e.g., 12 months)          |
-| Level 0 (Trusted)         | `renewal_period_l0` (governance parameter, shortest, e.g., 6 months) |
+| Level 3 (Established)     | `renewal_period_l3` (governance parameter, e.g., 12 months)          |
+| Level 4 (Trusted)         | `renewal_period_l4` (governance parameter, shortest, e.g., 6 months) |
 
 On successful renewal (governance proposal passes), the auditor's `renewal_deadline` is reset to the current time plus
 the applicable renewal period.
@@ -1836,7 +1836,7 @@ Effect:
 
 - All valid attestations on this provider are voided (status: `Voided`, reason: `GovernanceAction`)
 - Escrowed fees and deposits are settled according to `fault_attribution`
-- Provider is effectively Level 4 (Permissionless)
+- Provider is effectively Level 0 (Permissionless)
 - No automatic action against any of the auditors involved
 
 When `fault_attribution` is `ProviderFault`, the auditors are paid for completed work and auditor deposits are returned.
@@ -1976,12 +1976,12 @@ required_bond = sum(
 Each `bond_per_*[tier]` is a [governance parameter](./README.md#governance-parameters). Higher tiers require higher
 per-unit bonds:
 
-| Resource       | L2 (Verified)        | L1 (Established)         | L0 (Trusted)             |
+| Resource       | L2 (Verified)        | L3 (Established)         | L4 (Trusted)             |
 | -------------- | -------------------- | ------------------------ | ------------------------ |
-| Per GPU        | `bond_gpu_l2`        | `bond_gpu_l1` (>= 2x L2) | `bond_gpu_l0` (>= 4x L2) |
-| Per vCPU       | `bond_vcpu_l2`       | `bond_vcpu_l1`           | `bond_vcpu_l0`           |
-| Per GB memory  | `bond_mem_gb_l2`     | `bond_mem_gb_l1`         | `bond_mem_gb_l0`         |
-| Per TB storage | `bond_storage_tb_l2` | `bond_storage_tb_l1`     | `bond_storage_tb_l0`     |
+| Per GPU        | `bond_gpu_l2`        | `bond_gpu_l3` (>= 2x L2) | `bond_gpu_l4` (>= 4x L2) |
+| Per vCPU       | `bond_vcpu_l2`       | `bond_vcpu_l3`           | `bond_vcpu_l4`           |
+| Per GB memory  | `bond_mem_gb_l2`     | `bond_mem_gb_l3`         | `bond_mem_gb_l4`         |
+| Per TB storage | `bond_storage_tb_l2` | `bond_storage_tb_l3`     | `bond_storage_tb_l4`     |
 
 #### Bond Messages
 
@@ -2044,7 +2044,7 @@ This module is separate from the existing `x/audit` module and runs alongside it
 AuditorRecord {
   address: AccAddress
   status: Active | Frozen | Lapsed | Resigned | Removed
-  max_attestation_tier: VerificationTier (TierTrusted through TierIdentified)
+  max_attestation_tier: VerificationTier (TierIdentified through TierTrusted)
   bond_amount: Coin
   bond_status: Bonded | Frozen | Unbonding
   bond_unbonding_completion_time: Timestamp (nullable)
@@ -2057,16 +2057,16 @@ AuditorRecord {
 
 #### Attestation Record
 
-> **Note**: Attestation records exist only for tiers L0-L3 (TierTrusted through TierIdentified). Level 4
-> (Permissionless) is the implicit state of any provider without a valid attestation -- there is no L4 attestation
-> record. In query responses, `TierUnspecified` (enum value 0) represents "no attestation" (effectively L4).
+> **Note**: Attestation records exist only for tiers L1-L4 (TierIdentified through TierTrusted). Level 0
+> (Permissionless) is the implicit state of any provider without a valid attestation -- there is no L0 attestation
+> record. In query responses, `TierUnspecified` (enum value 0) represents "no attestation" (effectively L0).
 
 ```
 AttestationRecord {
   provider: AccAddress
   auditor: AccAddress
   audit_escrow_id: uint64
-  tier: VerificationTier (TierTrusted through TierIdentified)
+  tier: VerificationTier (TierIdentified through TierTrusted)
   capabilities: []CapabilityFlag
   evidence_hash: bytes
   fee: Coin
@@ -2205,48 +2205,48 @@ See [Initial Governance Parameter Values](./README.md#initial-governance-paramet
 
 | Parameter                                                          | Description                                                                                                         |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| `bond_l3`                                                          | Minimum auditor bond for Level 3 attestation authority                                                              |
-| `bond_l2`                                                          | Minimum auditor bond for Level 2 attestation authority                                                              |
 | `bond_l1`                                                          | Minimum auditor bond for Level 1 attestation authority                                                              |
-| `bond_l0`                                                          | Minimum auditor bond for Level 0 attestation authority                                                              |
-| `ttl_l3`                                                           | Attestation TTL for Level 3                                                                                         |
-| `ttl_l2`                                                           | Attestation TTL for Level 2                                                                                         |
+| `bond_l2`                                                          | Minimum auditor bond for Level 2 attestation authority                                                              |
+| `bond_l3`                                                          | Minimum auditor bond for Level 3 attestation authority                                                              |
+| `bond_l4`                                                          | Minimum auditor bond for Level 4 attestation authority                                                              |
 | `ttl_l1`                                                           | Attestation TTL for Level 1                                                                                         |
-| `ttl_l0`                                                           | Attestation TTL for Level 0                                                                                         |
-| `min_fee_l3`                                                       | Minimum audit fee for Level 3 attestation                                                                           |
-| `min_fee_l2`                                                       | Minimum audit fee for Level 2 attestation                                                                           |
+| `ttl_l2`                                                           | Attestation TTL for Level 2                                                                                         |
+| `ttl_l3`                                                           | Attestation TTL for Level 3                                                                                         |
+| `ttl_l4`                                                           | Attestation TTL for Level 4                                                                                         |
 | `min_fee_l1`                                                       | Minimum audit fee for Level 1 attestation                                                                           |
-| `min_fee_l0`                                                       | Minimum audit fee for Level 0 attestation                                                                           |
+| `min_fee_l2`                                                       | Minimum audit fee for Level 2 attestation                                                                           |
+| `min_fee_l3`                                                       | Minimum audit fee for Level 3 attestation                                                                           |
+| `min_fee_l4`                                                       | Minimum audit fee for Level 4 attestation                                                                           |
 | `discrepancy_threshold`                                            | Maximum tier level difference before [cross-validation](./README.md#cross-validation) triggers (default: 1)         |
 | `auditor_unbonding_period`                                         | Duration of auditor bond unbonding                                                                                  |
-| `renewal_period_l3`                                                | Auditor [renewal](./README.md#renewal) period for Level 3 max authority                                             |
+| `renewal_period_l1`                                                | Auditor [renewal](./README.md#renewal) period for Level 1 max authority                                             |
 | `renewal_period_l2`                                                | Auditor renewal period for Level 2 max authority                                                                    |
-| `renewal_period_l1`                                                | Auditor renewal period for Level 1 max authority                                                                    |
-| `renewal_period_l0`                                                | Auditor renewal period for Level 0 max authority                                                                    |
+| `renewal_period_l3`                                                | Auditor renewal period for Level 3 max authority                                                                    |
+| `renewal_period_l4`                                                | Auditor renewal period for Level 4 max authority                                                                    |
 | `snapshot_hash_interval`                                           | Maximum time between required [snapshot hash](./README.md#on-chain-snapshot-hashes) postings                        |
 | `max_snapshot_age`                                                 | Maximum age of snapshot timestamp relative to block time                                                            |
-| `bond_gpu_l2` / `bond_gpu_l1` / `bond_gpu_l0`                      | [Provider bond](./README.md#provider-economic-bond) per GPU at each tier                                            |
-| `bond_vcpu_l2` / `bond_vcpu_l1` / `bond_vcpu_l0`                   | Provider bond per vCPU at each tier                                                                                 |
-| `bond_mem_gb_l2` / `bond_mem_gb_l1` / `bond_mem_gb_l0`             | Provider bond per GB memory at each tier                                                                            |
-| `bond_storage_tb_l2` / `bond_storage_tb_l1` / `bond_storage_tb_l0` | Provider bond per TB storage at each tier                                                                           |
+| `bond_gpu_l2` / `bond_gpu_l3` / `bond_gpu_l4`                      | [Provider bond](./README.md#provider-economic-bond) per GPU at each tier                                            |
+| `bond_vcpu_l2` / `bond_vcpu_l3` / `bond_vcpu_l4`                   | Provider bond per vCPU at each tier                                                                                 |
+| `bond_mem_gb_l2` / `bond_mem_gb_l3` / `bond_mem_gb_l4`             | Provider bond per GB memory at each tier                                                                            |
+| `bond_storage_tb_l2` / `bond_storage_tb_l3` / `bond_storage_tb_l4` | Provider bond per TB storage at each tier                                                                           |
 | `provider_bond_unbonding_period`                                   | Duration of provider bond unbonding                                                                                 |
 | `min_age_l2`                                                       | Minimum provider registration age for Level 2 [on-chain enforcement](./README.md#on-chain-prerequisite-enforcement) |
-| `min_age_l1`                                                       | Minimum provider registration age for Level 1                                                                       |
-| `min_age_l0`                                                       | Minimum provider registration age for Level 0                                                                       |
-| `min_lease_completion_bps_l1`                                      | Minimum lease completion rate (basis points) for Level 1                                                            |
-| `min_lease_completion_bps_l0`                                      | Minimum lease completion rate (basis points) for Level 0                                                            |
-| `clean_history_window_l1`                                          | Lookback window for clean slashing history (Level 1)                                                                |
-| `clean_history_window_l0`                                          | Lookback window for clean slashing history (Level 0)                                                                |
-| `min_l1_duration_for_l0`                                           | Minimum continuous Level 1+ attestation duration before Level 0                                                     |
+| `min_age_l3`                                                       | Minimum provider registration age for Level 3                                                                       |
+| `min_age_l4`                                                       | Minimum provider registration age for Level 4                                                                       |
+| `min_lease_completion_bps_l3`                                      | Minimum lease completion rate (basis points) for Level 3                                                            |
+| `min_lease_completion_bps_l4`                                      | Minimum lease completion rate (basis points) for Level 4                                                            |
+| `clean_history_window_l3`                                          | Lookback window for clean slashing history (Level 3)                                                                |
+| `clean_history_window_l4`                                          | Lookback window for clean slashing history (Level 4)                                                                |
+| `min_l3_duration_for_l4`                                           | Minimum continuous Level 3+ attestation duration before Level 4                                                     |
 | `min_leases_for_completion_rate`                                   | Minimum lease count before completion rate is enforced                                                              |
-| `contact_response_critical_l3`                                     | Maximum response time for critical incidents at Level 3                                                             |
-| `contact_response_critical_l2`                                     | Maximum response time for critical incidents at Level 2                                                             |
 | `contact_response_critical_l1`                                     | Maximum response time for critical incidents at Level 1                                                             |
-| `contact_response_critical_l0`                                     | Maximum response time for critical incidents at Level 0                                                             |
-| `contact_response_standard_l3`                                     | Maximum response time for standard provider-controlled operational inquiries at Level 3                             |
-| `contact_response_standard_l2`                                     | Maximum response time for standard provider-controlled operational inquiries at Level 2                             |
+| `contact_response_critical_l2`                                     | Maximum response time for critical incidents at Level 2                                                             |
+| `contact_response_critical_l3`                                     | Maximum response time for critical incidents at Level 3                                                             |
+| `contact_response_critical_l4`                                     | Maximum response time for critical incidents at Level 4                                                             |
 | `contact_response_standard_l1`                                     | Maximum response time for standard provider-controlled operational inquiries at Level 1                             |
-| `contact_response_standard_l0`                                     | Maximum response time for standard provider-controlled operational inquiries at Level 0                             |
+| `contact_response_standard_l2`                                     | Maximum response time for standard provider-controlled operational inquiries at Level 2                             |
+| `contact_response_standard_l3`                                     | Maximum response time for standard provider-controlled operational inquiries at Level 3                             |
+| `contact_response_standard_l4`                                     | Maximum response time for standard provider-controlled operational inquiries at Level 4                             |
 | `provider_maintenance_max_duration`                                | Maximum length of one provider maintenance window in `x/provider`                                                   |
 | `provider_maintenance_max_lookahead`                               | Maximum time in the future a provider can schedule a maintenance window in `x/provider`                             |
 | `max_endblocker_attestation_expiries`                              | Maximum attestation expiries processed per block by [EndBlocker](./README.md#endblocker-design)                     |
@@ -2265,47 +2265,47 @@ See [Initial Governance Parameter Values](./README.md#initial-governance-paramet
 
 | Parameter                              | Value              | Rationale                                                                      |
 | -------------------------------------- | ------------------ | ------------------------------------------------------------------------------ |
-| `bond_l3`                              | 1,000 AKT          | Low barrier for L3 auditors                                                    |
+| `bond_l1`                              | 1,000 AKT          | Low barrier for L1 auditors                                                    |
 | `bond_l2`                              | 5,000 AKT          | Moderate for L2                                                                |
-| `bond_l1`                              | 25,000 AKT         | Significant for L1                                                             |
-| `bond_l0`                              | 100,000 AKT        | Highest assurance                                                              |
-| `ttl_l3`                               | 365 days           | Annual re-audit                                                                |
+| `bond_l3`                              | 25,000 AKT         | Significant for L3                                                             |
+| `bond_l4`                              | 100,000 AKT        | Highest assurance                                                              |
+| `ttl_l1`                               | 365 days           | Annual re-audit                                                                |
 | `ttl_l2`                               | 180 days           | Semi-annual                                                                    |
-| `ttl_l1`                               | 90 days            | Quarterly                                                                      |
-| `ttl_l0`                               | 90 days            | Quarterly                                                                      |
-| `min_fee_l3`                           | 10 AKT             | Nominal                                                                        |
+| `ttl_l3`                               | 90 days            | Quarterly                                                                      |
+| `ttl_l4`                               | 90 days            | Quarterly                                                                      |
+| `min_fee_l1`                           | 10 AKT             | Nominal                                                                        |
 | `min_fee_l2`                           | 50 AKT             | Covers automated audit cost                                                    |
-| `min_fee_l1`                           | 200 AKT            | Covers deeper evaluation                                                       |
-| `min_fee_l0`                           | 1,000 AKT          | Covers on-site audit                                                           |
+| `min_fee_l3`                           | 200 AKT            | Covers deeper evaluation                                                       |
+| `min_fee_l4`                           | 1,000 AKT          | Covers on-site audit                                                           |
 | `discrepancy_threshold`                | 1                  | Trigger on >1 tier difference                                                  |
 | `auditor_unbonding_period`             | 21 days            | Standard Cosmos unbonding                                                      |
-| `renewal_period_l3`                    | 24 months          | Longest renewal cycle                                                          |
+| `renewal_period_l1`                    | 24 months          | Longest renewal cycle                                                          |
 | `renewal_period_l2`                    | 18 months          |                                                                                |
-| `renewal_period_l1`                    | 12 months          |                                                                                |
-| `renewal_period_l0`                    | 6 months           | Most frequent re-approval                                                      |
+| `renewal_period_l3`                    | 12 months          |                                                                                |
+| `renewal_period_l4`                    | 6 months           | Most frequent re-approval                                                      |
 | `snapshot_hash_interval`               | 24 hours           | Daily freshness                                                                |
 | `max_snapshot_age`                     | 1 hour             | Snapshot must be recent                                                        |
-| `bond_gpu_l2` / `l1` / `l0`            | 50 / 100 / 200 AKT | Per GPU                                                                        |
-| `bond_vcpu_l2` / `l1` / `l0`           | 0.5 / 1 / 2 AKT    | Per vCPU                                                                       |
-| `bond_mem_gb_l2` / `l1` / `l0`         | 0.25 / 0.5 / 1 AKT | Per GB memory                                                                  |
-| `bond_storage_tb_l2` / `l1` / `l0`     | 2 / 4 / 8 AKT      | Per TB storage                                                                 |
+| `bond_gpu_l2` / `l3` / `l4`            | 50 / 100 / 200 AKT | Per GPU                                                                        |
+| `bond_vcpu_l2` / `l3` / `l4`           | 0.5 / 1 / 2 AKT    | Per vCPU                                                                       |
+| `bond_mem_gb_l2` / `l3` / `l4`         | 0.25 / 0.5 / 1 AKT | Per GB memory                                                                  |
+| `bond_storage_tb_l2` / `l3` / `l4`     | 2 / 4 / 8 AKT      | Per TB storage                                                                 |
 | `provider_bond_unbonding_period`       | 21 days            | Standard unbonding                                                             |
 | `min_age_l2`                           | 30 days            |                                                                                |
-| `min_age_l1`                           | 120 days           |                                                                                |
-| `min_age_l0`                           | 300 days           |                                                                                |
-| `min_lease_completion_bps_l1` / `l0`   | 9800 (98%)         | High completion threshold                                                      |
-| `clean_history_window_l1`              | 90 days            |                                                                                |
-| `clean_history_window_l0`              | 180 days           |                                                                                |
-| `min_l1_duration_for_l0`               | 180 days           | 6 months at L1 before L0                                                       |
+| `min_age_l3`                           | 120 days           |                                                                                |
+| `min_age_l4`                           | 300 days           |                                                                                |
+| `min_lease_completion_bps_l3` / `l4`   | 9800 (98%)         | High completion threshold                                                      |
+| `clean_history_window_l3`              | 90 days            |                                                                                |
+| `clean_history_window_l4`              | 180 days           |                                                                                |
+| `min_l3_duration_for_l4`               | 180 days           | 6 months at L3 before L4                                                       |
 | `min_leases_for_completion_rate`       | 10                 | Avoids 1/1 = 100% gaming                                                       |
-| `contact_response_critical_l3`         | 72 hours           | Lenient; proves channel is monitored                                           |
+| `contact_response_critical_l1`         | 72 hours           | Lenient; proves channel is monitored                                           |
 | `contact_response_critical_l2`         | 24 hours           | Business-day response                                                          |
-| `contact_response_critical_l1`         | 4 hours            | Near-real-time for established operators                                       |
-| `contact_response_critical_l0`         | 1 hour             | Highest-trust providers must be highly responsive                              |
-| `contact_response_standard_l3`         | 7 days             | Generous window for non-urgent provider-controlled inquiries                   |
+| `contact_response_critical_l3`         | 4 hours            | Near-real-time for established operators                                       |
+| `contact_response_critical_l4`         | 1 hour             | Highest-trust providers must be highly responsive                              |
+| `contact_response_standard_l1`         | 7 days             | Generous window for non-urgent provider-controlled inquiries                   |
 | `contact_response_standard_l2`         | 72 hours           |                                                                                |
-| `contact_response_standard_l1`         | 24 hours           |                                                                                |
-| `contact_response_standard_l0`         | 4 hours            |                                                                                |
+| `contact_response_standard_l3`         | 24 hours           |                                                                                |
+| `contact_response_standard_l4`         | 4 hours            |                                                                                |
 | `provider_maintenance_max_duration`    | 7 days             | Allows long planned windows without making stale notices permanent             |
 | `provider_maintenance_max_lookahead`   | 90 days            | Lets tenants see planned maintenance without turning the store into a calendar |
 | `max_endblocker_attestation_expiries`  | 100                | Per-block processing cap                                                       |
@@ -2546,8 +2546,8 @@ VerificationKeeper:
   does NOT filter by snapshot compliance -- the caller must check `IsProviderSnapshotCompliant` separately. This
   separation ensures the verification module reports facts while the market module applies bid-time policy.
 - `IsProviderSnapshotCompliant` returns `false` if the provider's `ProviderSnapshotRecord.suspended` is `true`.
-- `GetProviderBestTier` returns the best (lowest numeric enum value = highest trust) tier from valid attestations.
-  Returns `TierUnspecified` if no valid attestations exist (effectively Level 4).
+- `GetProviderBestTier` returns the best (highest numeric enum value = highest trust) tier from valid attestations.
+  Returns `TierUnspecified` if no valid attestations exist (effectively Level 0).
 - `GetProviderGraceTier` returns the active discrepancy grace tier, if one exists. `x/market` uses this tier for tier
   filtering only when verification filtering is active. It must still enforce snapshot compliance, bond requirements,
   capability requirements, and named auditor requirements.
