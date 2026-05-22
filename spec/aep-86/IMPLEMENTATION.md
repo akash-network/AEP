@@ -176,7 +176,7 @@ Required `x/provider` additions:
 
 Suggested protobuf shape:
 
-```protobuf
+```proto
 enum ProviderMaintenanceType {
     provider_maintenance_type_unspecified = 0;
     provider_maintenance_type_planned = 1;
@@ -243,7 +243,7 @@ message MsgCloseProviderMaintenanceResponse {}
 
 Suggested query shape:
 
-```protobuf
+```proto
 service Query {
     rpc ProviderMaintenance(QueryProviderMaintenanceRequest) returns (QueryProviderMaintenanceResponse) {
         option (google.api.http).get = "/akash/provider/v1beta4/providers/{provider}/maintenance/{maintenance_id}";
@@ -275,7 +275,7 @@ message QueryProviderMaintenancesResponse {
 
 Suggested events:
 
-```protobuf
+```proto
 message EventProviderMaintenanceOpened {
     uint64 maintenance_id = 1;
     string provider = 2 [(cosmos_proto.scalar) = "cosmos.AddressString"];
@@ -548,7 +548,7 @@ legacy attributes and verification requirements, the adapter requires both check
 
 The `PlacementRequirements` in the deployment module gains a new field:
 
-```protobuf
+```proto
 // In deployment proto -- PlacementRequirements
 message PlacementRequirements {
     // ... existing attribute fields ...
@@ -576,7 +576,7 @@ Complete proto file specifications for `akash.verification.v1`. All files are pl
 
 ### 4.1 types.proto
 
-```protobuf
+```proto
 syntax = "proto3";
 package akash.verification.v1;
 
@@ -895,7 +895,7 @@ enum AuditorSelectionMode {
 
 ### 4.2 state.proto
 
-```protobuf
+```proto
 syntax = "proto3";
 package akash.verification.v1;
 
@@ -1041,7 +1041,7 @@ message ProviderSnapshotRecord {
 
 ### 4.3 params.proto
 
-```protobuf
+```proto
 syntax = "proto3";
 package akash.verification.v1;
 
@@ -1160,7 +1160,7 @@ message Params {
 
 ### 4.4 msg.proto
 
-```protobuf
+```proto
 syntax = "proto3";
 package akash.verification.v1;
 
@@ -1386,7 +1386,7 @@ message MsgUpdateParamsResponse {}
 
 ### 4.5 service.proto
 
-```protobuf
+```proto
 syntax = "proto3";
 package akash.verification.v1;
 
@@ -1423,7 +1423,7 @@ service Msg {
 
 ### 4.6 query.proto
 
-```protobuf
+```proto
 syntax = "proto3";
 package akash.verification.v1;
 
@@ -1587,7 +1587,7 @@ message QueryParamsResponse {
 
 ### 4.7 events.proto
 
-```protobuf
+```proto
 syntax = "proto3";
 package akash.verification.v1;
 
@@ -1785,7 +1785,7 @@ message EventVerificationGraceEnded {
 
 ### 4.8 genesis.proto
 
-```protobuf
+```proto
 syntax = "proto3";
 package akash.verification.v1;
 
@@ -1911,7 +1911,7 @@ separate signing-key AEP or phase 2 work.
 
 The Inventory Service is exposed as a gRPC service on the existing provider daemon endpoint:
 
-```protobuf
+```proto
 service InventoryService {
     rpc GetInventorySnapshot(GetInventorySnapshotRequest) returns (GetInventorySnapshotResponse);
 }
