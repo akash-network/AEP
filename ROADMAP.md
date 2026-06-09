@@ -43,7 +43,6 @@
 | [80](spec/aep-80) | On-Chain Oracle Module | 2026-03-23 | Major |
 | [81](spec/aep-81) | Pyth Price feed Integration | 2026-03-23 | Major |
 | [60](spec/aep-60) | Akash HomeNode - MVP | 2026-04-30 | Major |
-| [67](spec/aep-67) | Console Bid PreCheck | 2026-04-30 | Major |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2026-05-15 | Minor |
 | [29](spec/aep-29) | Hardware Verification using Trusted Execution | 2026-05-30 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2026-05-31 | Major |
@@ -64,6 +63,7 @@
 | [49](spec/aep-49) | Virtual Machines | 2026-08-30 | Major |
 | [52](spec/aep-52) | Rollover Provider | 2026-08-30 | Minor |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2026-08-31 | Minor |
+| [67](spec/aep-67) | Console Bid Screening | 2026-08-31 | Major |
 | [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | 2026-09-30 | Major |
 | [44](spec/aep-44) | Reserved Instances | 2026-10-31 | Minor |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-11-15 | Minor |
