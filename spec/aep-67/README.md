@@ -12,7 +12,7 @@ roadmap: major
 ---
 
 > This revision supersedes the original abandoned design (live per-provider inventory queries with a
-> split-screen YAML editor + precheck panel, proposed by @anilmurty) and documents the as-built **Bid
+> split-screen YAML editor + precheck panel) and documents the as-built **Bid
 > Screening** feature. The feature was originally named "Bid PreCheck"; it is now "Bid Screening"
 > everywhere (route, feature flag, service, glossary). The `aep-67` URL is unchanged.
 
