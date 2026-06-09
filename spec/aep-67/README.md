@@ -1,7 +1,7 @@
 ---
 aep: 67
 title: "Console Bid Screening"
-author: Maxime Beauchamp (@baktun14)
+author: Maxime Beauchamp (@baktun14) Serhii Stotskyi (@stalniy)
 status: Final
 type: Standard
 category: Interface
