@@ -768,14 +768,14 @@
   },
   {
     "aep": 67,
-    "title": "Console Bid PreCheck",
-    "author": "Anil Murty (@anilmurty)",
-    "status": "Final",
+    "title": "Console Bid Screening",
+    "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14) Serhii Stotskyi (@stalniy)",
+    "status": "Last Call",
     "type": "Standard",
     "category": "Core",
     "created": "2025-05-16T00:00:00.000Z",
-    "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2026-04-30T00:00:00.000Z",
+    "updated": "2026-06-09T00:00:00.000Z",
+    "estimated-completion": "2026-08-31T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -1030,7 +1030,7 @@
   {
     "aep": 86,
     "title": "Provider Verifications",
-    "author": "Artur Troian (@troian)",
+    "author": "Artur Troian (@troian) Joseph Chalabi (@chalabi2)",
     "status": "Draft",
     "type": "Standard",
     "category": "Core",
