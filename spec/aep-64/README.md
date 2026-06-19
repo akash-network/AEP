@@ -659,7 +659,7 @@ sequenceDiagram
 
 ### Recommended Libraries
 
-Any JWT implemenation with ability to implement custom signer/verifiers.
+Any JWT implementation with ability to implement custom signer/verifiers.
 
 ### Security Considerations
 

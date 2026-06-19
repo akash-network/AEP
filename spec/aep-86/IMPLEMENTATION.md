@@ -1,6 +1,6 @@
 # AEP-86 Implementation Guide
 
-> Companion to [AEP-86: Provider Verification Tiers](./README.md) (the authoritative specification).
+> Companion to [AEP-86: Provider Verifications](./README.md) (the authoritative specification).
 >
 > This document contains **implementation-specific details only**: protobuf definitions, Go interfaces,
 > codebase-specific notes, and error codes. It does not repeat specification-level content.

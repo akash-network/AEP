@@ -14,7 +14,7 @@ roadmap: major
 
 ## Motivation
 
-By default, Akash offers temporary storage that is wiped clean upon worload restarts. To maintain data integrity across reboots, we propose enabling persistent storage functionality, which ensures that information written to the disk remains intact.
+By default, Akash offers temporary storage that is wiped clean upon workload restarts. To maintain data integrity across reboots, we propose enabling persistent storage functionality, which ensures that information written to the disk remains intact.
 
 ## Summary
 

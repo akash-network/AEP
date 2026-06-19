@@ -183,7 +183,7 @@ Mirror settlement but `to` is tenant-provided address; share code path to reduce
 | `mint_cooldown_blocks` | `x/bme` | Rate limit for new ACT mints | e.g., 10 |
 | `max_mint_per_block` | `x/bme` | Additional throttle | sized vs. liquidity |
 | `oracle_max_age_mint` | `x/oracle` | Freshness requirement | 600s |
-| `oracle_max_age_settle` | `x/oracle` | 300s |
+| `oracle_max_age_settle` | `x/oracle` | Freshness requirement | 300s |
 | `oracle_deviation_limit` | `x/oracle` | Source disagreement bound | 0.015 |
 | `dust_threshold_uakt` | `x/bme` | When to sweep rounding dust | 1 uAKT |
 | `min_mint_act` | `x/bme` | Lower bound per mint (USD) | e.g., 10 USD |

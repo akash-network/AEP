@@ -36,7 +36,7 @@ The Akashian Challenge will begin on Thursday, April 30th, 2020, and run for 8 w
   
 **Phase 1:** The participants earn tokens by solving different challenges related to operating and validating the Akash Blockchain. The challenges will range from setting up Akash node to Governing the network.  
 **Phase 2:** Phase 2 involves setting up a secure, production-ready, and scalable Datacenter operation as a provider and/or validator on the Akash network. The goal of this phase is to test various adversarial conditions, identify security loopholes and scalability limits of the Akash network. Beyond setting up the operations, participants are incentivized to stress test the limits of the Akash Network.  
-**Phase 3:** Phase 3 incentives developers to build on the Akash network. Developers earn tokens by deploying applications. The most creative applications will be selected every fortnight by committee and public in a live-streamed ceremony.
+**Phase 3:** Phase 3 incentivizes developers to build on the Akash network. Developers earn tokens by deploying applications. The most creative applications will be selected every fortnight by committee and public in a live-streamed ceremony.
 
 ### Rewards
 
@@ -56,7 +56,7 @@ A total of **3 million AKT (3% of AKT)** is allocated for rewards that include:
 *   **Phase 1:** April 30, 2020
 
 
-## Annoucements
+## Announcements
 
 * [Announcing The Akashian Challenge: Incentivized Testnet](https://akash.network/blog/announcing-the-akashian-challenge-incentivized-testnet/)
 * [The Akashian Challenge: Token Rewards, Prizes, and Schedule](https://akash.network/blog/the-akashian-challenge-token-rewards-prizes-schedule/)

@@ -29,11 +29,11 @@ After surveying over a dozen products (across the public cloud, neo cloud and AI
 
 Further, the current trial is limited to a small subset of providers and we'd like to extend this to the entire network so that all providers benefit from it.
 
-With those in mind, we've enbarked on a project to build a new onboarding flow that will:
+With those in mind, we've embarked on a project to build a new onboarding flow that will:
 1. Optimize the landing page for new users that is significantly simpler from a cognitive load perspective
 2. Require that the users sign up and enter a valid credit card (won't be charged) before they can start the trial
 3. Grant the user a lot more trial credits ($100 - which is a 10x increase from current) so that they can fully experience the product
-4. Open up the trial to ALL providers on the network - in conjunction with the[Tenant Incentives Pilot (TIPs)](https://github.com/orgs/akash-network/discussions/978) proposal
+4. Open up the trial to ALL providers on the network - in conjunction with the [Tenant Incentives Pilot (TIPs)](https://github.com/orgs/akash-network/discussions/978) proposal
 5. Limit trial deployments to run for only 24 hours (will be closed unless the user upgrades to paid user but they can redeploy)
 6. Limit trials to last 30 days
 7. Plug the onboarding flow into the email notification system built as part of the Alert & Notification work in [AEP-33](https://akash.network/roadmap/aep-33/)

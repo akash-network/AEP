@@ -6,7 +6,7 @@ status: Draft
 type: Standard
 category: Core
 created: 2026-04-04
-supersedes: 9, 40
+replaces: 9, 40
 ---
 
 ## Motivation
@@ -204,7 +204,7 @@ Requirements:
 
 **Application-layer policy**: Level 4 should require 2+ independent auditor attestations at Level 4.
 This can be enforced with `verification.min_auditor_count: 2`, optionally combined with named auditor requirements as
-described in [Level 3](./README.md#level-1----established).
+described in [Level 3](./README.md#level-3----established).
 
 ### Verification Tier Summary
 

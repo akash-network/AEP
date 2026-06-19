@@ -26,7 +26,7 @@ A complete deployment has the following sections:
 - [profiles](#profiles)
 - [deployment](#deployment)
 
-A full example deployment configuration can be found [here](deployment.yml).
+Current deployment examples can be found in the [SDL examples library](https://akash.network/docs/developers/deployment/akash-sdl/examples-library/).
 
 ### version
 
@@ -42,7 +42,7 @@ The top-level `services` entry contains a map of workloads to be ran on the Akas
 | `depends-on` | No       | List of services which must be brought up before the current service                   |
 | `args`       | No       | Arguments to use when executing the container                                          |
 | `env`        | No       | Environment variables to set in running container                                      |
-| `expose`     | No       | Entities allowed to connec to to the services. See [services.expose](#servicesexpose). |
+| `expose`     | No       | Entities allowed to connect to the services. See [services.expose](#servicesexpose). |
 
 #### services.expose
 
@@ -87,7 +87,7 @@ The `profiles` section contains named compute and placement profiles to be used 
 #### profiles.compute
 
 `profiles.compute` is map of named compute profiles. Each profile specifies compute resources to be leased for each service instance
-uses uses the profile.
+that uses the profile.
 
 Example:
 
@@ -101,7 +101,7 @@ web:
 ```
 
 `cpu` units represent a vCPU share and can be fractional. When no suffix is present the value represents
-a fraction of a whole CPU share. With a `m` suffix, the value represnts the number of milli-CPU shares (1/1000 of a CPU share).
+a fraction of a whole CPU share. With a `m` suffix, the value represents the number of milli-CPU shares (1/1000 of a CPU share).
 
 Example:
 
@@ -146,7 +146,7 @@ westcoast:
 ```
 
 This defines a profile named `westcoast` having required attributes `{region="us-west"}`, and with a max price for
-the `web` and `db` [compute profiles](#profilescompute) of 8 and 15 _micro_ (10^-6) tokens per block, respectively.
+the `web` and `db` [compute profiles](#profilescompute) of 8 and 100 _micro_ (10^-6) tokens per block, respectively.
 
 Pricing may be expressed in decimal or scientific notation for Akash units, or may be suffixed with `mu`,`µ`, or `u` to represent _micro_ Akash.
 

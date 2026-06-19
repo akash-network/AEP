@@ -17,4 +17,4 @@ Offering something similar to what customers can get from public clouds and a pr
 
 ## Summary
 
-This will be a third alernative (in addition to on-demand and reserved instances) where the users deployment can be preempted with a certain grace period. The nofication period for preempting a deployment can be 2mins
+This will be a third alternative (in addition to on-demand and reserved instances) where the users deployment can be preempted with a certain grace period. The notification period for preempting a deployment can be 2mins

@@ -153,7 +153,7 @@ When an invoice for A ACT is due, the protocol:
 #### `x/market` Leases & settlement
 * Quotes remain **USD‑first** in the UI; on chain, settlement pays providers **in AKT** by consuming ACT.  
 * Providers optionally auto‑stake a % of payouts (off by default).
-* AEP‑23 brought [stable payments](https://akash.network/docs/deployments/stable-payment-deployments) and take‑rates; with BME we keep the stable UX but remove take‑rates and settle AKT‑only.*
+* AEP‑23 brought [stable payments](../aep-23) and take‑rates; with BME we keep the stable UX but remove take‑rates and settle AKT‑only.*
 
 ##### Settlement loop (system flow)
 
@@ -238,7 +238,7 @@ Because the vault is transparent (on-chain), you get auditable metrics: `VaultAK
 
 We avoid per‑lease take‑rates. Instead, we rely on **design‑time controls**:
 * **Oracle safety:** dual‑feed medianization; TWAP windows (e.g., 30 min); max update drift; pause on disagreement \> X%. *TWAP mechanics [documented](https://docs.osmosis.zone/overview/features/concentrated-liquidity) by Osmosis*.
-* **Circuit breakers:** if $CR<0.93~$ (configurable), temporary measures engage:  
+* **Circuit breakers:** if $CR<0.95~$ (configurable), temporary measures engage:  
   * Slow mints (shorter settlement epochs),  
   * Require new ACT mints to be ≥ N days of run‑rate (encourages batching),  
   * If $CR<0.90$, fallback: pause new ACT mints; tenants can still pay directly in **AKT** (UI reveals an “AKT direct” path) until CR recovers.  
@@ -438,7 +438,7 @@ MsgBurnACT {
 
 * `RemintCredits >= 0` except during a price‑crash path when circuit breaker logic governs shortfall; if `RemintCredits < 0`, only inflationary mint covers the difference (visible metric).
 
-*(Cosmos SDK’s [bank/mint](https://docs.cosmos.network/v0.46/modules/bank/) facilities support this pattern cleanly)*
+*(Cosmos SDK’s [bank/mint](https://docs.cosmos.network/sdk/latest/modules/bank/README) facilities support this pattern cleanly)*
 
 ### Provider & Tenant UX
 
@@ -469,7 +469,7 @@ MsgBurnACT {
 
 * **Oracle manipulation:** use multi‑feed medianization with [TWAP](https://docs.osmosis.zone/overview/features/concentrated-liquidity); cap per‑block price move; pausable by governance multisig in emergencies. 
 * **Liquidity stress:** perform console buys via RFQ/aggregator (Osmosis primary) with max slippage. (Osmosis as Cosmos liquidity hub. 
-* **Module integrity:** [bank](https://docs.cosmos.network/v0.46/modules/bank) burn/mint auditing with supply invariants in end blockers. 
+* **Module integrity:** [bank](https://docs.cosmos.network/sdk/latest/modules/bank/README) burn/mint auditing with supply invariants in end blockers.
 
 ### Rollout plan
 

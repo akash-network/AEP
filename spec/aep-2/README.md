@@ -80,7 +80,7 @@ Decentralized cloud computing exchange connects those who need computing resourc
 - The [bid](#fulfillment) with lowest price gets [matched](#matchopenorders) with [order](#order) to create a [lease](#lease).
 - Once [lease](#lease) is reached, workloads and topology are delivered to [datacenter](#datacenters).
 - [Datacenter](#datacenters) deploy workloads and allow connectivity as specified by the tenant.
-- If a [datacenter](#datacenters) fails to maintain lease, collateral is transferred to tenant, and a new [order](#order) is crated for the desired resources.
+- If a [datacenter](#datacenters) fails to maintain lease, collateral is transferred to tenant, and a new [order](#order) is created for the desired resources.
 
 ## Actors
 
@@ -90,12 +90,12 @@ A tenant hosting an application on the Akash network
 
 ### Datacenters
 
-Each datacenter will host an agent which is a mediator between the with the Akash Network and datecenter-local infrastructure.
+Each datacenter will host an agent which is a mediator between the Akash Network and datacenter-local infrastructure.
 
 The datacenter agent is responsible for
 
 - Bidding on [orders](#order) fulfillable by the datacenter.
-- Managing managing active leases it is a provider for.
+- Managing active leases it is a provider for.
 
 ### Validators
 
@@ -234,11 +234,11 @@ be called once every [reconfirmation period](#global-parameters) rounds.
 
 ### SubmitLease
 
-Sent by a [validator](#validator) to match a [order](#order) with a [fulfillment order](#fulfillment).
+Sent by a [validator](#validators) to match a [order](#order) with a [fulfillment order](#fulfillment).
 
 ### SubmitStaleLease
 
-Sent by a [validator](#validator) after finding a lease that has not been confirmed in [reconfirmation period](#global-parameters) rounds.
+Sent by a [validator](#validators) after finding a lease that has not been confirmed in [reconfirmation period](#global-parameters) rounds.
 
 ### Workflows
 
@@ -355,7 +355,7 @@ A _stack_ is a description of all components necessary to deploy an application 
 
 A _stack_ includes:
 
-- Infrastucture requirements.
+- Infrastructure requirements.
 - Manifest of workloads to deploy on procured infrastructure.
 
 #### Manifest
@@ -384,15 +384,15 @@ A _deployment_ represents the _current state_ of a stack as fulfilled by the Aka
 | container   | Docker container                                     |
 | compute     | [resources](#computeunit) needed for each instance   |
 | count       | number of instances to run                           |
-| connections | List of allowed incomming [connections](#connection) |
+| connections | List of allowed incoming [connections](#connection) |
 
 #### Connection
 
 | Field      | Description                                                                |
 | ---------- | -------------------------------------------------------------------------- |
 | port       | TCP port                                                                   |
-| workload   | [Workload](#workload) name to allow incomming connection from              |
-| datacenter | [Datacenter](#deploymentinfrastructure) to allow incomming connection from |
+| workload   | [Workload](#workload) name to allow incoming connection from               |
+| datacenter | [Datacenter](#deploymentinfrastructure) to allow incoming connection from  |
 | global     | If `true`, allow all connections, regardless of source                     |
 
 #### LeasedWorkload

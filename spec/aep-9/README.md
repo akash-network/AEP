@@ -29,7 +29,7 @@ Akash is a permission-less network where any tenant (with a valid key) can consu
 3. The Tenant specifies the authority (public key of Accreditor) in deployment manifest along with attributes to be verified.
 4. The system then limits the auction only to the trusted providers verified by the Accreditor (authority).
 
-![Provider accredation](wot.svg)
+![Provider accreditation](wot.svg)
 
 ## Copyright
 

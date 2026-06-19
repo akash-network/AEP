@@ -3,7 +3,7 @@ aep: 52
 title: Rollover Provider
 author: Anil Murty (@anilmurty)
 status: Draft
-type: Core
+type: Standard
 category: Interface
 created: 2024-12-01
 updated: 2024-12-01

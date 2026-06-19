@@ -17,7 +17,7 @@ Lease-to-lease networking on the Akash Network would provide dynamic IP address 
 
 ## Summary
 
-Currently, workloads belonging to the same tenant on the Akash Network can communicate with each other only via public IP addresses, limiting the platform’s ability to support interconnected deployments and tenant-specific networking needs. To address this challenge, this AEP introduces the concepts of a Akash Virtual Private Network (AVPN) to enable seamless and secure communication between tenant workloads while adhering to the principles of decentralization.
+Currently, workloads belonging to the same tenant on the Akash Network can communicate with each other only via public IP addresses, limiting the platform’s ability to support interconnected deployments and tenant-specific networking needs. To address this challenge, this AEP introduces the concepts of an Akash Virtual Private Network (AVPN) to enable seamless and secure communication between tenant workloads while adhering to the principles of decentralization.
 
 ## Akash Virtual Private Network
 Tenant will be responsible for creating network on the blockchain.
@@ -40,7 +40,7 @@ The decentralized firewall ensures secure, policy-driven communication between l
     - Each lease can have its own set of firewall rules (defined in smart contracts) to govern inbound and outbound traffic.
     - Inter-lease communication is allowed only if explicitly permitted by both leases' policies.
 2. Customizable Rules:
-    - Allows users to define and update policies via [Netowork Manifest)[#Network-manifest]
+    - Allows users to define and update policies via [Network manifest](#network-manifest)
     - Examples:
         - Block specific IP ranges between leases.
         - Allow secure ports for application-specific traffic (e.g., HTTP, HTTPS, or custom protocols).

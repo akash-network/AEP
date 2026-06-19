@@ -18,7 +18,7 @@ roadmap: major
  ## Motivation
 
  Currently, Akash Network deployments are accessible via the default ingress subdomain (e.g., *.ingress.akash.pub).
- To enhance the security and accessbility of deployments, tenants should have the ability to use custom domains with SSL/TLS certificates without relying on third party solutions such as Cloudflare.
+ To enhance the security and accessibility of deployments, tenants should have the ability to use custom domains with SSL/TLS certificates without relying on third party solutions such as Cloudflare.
 
  ## Technical Details
 

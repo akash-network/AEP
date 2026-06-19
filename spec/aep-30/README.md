@@ -1,7 +1,7 @@
 ---
 aep: 30
-title: "Cosmos SDK v0.53 Migration"
-author: Cheng Wang (@lechenghiskhan) Artur Troian (@atroian) Scott Carrutthers (@chainzero)
+title: "Cosmos SDK v0.47 Migration"
+author: Cheng Wang (@lechenghiskhan) Artur Troian (@troian) Scott Carruthers (@chainzero)
 status: Final
 type: Standard
 category: Core

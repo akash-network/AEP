@@ -4,7 +4,7 @@ title: AEP Purpose and Guidelines
 status: Final
 type: Meta
 author: Greg Osuri (@gosuri) Adam Bozanich (@boz)
-discussions-to: https://github.com/ovrclk/aep/issues/1
+discussions-to: https://github.com/akash-network/AEP/issues/1
 created: 2020-03-09
 updated: 2020-03-17
 ---
@@ -76,7 +76,7 @@ Each status change is requested by the AEP author and reviewed by the AEP editor
 * **Draft** -- Once the first Draft has been merged, you may submit follow-up pull requests with further changes to your Draft until you believe the AEP to be mature and ready to proceed to the next status. An AEP in draft status must be implemented to be considered for promotion to the next status (ignore this requirement for core AEPs).
   * :arrow_right: Last Call -- If agreeable, the AEP editor will assign Last Call status and set a review end date (`review-period-end`), normally 14 days later.
   * :x: Last Call -- A request for Last Call status will be denied if material changes are still expected to be made to the Draft. We hope that AEPs only enter Last Call once, so as to avoid unnecessary noise on the RSS feed.
-* **Last Call** -- This AEP will be listed prominently on the https://aeps.akash.network/ website (subscribe via RSS at [last-call.xml](/last-call.xml)).
+* **Last Call** -- This AEP will be listed prominently on the [Akash roadmap](https://akash.network/roadmap/).
   * :x: -- The Last Call, which results in material changes or substantial unaddressed technical complaints, will cause the AEP to revert to Draft.
   * :arrow_right: Accepted (Core AEPs only) -- A successful Last Call without material changes or unaddressed technical complaints will become Accepted.
   * :arrow_right: Final (Non-Core AEPs) -- A successful Last Call without material changes or unaddressed technical complaints will become Final.
@@ -99,7 +99,7 @@ Other exceptional statuses include:
 
 Each AEP should have the following parts:
 
-- Preamble - RFC 822 style headers containing metadata about the AEP, including the AEP number, a short descriptive title (limited to a maximum of 44 characters), and the author details. See [below](https://github.com/ovrclk/AEPs/blob/master/AEPSS/aep-1.md#aep-header-preamble) for details.
+- Preamble - RFC 822 style headers containing metadata about the AEP, including the AEP number, a short descriptive title (limited to a maximum of 44 characters), and the author details. See [below](#aep-header-preamble) for details.
 - Abstract - A short (~200 word) description of the technical issue being addressed.
 - Motivation (*optional*) - The motivation is critical for AEPs that want to change the Akash protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the AEP solves. AEP submissions without sufficient motivation may be rejected outright.
 - Specification - The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations Akash platform.
@@ -225,7 +225,7 @@ If you are interested in assuming ownership of an AEP, send a message asking to 
 The current AEP editors are:
 
 * Greg Osuri ([@gosuri](http://github.com/gosuri))
-* Anil Murty ([@anilmurty](http://github.com/anilmurthy))
+* Anil Murty ([@anilmurty](http://github.com/anilmurty))
 * Artur Troian ([@troian](http://github.com/troian))
 * Cheng Wang ([@lechenghiskhan](http://github.com/lechenghiskhan))
 * Adam Bozanich ([@boz](http://github.com/boz))
@@ -262,7 +262,7 @@ This document was derived heavily from [Ethereum's EIP-1] written by Martin Becz
 [Ethereum's EIP-1]: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1.md
 [Bitcoin's BIP-0001]: https://github.com/bitcoin/bips
 [Akash Technical Chat]: https://discord.akash.network/
-[Pull request]: https://github.com/ovrclk/AEPs/pulls
+[Pull request]: https://github.com/akash-network/AEP/pulls
 
 ## Copyright
 
