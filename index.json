@@ -978,10 +978,10 @@
     "aep": 82,
     "title": "Resource Reclamation",
     "author": "Artur Troian (@troian)",
-    "status": "Last Call",
+    "status": "Final (core)",
     "type": "Standard",
     "category": "Core",
-    "estimated-completion": "2026-05-31T00:00:00.000Z",
+    "completed": "2026-06-11T00:00:00.000Z",
     "created": "2026-04-22T00:00:00.000Z",
     "roadmap": "major"
   },
@@ -989,12 +989,12 @@
     "aep": 83,
     "title": "Confidential Compute via Kata Containers",
     "author": "Joao Luna (@cloud-j-luna)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Core",
     "created": "2026-04-14T00:00:00.000Z",
-    "updated": "2026-05-01T00:00:00.000Z",
-    "estimated-completion": "2026-07-31T00:00:00.000Z",
+    "updated": "2026-06-16T00:00:00.000Z",
+    "completed": "2026-07-17T00:00:00.000Z",
     "requires": [
       "29",
       "65"
@@ -1039,6 +1039,18 @@
       "9",
       "40"
     ]
+  },
+  {
+    "aep": 87,
+    "title": "Marketplace V2",
+    "description": "New marketplace supporting Virtual Machines and baremetal compute resources",
+    "author": "Artur Troian (@troian)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2025-07-31T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
+    "roadmap": "major"
   },
   {
     "aep": 9,
