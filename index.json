@@ -929,7 +929,7 @@
     "type": "Standard",
     "category": "Core",
     "created": "2025-12-15T00:00:00.000Z",
-    "updated": "2025-12-15T00:00:00.000Z",
+    "updated": "2026-08-11T00:00:00.000Z",
     "estimated-completion": "2026-12-31T00:00:00.000Z",
     "roadmap": "major"
   },
@@ -1041,16 +1041,18 @@
     ]
   },
   {
-    "aep": 87,
-    "title": "Marketplace V2",
-    "description": "New marketplace supporting Virtual Machines and baremetal compute resources",
-    "author": "Artur Troian (@troian)",
+    "aep": 88,
+    "title": "Pyth Router-Based Price Feed Contracts",
+    "author": "Scott Carruthers (@chainzero) Joseph Chalabi (@chalabi2)",
     "status": "Draft",
     "type": "Standard",
+    "created": "2026-08-17T00:00:00.000Z",
     "category": "Core",
-    "created": "2025-07-31T00:00:00.000Z",
-    "discussions-to": "https://github.com/orgs/akash-network/discussions",
-    "roadmap": "major"
+    "requires": [
+      "76",
+      "78",
+      "80"
+    ]
   },
   {
     "aep": 9,
