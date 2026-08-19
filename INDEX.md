@@ -85,5 +85,5 @@
 | [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | Final | Standard/Interface | 2026-04-24 |  | 2026-05-31 |
 | [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | Draft | Standard/Interface | 2026-04-24 |  | 2026-09-30 |
 | [86](spec/aep-86) | Provider Verifications | Draft | Standard/Core | 2026-04-04 |  |  |
-| [87](spec/aep-87) | Unified Akash Command-Line Interface | Draft | Standard/Interface | 2026-08-14 |  |  |
 | [88](spec/aep-88) | Pyth Router-Based Price Feed Contracts | Draft | Standard/Core | 2026-08-17 |  |  |
+| [89](spec/aep-89) | Unified Akash Command-Line Interface | Draft | Standard/Interface | 2026-08-14 |  |  |

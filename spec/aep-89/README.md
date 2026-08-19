@@ -1,5 +1,5 @@
 ---
-aep: 87
+aep: 89
 title: "Unified Akash Command-Line Interface"
 description: "Establish akt as the single user-facing CLI and separate command ownership from daemon and library repositories"
 author: Joseph Chalabi (@chalabi2) Artur Troian (@troian)

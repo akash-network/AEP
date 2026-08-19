@@ -1041,7 +1041,21 @@
     ]
   },
   {
-    "aep": 87,
+    "aep": 88,
+    "title": "Pyth Router-Based Price Feed Contracts",
+    "author": "Scott Carruthers (@chainzero) Joseph Chalabi (@chalabi2)",
+    "status": "Draft",
+    "type": "Standard",
+    "created": "2026-08-17T00:00:00.000Z",
+    "category": "Core",
+    "requires": [
+      "76",
+      "78",
+      "80"
+    ]
+  },
+  {
+    "aep": 89,
     "title": "Unified Akash Command-Line Interface",
     "description": "Establish akt as the single user-facing CLI and separate command ownership from daemon and library repositories",
     "author": "Joseph Chalabi (@chalabi2) Artur Troian (@troian)",
@@ -1054,20 +1068,6 @@
     "requires": [
       "56",
       "63"
-    ]
-  },
-  {
-    "aep": 88,
-    "title": "Pyth Router-Based Price Feed Contracts",
-    "author": "Scott Carruthers (@chainzero) Joseph Chalabi (@chalabi2)",
-    "status": "Draft",
-    "type": "Standard",
-    "created": "2026-08-17T00:00:00.000Z",
-    "category": "Core",
-    "requires": [
-      "76",
-      "78",
-      "80"
     ]
   },
   {
