@@ -1055,6 +1055,22 @@
     ]
   },
   {
+    "aep": 89,
+    "title": "Unified Akash Command-Line Interface",
+    "description": "Establish akt as the single user-facing CLI and separate command ownership from daemon and library repositories",
+    "author": "Joseph Chalabi (@chalabi2) Artur Troian (@troian)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2026-08-14T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
+    "roadmap": "major",
+    "requires": [
+      "56",
+      "63"
+    ]
+  },
+  {
     "aep": 9,
     "title": "Trusted Providers",
     "author": "Greg Osuri (@gosuri) Adam Bozanich (@boz)",
