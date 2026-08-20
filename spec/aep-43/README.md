@@ -17,4 +17,4 @@ Tenants/ users of Akash expect to be able to see what amount of allocated resour
 
 ## Summary
 
-This AEP will likely require building the necessary contructs (metrics server/ agent) for collecting utilization metrics from the tenant containers and reporting them through an API that can be quried and graphed for display in clients like Console. The metrics collected initially will likely be GPU (VRAM), CPU, Memeory and Storage.
+This AEP will likely require building the necessary constructs (metrics server/ agent) for collecting utilization metrics from the tenant containers and reporting them through an API that can be queried and graphed for display in clients like Console. The metrics collected initially will likely be GPU (VRAM), CPU, Memory and Storage.

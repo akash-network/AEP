@@ -18,13 +18,13 @@ Limitations of the first version of Akash economics:
 
 * The Akash Network requires AKT to pay for hosting, and the price is determined by agreement between the provider and tenant when they begin the lease. This can be a problem if a workload like a website needs to run for a long time because AKT prices could differ significantly over its duration, leaving either the tenant or the provider paying too much or too little compared to what was initially agreed upon.
 
-* Akash Network is in its infancy with early Product Market Fit where with a growing demand but not yet suffcient for providers to commit large amounts of compute. 
+* Akash Network is in its infancy with early Product Market Fit where with a growing demand but not yet sufficient for providers to commit large amounts of compute.
 * The community fund is too small to incentivize the growth of the Akash Network.
 * The AKT token needs to accrue value beyond incentives to ensure the security of the network.
 
 ## Purpose
 
-This proposal is intended to be a starting point for discussion in the [sig-economics][sig-economics] to propose a working group to complete the design and implementation of ideas presented in this proposal after a rigourous review and feedback from the community. The proposal is not intended to be a final version of the Akash Network Economics 2.0, but rather a starting point.
+This proposal is intended to be a starting point for discussion in the [sig-economics][sig-economics] to propose a working group to complete the design and implementation of ideas presented in this proposal after a rigorous review and feedback from the community. The proposal is not intended to be a final version of the Akash Network Economics 2.0, but rather a starting point.
 
 ## Network Security is proportional to AKT value
 
@@ -38,7 +38,7 @@ These network parameters are set through on-chain governance and adhere to a dec
 
 Since the value of AKT is driven by demand, we propose that the network tax the hosting fees paid by tenants to the providers and allocate it to the security budget of the network. This ensures a direct alignment between the usage and security of the Akash Network.
 
-Akash is a decentralized exchange where the health of the marketplace depends on the liquidy of the commodity its trading — compute. We propose that Tenant pay a take fee when _taking_ liquidity from the marketplace and a **_make fee_** that a Provider pays when _making_ liquidity available to the marketplace. The take fee is deducted from the Order when created and `Make Fee` is set by the network through on-chain governance. 
+Akash is a decentralized exchange where the health of the marketplace depends on the liquidity of the commodity it's trading — compute. We propose that Tenant pay a take fee when _taking_ liquidity from the marketplace and a **_make fee_** that a Provider pays when _making_ liquidity available to the marketplace. The take fee is deducted from the Order when created and `Make Fee` is set by the network through on-chain governance.
 
 We anticipate AKT holders will choose a fee that is high enough to ensure the security of the network and not too high which impedes the network's usage and growth along with it.
 
@@ -65,14 +65,14 @@ Early on in the network's lifecycle, the network will need to subsidize provider
 There are numerous ways to subsidize providers, some considerations are:
 
 * Cover cost of the operational and amortized cost of the hardware for a period of time.
-* Incentivize based on amount wokload they host, similar to [Filecoin Plus][filecoin-plus] Program.
+* Incentivize based on amount of workload they host, similar to [Filecoin Plus][filecoin-plus] Program.
 * Use an "exponential discount model" described in Evolution of the Akash Network Token Economics [blog post][akt-evolution].
 
 ### Public Goods Fund
 
 We propose a portion of the Tokens from the `Incentive Distribution Pool` be allocated to the Public Goods Fund to incentivize the growth of the Akash Network. The Public Goods Fund is a pool of AKT that is distributed to developers who build applications that grow the Akash Network and its adoption. The Developer Fund is distributed through on-chain governance.
 
-The mechanism for distributing the Developer Fund will be determined by the [Steering Committee][streeing-committee].
+The mechanism for distributing the Developer Fund will be determined by the [Steering Committee][steering-committee].
 
 ### Stakers
 
@@ -117,13 +117,13 @@ The fees on the order offered to the Provider is $F_p = \digamma_0 - F_t$ , or:
 $F_p = \digamma_0 \cdot (1 - R_t \cdot (1 - R_d))$
 
 [akt-economics-1]: https://ipfs.io/ipfs/QmdV52bF7j4utynJ6L11RgG93FuJiUmBH1i7pRD6NjUt6B
-[cosmos-sdk-x-mint]: https://docs.cosmos.network/main/modules/mint
+[cosmos-sdk-x-mint]: https://docs.cosmos.network/sdk/latest/modules/mint/README
 [osmosis]: https://osmosis.zone/
-[streeing-committee]: https://github.com/akash-network/community/tree/main/committee-steering
+[steering-committee]: https://github.com/akash-network/community/tree/main/committee-steering
 [sig-economics]: https://github.com/akash-network/community/tree/main/sig-economics
 [akt-evolution]: https://akash.network/blog/an-evolution-of-akash-network-token-economics/
-[filecoin-plus]: https://docs.filecoin.io/store/filecoin-plus/overview/
+[filecoin-plus]: https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus
 
 ## Copyright
 
-All content herein is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0). 
+All content herein is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).

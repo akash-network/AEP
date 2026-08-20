@@ -83,7 +83,7 @@ Enabling CosmWasm smart contracts on Akash Network provides transformational cap
 The implementation requires integrating the `x/wasm` module from the CosmWasm stack into the Akash blockchain:
 
 ```
-wasmd v0.61.6.0 or higher
+wasmd v0.61.6 or higher
 - CosmWasm VM integration
 - Wasm bytecode storage
 - Smart contract instantiation and execution

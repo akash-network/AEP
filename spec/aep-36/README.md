@@ -17,4 +17,4 @@ Many users of Akash Console deploy apps and services that need a custom domain. 
 
 ## Summary
 
-Users of Akash Console will have the option of choosing their DNS provider of choice from a set of available options and then configuring custom domain. Console would take care of authenticating the user (via the API credentials for the speicifc DNS provider) and settin the configuration.
+Users of Akash Console will have the option of choosing their DNS provider of choice from a set of available options and then configuring custom domain. Console would take care of authenticating the user (via the API credentials for the specific DNS provider) and setting the configuration.

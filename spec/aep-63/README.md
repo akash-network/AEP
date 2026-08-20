@@ -18,7 +18,7 @@ The number of Managed Wallet (Credit Card) users in Akash Console has grown sign
 
 ## Summary
 
-Akash provides a programmatic way for users to deploy workloads via the [AkashJS SDK](https://github.com/akash-network/akashjs) but AkashJS is requires that the user of the API be familiar with not just crypto (API requires specifying wallets, mnemonics) but even the Cosmos SDK (requires importing cosmos specific libraries). This makes it hard if not impossible for non-crypto users to consume this API. Based on conversations with such non-crypto users it has become clear that they need a clean API with simple endpoints to call, for deployment and lease lifecycle management.
+Akash provides a programmatic way for users to deploy workloads via the [AkashJS SDK](https://github.com/akash-network/akashjs) but AkashJS requires that the user of the API be familiar with not just crypto (API requires specifying wallets, mnemonics) but even the Cosmos SDK (requires importing cosmos specific libraries). This makes it hard if not impossible for non-crypto users to consume this API. Based on conversations with such non-crypto users it has become clear that they need a clean API with simple endpoints to call, for deployment and lease lifecycle management.
 
 The goal of this roadmap milestone is to implement clean API endpoints for all parts of managing the lifecycle of applications and workloads programmatically for users who pay with a credit card.
 

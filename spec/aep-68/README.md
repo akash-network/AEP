@@ -14,13 +14,13 @@ roadmap: major
 
 ## Motivation
 
-As number of credit card users in Akash Console grows, a common request we here is being able to view usage and billing info
+As number of credit card users in Akash Console grows, a common request we hear is being able to view usage and billing info
 
 ## Background
 
-Akash Console support two payment options - Crypto Wallet based and Credit Card based. For Crypto Wallets it is easy enough for the users to see when they used tokens for deployments with a blockchain scan tool like mintscan. For credit card users there is no such tracking avaialble. We do get the invoice data from Stripe that we should be able to pass back to the user.
+Akash Console supports two payment options - Crypto Wallet based and Credit Card based. For Crypto Wallets it is easy enough for the users to see when they used tokens for deployments with a blockchain scan tool like mintscan. For credit card users there is no such tracking available. We do get the invoice data from Stripe that we should be able to pass back to the user.
 
-Separately, users sometimes also may want to know how much of their funds are being used and for what - similar to the AWS (or othre cloud) billing pages where there is separation by services. In our case since we do not have managed services, showing some information about spend by provider or GPU models might be nice to have.
+Separately, users sometimes also may want to know how much of their funds are being used and for what - similar to the AWS (or other cloud) billing pages where there is separation by services. In our case since we do not have managed services, showing some information about spend by provider or GPU models might be nice to have.
 
 ## Proposed Solution
 
@@ -32,7 +32,7 @@ A new page and submenu in the user Account Settings page called "Billing & Usage
     - Transaction Type (purchase/ refund) 
     - Payment Method 
     - Amount 
-    - Status (suceeded or failed)
+    - Status (succeeded or failed)
     - Link to download receipt
   - Daily Usage 
     - Date
@@ -40,11 +40,11 @@ A new page and submenu in the user Account Settings page called "Billing & Usage
     - Amount Spent
 
 - Charts that show:
-  -  Cumulative Credit purchase over timne
+  -  Cumulative Credit purchase over time
   -  Account balance over time 
   -  Spend (in terms of compute costs for deployment) over time
 
-#### Tenative Design Mocks
+#### Tentative Design Mocks
 
 These are just placeholders for now to provide general direction and the final version will be different (see resolution link or console.akash.network for final UI/ UX)
 

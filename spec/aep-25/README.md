@@ -12,7 +12,7 @@ discussions-to: https://github.com/orgs/akash-network/discussions/300
 roadmap: minor
 ---
 
-## Motivaiton
+## Motivation
 
 Akash is the first decentralized network with GPUs capable of general-purpose computing.
 

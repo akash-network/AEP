@@ -38,7 +38,7 @@ The system gathers cryptographic measurements from the hardware platform — inc
 
 The collected evidence is sent to a remote verifier — either a vendor-provided service (e.g., [Intel Trust Authority](https://www.intel.com/content/www/us/en/security/trust-authority.html), [AMD Attestation Service](https://www.amd.com/content/dam/amd/en/documents/developer/lss-snp-attestation.pdf), NVIDIA [NVTrust CA](https://docs.nvidia.com/attestation/#overview)) or a custom verifier (sometime called a “local verifier”). 
 
-The verifier perfoms the following functions:
+The verifier performs the following functions:
   - Authenticates the hardware’s cryptographic identity
   - Compares measurements against a set of trusted baseline values (aka “golden measurements”)
   - Validates integrity and authenticity of the platform state
@@ -58,7 +58,7 @@ The outcome is a binary verdict (e.g., Attestation OK or Rejected) which can be 
 
 #### NVTrust SDK
 
-Nvidia provides the [NVTRUST SDK](https://github.com/NVIDIA/nvtrust) that abstracts a lot of the complexity involved in attesting Nvidia GPUs (primarily H100s and NVSwitches) for trusted execution. This SDK provides abstractions for gathering evidence (aka measurements) as well as a verifier (NRAS) that plugs into Nvidia’s internal build pipeline (to obtain “golden measurements” through the RIM service). For reference see NRAS [documention](https://nras.attestation.nvidia.com/) and [API](https://docs.nvidia.com/attestation/api-docs-nras/latest/nras_api.html).
+Nvidia provides the [NVTRUST SDK](https://github.com/NVIDIA/nvtrust) that abstracts a lot of the complexity involved in attesting Nvidia GPUs (primarily H100s and NVSwitches) for trusted execution. This SDK provides abstractions for gathering evidence (aka measurements) as well as a verifier (NRAS) that plugs into Nvidia’s internal build pipeline (to obtain “golden measurements” through the RIM service). For reference see NRAS [documentation](https://nras.attestation.nvidia.com/) and [API](https://docs.nvidia.com/attestation/cloud-services/latest/nras/nras_api.html).
 
 This is what attestation with the Nvidia SDK looks like at a high level
 
@@ -66,7 +66,7 @@ This is what attestation with the Nvidia SDK looks like at a high level
 
 ### Intel Trusted Authority SDK
 
-Since GPUs do not operte standalone - they typically are part of a server that includes a CPU (and memory, storage and other things) which is where the application is typically executed (with the AI model then getting loaded into GPU memory for inference or training or fine-tuning), the attestation must encompass the CPU, GPU and the interface between them. To make this easy for customers, Intel has an SDK of its own that plugs into the NVTrust SDK and enables performing attestation for the whole system with SDKs available in  [python](https://github.com/intel/trustauthority-client-for-python) and [golang](https://github.com/intel/trustauthority-client-for-go).
+Since GPUs do not operate standalone - they typically are part of a server that includes a CPU (and memory, storage and other things) which is where the application is typically executed (with the AI model then getting loaded into GPU memory for inference or training or fine-tuning), the attestation must encompass the CPU, GPU and the interface between them. To make this easy for customers, Intel has an SDK of its own that plugs into the NVTrust SDK and enables performing attestation for the whole system with SDKs available in  [python](https://github.com/intel/trustauthority-client-for-python) and [golang](https://github.com/intel/trustauthority-client-for-go).
 
 ![Intel Attestation](intel-ita-attestation.png)
 
@@ -84,7 +84,7 @@ To that end, the following will need to be done
 
 | Vendor | Feature                              | Required Models                                                                 |
 |--------|--------------------------------------|---------------------------------------------------------------------------------|
-| Intel  | TDX (Trust Domain Extensions)        | Intel Xeon 5th Gen CPUs like “Sapphire Rapids” (with TDX BIOS support)          |
+| Intel  | TDX (Trust Domain Extensions)        | Intel Xeon 4th Gen CPUs like “Sapphire Rapids” (with TDX BIOS support)          |
 | Intel  | SGX (Software Guard Extensions)      | Intel Xeon E3, Xeon D, and select 10th–11th Gen Core CPUs (now deprecated by Intel) |
 | AMD    | SEV                                  | AMD EPYC “Rome” (7002 series)                                                   |
 | AMD    | SEV-ES / SNP                         | AMD EPYC “Milan” (7003) and “Genoa” (9004) series                               |

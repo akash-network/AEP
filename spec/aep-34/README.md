@@ -13,7 +13,7 @@ roadmap: minor
 
 ## Motivation
 
-Customers need to be able to debug issues that occur with their deployments. In the absense of log forwarding, customers can only view limited logs in Console and the logs are lost when the lease closes
+Customers need to be able to debug issues that occur with their deployments. In the absence of log forwarding, customers can only view limited logs in Console and the logs are lost when the lease closes
 
 ## Summary
 

@@ -90,7 +90,7 @@ services:
 
 > _**NOTE**_ - it is no longer necessary to specify the `ip-lease` attribute covered in this section as the bid engine now filters out non-IP lease capable providers when an IP endpoint is required by the deployment.  **This is now an optional and not required step**.
 
-Include the attribute key-value pair of `ip-lease: true` in the SDL.  This ensures that only provider advertising this attribute will bid on the workload.
+Include the attribute key-value pair of `ip-lease: true` in the SDL.  This ensures that only providers advertising this attribute will bid on the workload.
 
 ```
      attributes:
@@ -184,7 +184,7 @@ To experiment with the IP Leases migration functionality follow these steps.  Th
 * STEP 1 - create a deployment using the [full SDL example](#full-sdl-example-with-ip-leases) in this guide
 * STEP 2 - create a second deployment using the [full SDL example](#full-sdl-example-with-ip-leases) in this guide.  No changes to the SDL are necessary.
 * STEP 3 - observe that the IP lease remains on the first deployment made
-* STEP 4 - with the goal of migrating the IP lease to the new/second deployment - execute the migration steps detailed in this [section](#ip-leases-migration.md#migration-steps)
+* STEP 4 - with the goal of migrating the IP lease to the new/second deployment - execute the migration steps detailed in this [section](#migration-steps)
 * STEP 5 - following the successful IP Leases migration - observe that the IP lease is now active on the second/new deployment
 * STEP 6 - close the first deployment completing the example of migrating an IP lease to new/updated deployment with little down time during the transition&#x20;
 

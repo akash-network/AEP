@@ -7,12 +7,12 @@ type: Standard
 category: Core
 created: 2025-05-14
 updated: 2025-05-14
-estimated-completion: 2026-7-31
+estimated-completion: 2026-07-31
 roadmap: major
 ---
 
 ## Motivation
-Public clouds (like AWS, Azure and GCP) support Confindential Computing because some customers request this before they agree to migrate workloads from their own DCs to public cloud infrastructure. While a vast majority of users don't ask the public clouds for this (and just blindly "trust" them) this is likely to become a challenge for Akash's growth particularly because infractstructure on Akash is owned by 10s if not 100s of independent providers.
+Public clouds (like AWS, Azure and GCP) support Confidential Computing because some customers request this before they agree to migrate workloads from their own DCs to public cloud infrastructure. While a vast majority of users don't ask the public clouds for this (and just blindly "trust" them) this is likely to become a challenge for Akash's growth particularly because infrastructure on Akash is owned by 10s if not 100s of independent providers.
 
 ## Background
 Confidential Computing (CC) protects sensitive data while it's being used, by running computations inside a secure, isolated hardware environment—often a Trusted Execution Environment (TEE) or TEE “Enclave”—so that even cloud providers or system administrators can't access it. It is effectively the equivalent of what Encryption and TLS do for code/ data at rest and in transit, respectively.
@@ -44,7 +44,7 @@ Not all hardware is TEE capable. Here is the list of TEE capable CPUs and GPUs a
 
 | Vendor | Feature                              | Required Models                                                                 |
 |--------|--------------------------------------|---------------------------------------------------------------------------------|
-| Intel  | TDX (Trust Domain Extensions)        | Intel Xeon 5th Gen CPUs like “Sapphire Rapids” (with TDX BIOS support)          |
+| Intel  | TDX (Trust Domain Extensions)        | Intel Xeon 4th Gen CPUs like “Sapphire Rapids” (with TDX BIOS support)          |
 | Intel  | SGX (Software Guard Extensions)      | Intel Xeon E3, Xeon D, and select 10th–11th Gen Core CPUs (now deprecated by Intel) |
 | AMD    | SEV                                  | AMD EPYC “Rome” (7002 series)                                                   |
 | AMD    | SEV-ES / SNP                         | AMD EPYC “Milan” (7003) and “Genoa” (9004) series                               |
@@ -67,11 +67,11 @@ BIOS configuration changes need to be made to enable TDX/ SGX (for intel) and SE
 
 ##### Intel
 
-To Enable memory encryption, TDX and SGX for Intel, consult [this document](https://github.com/canonical/tdx/blob/1.2/README.md ). 
+To enable memory encryption, TDX and SGX for Intel, consult [this document](https://github.com/canonical/tdx/blob/1.2/README.md).
 
 ##### AMD
 
-To Enable AMD SEV, consult [this document](https://github.com/AMDESE/AMDSEV/blob/master/README.md).
+To enable AMD SEV, consult [this document](https://github.com/AMDESE/AMDSEV/blob/master/README.md).
 
 
 #### Access to Device Nodes for Attestation
@@ -97,7 +97,7 @@ Full VMs would offer the strongest tenant isolation and flexibility in terms of 
 The downsides of this approach are:
 Requires figuring out how to orchestrate VMs with Kubernetes (possibly using KubeVirt) or figuring out an entirely different orchestratorKubeVirt
 Has a performance overhead 
-WIll also require implementing tenant-side VM image management which is harder than container packaging/ management
+Will also require implementing tenant-side VM image management which is harder than container packaging/ management
 
 For this reason THIS IS ALSO LIKELY NOT THE BEST OPTION (at least not if we’re looking to get CC/ TEE support to market sooner than later)
 
@@ -119,7 +119,7 @@ This would (at least in theory) achieve all the objectives for the near term whi
 The ideal user experience should be one where Akash users (aka “tenants”) should barely notice any difference in the deployment experience, relative to what it is for regular (non confidential) deployments. When requesting bids, they should be able to select an option (in the UI, the CLI or API) and be able to get bids only from providers that are capable of executing the tenant container within a secure enclave.
 And once the deployment is done (container is running), the tenants should be able to make a set of simple, high level API calls from within the container to perform attestation, apply a policy and then seal an unseal subsequent requests for the duration of the container’s life.
 
-In order to achieve that, the following need to be done (this assumed that the prerequisites from the previous section are satisfied)
+In order to achieve that, the following need to be done (this assumes that the prerequisites from the previous section are satisfied)
 
 1. Changes to provider attributes to allow providers to advertise that they are TEE/ CCE capable. 
 

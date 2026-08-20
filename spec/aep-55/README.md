@@ -7,7 +7,7 @@ type: Standard
 category: Economics
 created: 2024-12-07
 updated: 2025-07-07
-superseeded-by: 76
+superseded-by: 76
 ---
 
 ## Motivation

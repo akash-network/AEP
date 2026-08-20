@@ -56,7 +56,7 @@ For the initial launch, we should focus on the bare essentials to expedite imple
 
 ### Stage 3: Additional Features
 
-All Phasse 3 enhancements should be considered secondary priorities after implementing more critical aspects of AKT 2.0.
+All Phase 3 enhancements should be considered secondary priorities after implementing more critical aspects of AKT 2.0.
 1. Implement atomic swap functionality:
    - Integrate at the account module level to potentially enable automatic burning in the future.
    - Incorporate at the tenant account level, allowing those who prefer to pay in USDC to avoid acquiring AKT solely for gas fees.

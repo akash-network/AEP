@@ -69,7 +69,7 @@ Some disadvantages are:
 
 ##### Budget & Distribution
 
-We propose allocating 40% of the Pilot budget that is approximately $3,500,000 with the following distribution (not final):
+We propose allocating 70% of the Pilot budget that is approximately $3,500,000 with the following distribution (not final):
 
 <table>
   <tr>
@@ -139,7 +139,7 @@ Some disadvantages are:
 
 #####  Budget & Distribution
 
-We propose allocating 40% of the Pilot budget which is approximately $750,000 with the following distribution (not final):
+We propose allocating 15% of the Pilot budget which is approximately $750,000 with the following distribution (not final):
 
 <table>
   <tr>
@@ -166,7 +166,7 @@ As AI models are evolving the GPU architecture and following suit. This model pr
 
 ##### Budget & Distribution
 
-We propose allocating 20% of the program budget, which is $750,000 and will be exclusively allocated to GPUs launched in 2024 or later. This will apply to both Nvidia and AMD GPUs. Some GPU models under consideration are Nvidia’s H200, B100, L40s, and AMD’s MI300 MI350. 
+We propose allocating 15% of the program budget, which is $750,000 and will be exclusively allocated to GPUs launched in 2024 or later. This will apply to both Nvidia and AMD GPUs. Some GPU models under consideration are Nvidia’s H200, B100, L40s, and AMD’s MI300 MI350. 
 
 Some advantages are:
 

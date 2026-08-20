@@ -115,7 +115,7 @@ State management is handled through a two-tier keeper system:
 
 #### Core Modules
 
-The marketplace functionality is implemented through six Akash-specific modules:
+The marketplace functionality is implemented through seven Akash-specific modules:
 
 1. **Deployment**: Manages workload deployment lifecycle  
 2. **Market**: Handles orders, bids, and leases  
@@ -173,8 +173,8 @@ The application implements the full ABCI lifecycle for block processing:
 
 #### Consensus Parameters
 
-- Block time: \~5 seconds  
-- Signed blocks window: 30,000 blocks (\~41 hours)  
+- Block time: \~6 seconds  
+- Signed blocks window: 30,000 blocks (\~50 hours)  
 - Minimum liveness: 5%  
 - Double sign slashing: 5%  
 - Downtime slashing: 0%

@@ -1,7 +1,7 @@
 ---
 aep: 62
 title: "Provider Console - Node Manager"
-author: Anil Murty (@anilmurty) Jigar Patel (@jigar-arc10) Deval Patel (devalpatel67)
+author: Anil Murty (@anilmurty) Jigar Patel (@jigar-arc10) Deval Patel (@devalpatel67)
 status: Final
 type: Standard
 category: Interface
@@ -24,7 +24,7 @@ With Akash Provider Console now generally available and new and existing provide
 ## Feature Requirements
 
 The scope of the work under this AEP will include 3 things:
-- A new "Node Management" page and side menu item that lets the provider user visualize key details of indvidual nodes of the specific provider they are connected to, including actions to add or remove nodes.
+- A new "Node Management" page and side menu item that lets the provider user visualize key details of individual nodes of the specific provider they are connected to, including actions to add or remove nodes.
 - A set of onboarding steps in the UI to add (onboard) more nodes on to the provider, starting from the "Node Management" page
 
 ## Design

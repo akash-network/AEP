@@ -21,7 +21,7 @@ Reduce the attack footprint and improve maintainability by using audited and bat
 
 ## Rationale
 
-The Akash blockchain development began in 2017 on an older version of Tendermint that proved to unscalable. 
+The Akash blockchain development began in 2017 on an older version of Tendermint that proved to be unscalable. 
 
 By migrating to Cosmos SDK, we believe Akash can solve the scalability issues and leverage an extensive set of prebuilt modules and audited and battle-tested.
 
