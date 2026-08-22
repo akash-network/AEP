@@ -459,13 +459,15 @@
   {
     "aep": 43,
     "title": "Workload Utilization Metrics",
-    "author": "Anil Murty (@anilmurty) Artur Troian (@troian)",
+    "description": "Per-lease workload utilization metrics surfaced by every provider and aggregated by clients for a unified multi-provider view across the Akash Network.",
+    "author": "Maxime Beauchamp (@baktun14) Anil Murty (@anilmurty) Artur Troian (@troian)",
     "status": "Draft",
     "type": "Standard",
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
-    "updated": "2025-07-30T00:00:00.000Z",
+    "updated": "2026-05-11T00:00:00.000Z",
     "estimated-completion": "2026-07-15T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
     "roadmap": "minor"
   },
   {
