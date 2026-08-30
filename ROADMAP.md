@@ -45,7 +45,6 @@
 | [60](spec/aep-60) | Akash HomeNode - MVP | 2026-04-30 | Major |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2026-05-15 | Minor |
 | [29](spec/aep-29) | Hardware Verification using Trusted Execution | 2026-05-30 | Major |
-| [59](spec/aep-59) | Provider Notifications | 2026-05-31 | Major |
 | [73](spec/aep-73) | Console - New Product Announcement feature | 2026-05-31 | Minor |
 | [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | 2026-05-31 | Major |
 | [82](spec/aep-82) | Resource Reclamation | 2026-06-11 | Major |
