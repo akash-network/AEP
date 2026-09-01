@@ -770,12 +770,12 @@
     "aep": 67,
     "title": "Console Bid Screening",
     "author": "Anil Murty (@anilmurty) Maxime Beauchamp (@baktun14) Serhii Stotskyi (@stalniy)",
-    "status": "Last Call",
+    "status": "Final",
     "type": "Standard",
     "category": "Core",
     "created": "2025-05-16T00:00:00.000Z",
     "updated": "2026-06-09T00:00:00.000Z",
-    "estimated-completion": "2026-08-31T00:00:00.000Z",
+    "completed": "2026-07-17T00:00:00.000Z",
     "roadmap": "major"
   },
   {

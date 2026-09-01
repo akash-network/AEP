@@ -52,6 +52,7 @@
 | [50](spec/aep-50) | Secrets Management | 2026-06-30 | Minor |
 | [66](spec/aep-66) | Custom Domain Certificates | 2026-06-30 | Major |
 | [43](spec/aep-43) | Workload Utilization Metrics | 2026-07-15 | Minor |
+| [67](spec/aep-67) | Console Bid Screening | 2026-07-17 | Major |
 | [83](spec/aep-83) | Confidential Compute via Kata Containers | 2026-07-17 | Major |
 | [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | 2026-07-21 | Major |
 | [48](spec/aep-48) | Private Overlay Networking | 2026-07-30 | Major |
@@ -63,7 +64,6 @@
 | [49](spec/aep-49) | Virtual Machines | 2026-08-30 | Major |
 | [52](spec/aep-52) | Rollover Provider | 2026-08-30 | Minor |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2026-08-31 | Minor |
-| [67](spec/aep-67) | Console Bid Screening | 2026-08-31 | Major |
 | [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | 2026-09-30 | Major |
 | [44](spec/aep-44) | Reserved Instances | 2026-10-31 | Minor |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-11-15 | Minor |
