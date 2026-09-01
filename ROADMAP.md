@@ -47,13 +47,13 @@
 | [29](spec/aep-29) | Hardware Verification using Trusted Execution | 2026-05-30 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2026-05-31 | Major |
 | [73](spec/aep-73) | Console - New Product Announcement feature | 2026-05-31 | Minor |
-| [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | 2026-05-31 | Major |
 | [82](spec/aep-82) | Resource Reclamation | 2026-06-11 | Major |
 | [40](spec/aep-40) | Continuous Provider Audits | 2026-06-15 | Minor |
 | [50](spec/aep-50) | Secrets Management | 2026-06-30 | Minor |
 | [66](spec/aep-66) | Custom Domain Certificates | 2026-06-30 | Major |
 | [43](spec/aep-43) | Workload Utilization Metrics | 2026-07-15 | Minor |
 | [83](spec/aep-83) | Confidential Compute via Kata Containers | 2026-07-17 | Major |
+| [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | 2026-07-21 | Major |
 | [48](spec/aep-48) | Private Overlay Networking | 2026-07-30 | Major |
 | [41](spec/aep-41) | Standard Provider Attributes | 2026-07-31 | Minor |
 | [51](spec/aep-51) | Lease Change Request | 2026-07-31 | Minor |

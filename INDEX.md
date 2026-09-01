@@ -56,7 +56,7 @@
 | [54](spec/aep-54) | NextGen AMD GPU support | Draft | Standard/Core | 2024-01-05 |  | 2026-12-15 |
 | [55](spec/aep-55) | Buy Back and Burn AKT | Draft | Standard/Economics | 2024-12-07 |  |  |
 | [56](spec/aep-56) | Chain SDK | Final | Standard/Interface | 2025-01-10 | 2025-10-30 |  |
-| [57](spec/aep-57) | Automatic Escrow Top Up | Draft | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
+| [57](spec/aep-57) | Automatic Escrow Top Up | Final | Standard/Interface | 2024-01-05 | 2025-01-30 |  |
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2026-07-31 |
 | [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2026-05-31 |
 | [60](spec/aep-60) | Akash HomeNode - MVP | Final | Meta | 2024-12-01 | 2026-04-30 |  |
@@ -67,13 +67,13 @@
 | [65](spec/aep-65) | Confidential Computing | Draft | Standard/Core | 2025-05-14 |  | 2026-07-31 |
 | [66](spec/aep-66) | Custom Domain Certificates | Draft | Standard/Core | 2025-05-13 |  | 2026-06-30 |
 | [67](spec/aep-67) | Console Bid Screening | Last Call | Standard/Core | 2025-05-16 |  | 2026-08-31 |
-| [68](spec/aep-68) | Console - Billing & Usage | Draft | Standard/Interface | 2025-05-20 | 2025-07-31 |  |
-| [69](spec/aep-69) | Provider Console API - v1 | Draft | Standard/Interface | 2025-05-22 | 2025-07-25 |  |
-| [70](spec/aep-70) | Console API using JWT | draft | Standard/Interface | 2025-05-28 | 2025-08-30 |  |
+| [68](spec/aep-68) | Console - Billing & Usage | Final | Standard/Interface | 2025-05-20 | 2025-07-31 |  |
+| [69](spec/aep-69) | Provider Console API - v1 | Final | Standard/Interface | 2025-05-22 | 2025-07-25 |  |
+| [70](spec/aep-70) | Console API using JWT | Final | Standard/Interface | 2025-05-28 | 2025-08-30 |  |
 | [71](spec/aep-71) | Deployment Closure Alert in Console | Final | Standard/Interface | 2025-07-30 | 2025-07-17 |  |
 | [72](spec/aep-72) | Console - Improved User Onboarding | Final | Standard/Interface | 2025-07-31 | 2025-11-07 |  |
 | [73](spec/aep-73) | Console - New Product Announcement feature | Draft | Standard/Interface | 2025-07-31 |  | 2026-05-31 |
-| [74](spec/aep-74) | Console - Auto Credit Reload | Draft | Standard/Interface | 2025-07-31 | 2025-12-31 |  |
+| [74](spec/aep-74) | Console - Auto Credit Reload | Final | Standard/Interface | 2025-07-31 | 2025-12-31 |  |
 | [75](spec/aep-75) | Multi-depositor escrow account | Final | Standard/Core | 2025-08-18 | 2025-08-30 |  |
 | [76](spec/aep-76) | Burn Mint Equilibrium On Akash | Final | Standard/Economics | 2025-09-21 | 2026-03-23 |  |
 | [78](spec/aep-78) | Enable CosmWasm Smart Contracts on Akash Network | Final | Standard/Core | 2025-11-14 | 2026-03-23 |  |
@@ -82,7 +82,7 @@
 | [81](spec/aep-81) | Pyth Price feed Integration | Final | Standard/Core | 2026-03-06 | 2026-03-23 |  |
 | [82](spec/aep-82) | Resource Reclamation | Final (core) | Standard/Core | 2026-04-22 | 2026-06-11 |  |
 | [83](spec/aep-83) | Confidential Compute via Kata Containers | Final | Standard/Core | 2026-04-14 | 2026-07-17 |  |
-| [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | Final | Standard/Interface | 2026-04-24 |  | 2026-05-31 |
+| [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | Final | Standard/Interface | 2026-04-24 | 2026-07-21 |  |
 | [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | Draft | Standard/Interface | 2026-04-24 |  | 2026-09-30 |
 | [86](spec/aep-86) | Provider Verifications | Draft | Standard/Core | 2026-04-04 |  |  |
 | [88](spec/aep-88) | Pyth Router-Based Price Feed Contracts | Draft | Standard/Core | 2026-08-17 |  |  |
