@@ -87,3 +87,4 @@
 | [86](spec/aep-86) | Provider Verifications | Draft | Standard/Core | 2026-04-04 |  |  |
 | [88](spec/aep-88) | Pyth Router-Based Price Feed Contracts | Draft | Standard/Core | 2026-08-17 |  |  |
 | [89](spec/aep-89) | Unified Akash Command-Line Interface | Draft | Standard/Interface | 2026-08-14 |  |  |
+| [90](spec/aep-90) | CPU Architecture Awareness in Bid Matching | Draft | Standard/Core | 2026-09-03 |  |  |
