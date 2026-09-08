@@ -659,18 +659,6 @@
     "roadmap": "minor"
   },
   {
-    "aep": 59,
-    "title": "Provider Notifications",
-    "author": "Anil Murty (@anilmurty)",
-    "status": "Draft",
-    "type": "Standard",
-    "category": "Interface",
-    "created": "2024-01-05T00:00:00.000Z",
-    "updated": "2025-07-30T00:00:00.000Z",
-    "estimated-completion": "2026-05-31T00:00:00.000Z",
-    "roadmap": "major"
-  },
-  {
     "aep": 6,
     "title": "Cosmos SDK Migration",
     "author": "Adam Bozanich (@boz)",
