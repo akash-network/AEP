@@ -1080,5 +1080,18 @@
     "created": "2020-03-09T00:00:00.000Z",
     "completed": "2021-02-17T00:00:00.000Z",
     "roadmap": "minor"
+  },
+  {
+    "aep": 95,
+    "title": "GPU Interconnect (Multi-Node RDMA)",
+    "description": "One SDL attribute for RDMA-connected multi-node GPU workloads plus how providers advertise and schedule InfiniBand and RoCE fabrics and wire pods onto them",
+    "author": "Zeke Ezagui (@zblocker64)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2026-09-04T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
+    "roadmap": "major",
+    "requires": 24
   }
 ]
