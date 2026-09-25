@@ -2,7 +2,7 @@
 aep: 96
 title: "Console: Redesign v2"
 description: "Rebuild Akash Console around a top navigation, one Configure flow for every new deployment, a card-based deployments list and a deployment page that leads with status, endpoints and cost"
-author: Maxime Beauchamp (@baktun14)
+author: Maxime Beauchamp (@baktun14) Josh Meyer
 status: Draft
 type: Standard
 category: Interface
