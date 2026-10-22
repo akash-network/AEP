@@ -66,6 +66,7 @@
 | [45](spec/aep-45) | Offchain Compute Inventory | 2026-08-31 | Minor |
 | [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | 2026-09-30 | Major |
 | [91](spec/aep-91) | Console: Escrow Abstraction and Auto-Funding | 2026-09-30 | Major |
+| [89](spec/aep-89) | Unified Akash Command-Line Interface | 2026-10-08 | Major |
 | [44](spec/aep-44) | Reserved Instances | 2026-10-31 | Minor |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-11-15 | Minor |
 | [11](spec/aep-11) | Managed Services Market | 2026-12-15 | Major |

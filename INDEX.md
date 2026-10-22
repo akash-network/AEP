@@ -86,7 +86,7 @@
 | [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | Draft | Standard/Interface | 2026-04-24 |  | 2026-09-30 |
 | [86](spec/aep-86) | Provider Verifications | Draft | Standard/Core | 2026-04-04 |  |  |
 | [88](spec/aep-88) | Pyth Router-Based Price Feed Contracts | Draft | Standard/Core | 2026-08-17 |  |  |
-| [89](spec/aep-89) | Unified Akash Command-Line Interface | Draft | Standard/Interface | 2026-08-14 |  |  |
+| [89](spec/aep-89) | Unified Akash Command-Line Interface | Final (Core) | Standard/Interface | 2026-08-14 | 2026-10-08 |  |
 | [90](spec/aep-90) | Compute Offers | Draft | Standard/Core | 2026-08-24 |  |  |
 | [91](spec/aep-91) | Console: Escrow Abstraction and Auto-Funding | Draft | Standard/Interface | 2026-09-04 |  | 2026-09-30 |
 | [92](spec/aep-92) | Console: Data Persistence and Secrets | Draft | Standard/Interface | 2026-09-04 |  | 2026-12-31 |
