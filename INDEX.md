@@ -87,3 +87,8 @@
 | [86](spec/aep-86) | Provider Verifications | Draft | Standard/Core | 2026-04-04 |  |  |
 | [88](spec/aep-88) | Pyth Router-Based Price Feed Contracts | Draft | Standard/Core | 2026-08-17 |  |  |
 | [89](spec/aep-89) | Unified Akash Command-Line Interface | Draft | Standard/Interface | 2026-08-14 |  |  |
+| [90](spec/aep-90) | Compute Offers | Draft | Standard/Core | 2026-08-24 |  |  |
+| [91](spec/aep-91) | Console: Escrow Abstraction and Auto-Funding | Draft | Standard/Interface | 2026-09-04 |  | 2026-09-30 |
+| [92](spec/aep-92) | Console: Data Persistence and Secrets | Draft | Standard/Interface | 2026-09-04 |  | 2026-12-31 |
+| [93](spec/aep-93) | Console: Async Actions & Notification Center | Draft | Standard/Interface | 2026-09-04 |  | 2026-12-31 |
+| [94](spec/aep-94) | Console: Organizations and Projects | Draft | Standard/Interface | 2026-09-04 |  | 2027-03-31 |
