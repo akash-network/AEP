@@ -1059,10 +1059,11 @@
     "title": "Unified Akash Command-Line Interface",
     "description": "Establish akt as the single user-facing CLI and separate command ownership from daemon and library repositories",
     "author": "Joseph Chalabi (@chalabi2) Artur Troian (@troian)",
-    "status": "Draft",
+    "status": "Final (Core)",
     "type": "Standard",
     "category": "Interface",
     "created": "2026-08-14T00:00:00.000Z",
+    "completed": "2026-10-08T00:00:00.000Z",
     "discussions-to": "https://github.com/orgs/akash-network/discussions",
     "roadmap": "major",
     "requires": [
