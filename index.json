@@ -1080,5 +1080,105 @@
     "created": "2020-03-09T00:00:00.000Z",
     "completed": "2021-02-17T00:00:00.000Z",
     "roadmap": "minor"
+  },
+  {
+    "aep": 90,
+    "title": "Compute Offers",
+    "description": [
+      "On-chain primitives for providers to offer resources for lease over a future",
+      "wall-clock-dated term at a locked price",
+      "and for tenants to publish the demand they want answered"
+    ],
+    "author": "Artur Troian (@troian)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Core",
+    "created": "2026-08-24T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
+    "roadmap": "major"
+  },
+  {
+    "aep": 91,
+    "title": "Console: Escrow Abstraction and Auto-Funding",
+    "description": [
+      "Hide on-chain escrow from managed-wallet users: always-on deployment funding",
+      "optional runtime limits",
+      "threshold-based credit reload and one account-level balance view"
+    ],
+    "author": "Maxime Beauchamp (@baktun14)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2026-09-04T00:00:00.000Z",
+    "estimated-completion": "2026-09-30T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
+    "roadmap": "major",
+    "requires": [
+      "74",
+      "75"
+    ],
+    "replaces": [
+      "33",
+      "57"
+    ]
+  },
+  {
+    "aep": 92,
+    "title": "Console: Data Persistence and Secrets",
+    "description": "Move per-user data from browser storage into the Console database and store deployment secrets sealed under a KMS-backed key hierarchy",
+    "author": "Maxime Beauchamp (@baktun14) Serhii Stotskyi (@stalniy)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2026-09-04T00:00:00.000Z",
+    "estimated-completion": "2026-12-31T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
+    "roadmap": "major",
+    "requires": [
+      "63",
+      "84"
+    ]
+  },
+  {
+    "aep": 93,
+    "title": "Console: Async Actions & Notification Center",
+    "description": [
+      "Run blockchain actions as persistent server-side jobs and show their progress",
+      "together with alerts",
+      "in an in-app notification center instead of a blocking modal"
+    ],
+    "author": "Maxime Beauchamp (@baktun14)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2026-09-04T00:00:00.000Z",
+    "estimated-completion": "2026-12-31T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
+    "roadmap": "minor",
+    "requires": [
+      "63",
+      "84"
+    ]
+  },
+  {
+    "aep": 94,
+    "title": "Console: Organizations and Projects",
+    "description": [
+      "Organization-owned billing and managed wallet",
+      "with projects as the grouping and permission boundary for shared team workloads"
+    ],
+    "author": "Maxime Beauchamp (@baktun14)",
+    "status": "Draft",
+    "type": "Standard",
+    "category": "Interface",
+    "created": "2026-09-04T00:00:00.000Z",
+    "estimated-completion": "2027-03-31T00:00:00.000Z",
+    "discussions-to": "https://github.com/orgs/akash-network/discussions",
+    "roadmap": "major",
+    "requires": [
+      "63",
+      "68",
+      "84"
+    ]
   }
 ]
