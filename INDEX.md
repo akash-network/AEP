@@ -92,3 +92,4 @@
 | [92](spec/aep-92) | Console: Data Persistence and Secrets | Draft | Standard/Interface | 2026-09-04 |  | 2026-12-31 |
 | [93](spec/aep-93) | Console: Async Actions & Notification Center | Draft | Standard/Interface | 2026-09-04 |  | 2026-12-31 |
 | [94](spec/aep-94) | Console: Organizations and Projects | Draft | Standard/Interface | 2026-09-04 |  | 2027-03-31 |
+| [95](spec/aep-95) | One-Way AKT Sink to Solana | Draft | Standard/Core | 2026-10-27 |  |  |
