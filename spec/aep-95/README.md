@@ -56,8 +56,8 @@ Out of scope: emissions, staking or governance on Solana, the future of the Akas
 | Term              | Meaning                                                                                                                                                                         |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `x/sink`          | New Akash module. Accepts deposits, locks AKT, stores transfer records and void orders, counts reporter votes and pays refunds.                                                 |
-| Transfer record   | The 77-byte value at `transfer/{id}` in the `sink` store. Written once at deposit and never changed.                                                                            |
-| Void order        | The 9-byte value at `void/{id}`, written by governance. Proving it on Solana voids that transfer.                                                                               |
+| Transfer record   | The 77-byte value under the transfer's key in the `sink` store. Written once at deposit and never changed.                                                                      |
+| Void order        | The 9-byte value under the transfer's void key, written by governance. Proving it on Solana voids that transfer.                                                                |
 | AKT program       | The Solana program that holds the AKT mint authority. It mints only against proven transfer records.                                                                            |
 | Light client      | A dedicated deployment of the ICS07 Tendermint client from `cosmos/ibc-contracts`. It stores verified Akash headers on Solana and checks ICS23 proofs against their app hashes. |
 | Relayer           | Off-chain service that uploads Akash headers to the light client and submits proofs to the AKT program. It has no authority over funds. Anyone can run one.                     |
@@ -104,10 +104,10 @@ sequenceDiagram
     participant P as Reporters
 
     U->>S: MsgSink {dest, amount}
-    S->>S: check, lock AKT, write transfer/{id}
+    S->>S: check, lock AKT, write transfer record
     R->>LC: upload signed Akash headers
     R->>M: mint_transfer(record, proof_height) with ICS23 proof
-    M->>LC: verify_membership(sink, transfer/{id}, record)
+    M->>LC: verify_membership(sink, transfer key, record)
     alt recipient can hold AKT
         M->>M: mint to recipient ATA, status Minted
     else recipient cannot hold AKT
@@ -130,14 +130,14 @@ A cap, pause or light-client error leaves no status on Solana, so the relayer re
 
 #### Store
 
-| Key                                | Value                   | Written by                                            | Notes                                      |
-| ---------------------------------- | ----------------------- | ----------------------------------------------------- | ------------------------------------------ |
-| `transfer/{id}`                    | 77-byte record          | `MsgSink`                                             | Proven on Solana. Never changed or deleted |
-| `void/{id}`                        | 9 bytes                 | `MsgRequestVoid`                                      | Proven on Solana                           |
-| `settlement/{id}`                  | `Settlement` (protobuf) | Reporters and governance                              | Bookkeeping only, never proven             |
-| `open/{id}` (8-byte big-endian ID) | `0x01`                  | Added at deposit, removed at the first mint or refund | Index behind `OpenTransfers`               |
+| Key              | Value                   | Written by                                            | Notes                                      |
+| ---------------- | ----------------------- | ----------------------------------------------------- | ------------------------------------------ |
+| `0x02 0x00` + ID | 77-byte record          | `MsgSink`                                             | Proven on Solana. Never changed or deleted |
+| `0x02 0x01` + ID | 9 bytes                 | `MsgRequestVoid`                                      | Proven on Solana                           |
+| `0x03 0x00` + ID | `Settlement` (protobuf) | Reporters and governance                              | Bookkeeping only, never proven             |
+| `0x03 0x01` + ID | Empty                   | Added at deposit, removed at the first mint or refund | Index behind `OpenTransfers`               |
 
-`{id}` in `transfer/` and `void/` is the decimal ID with no leading zeros. IDs start at 1, increase by one and are never reused. The store name `sink` and these two keys are part of the proof format: changing them breaks every Solana proof. Parameters, totals and per-sender usage are stored under separate keys that Solana never reads.
+The module keeps its state in Cosmos SDK collections. Each key above is a two-byte prefix followed by the ID as an 8-byte big-endian integer, so these keys are 10 bytes long and sort in ID order. For ID 1 the transfer key is `02 00 00 00 00 00 00 00 00 01`. Keys hold the ID big-endian; the record and the void order hold it little-endian. IDs start at 1, increase by one and are never reused. The store name `sink` and the transfer and void keys are part of the proof format: changing them breaks every Solana proof. Parameters, totals, per-sender usage and the refund queue are stored under other prefixes that Solana never reads.
 
 **Transfer record.** 77 bytes, integers little-endian, no length prefixes.
 
@@ -152,7 +152,7 @@ A cap, pause or light-client error leaves no status on Solana, so the relayer re
 
 **Void order.** 9 bytes: version `1`, then the transfer ID as a little-endian u64.
 
-**Proofs.** The proof path has two parts, the store name `sink` and the key. The proof is a protobuf `ibc.core.commitment.v1.MerkleProof` (IAVL proof, then multistore proof), fetched with the ABCI query `/store/sink/key` and `prove=true`. State committed at height H is proven against the app hash in header H+1.
+**Proofs.** The proof path has two parts: the store name `sink` and the 10-byte transfer or void key. The proof is a protobuf `ibc.core.commitment.v1.MerkleProof` (IAVL proof, then multistore proof), fetched with the ABCI query `/store/sink/key` and `prove=true`. State committed at height H is proven against the app hash in header H+1.
 
 #### Deposit: `MsgSink`
 
@@ -167,7 +167,7 @@ A deposit must meet all of these conditions. Otherwise, the transaction fails wi
 - `amount` is positive, in `uakt`, at least `min_transfer`, and no greater than either `solana_daily_mint_cap` or `max_transfer`. Each sender is limited to `max_daily_per_account` deposits per UTC day and `max_pending_per_account` open transfers.
 - If `max_daily_amount_per_account` is set, the sender's total for the UTC day, including this deposit, stays within it.
 
-On success, the module moves `amount` from the sender to the sink account, assigns the next ID, writes `transfer/{id}`, starts a pending settlement, adds the open-index entry and emits `sink_deposit`. The response includes the transfer ID.
+On success, the module moves `amount` from the sender to the sink account, assigns the next ID, writes the transfer record, starts a pending settlement, adds the open-index entry and emits `sink_deposit`. The response includes the transfer ID.
 
 The sink account is a blocked bank address. `MsgSend`, `MsgMultiSend` and contract sends to it fail, and it cannot be a distribution withdraw address. The memo is ignored. The user pays only the normal Akash transaction fee.
 
@@ -211,7 +211,7 @@ It pays exactly the recorded amount to the recorded sender, marks the transfer R
 
 **Governance.**
 
-- `MsgRequestVoid { authority, id }` writes `void/{id}` for a transfer that is not Minted or Refunded (`sink_void_order`). It moves no funds. A refund still requires proof of the void on Solana and confirmation by reporters.
+- `MsgRequestVoid { authority, id }` writes a void order for a transfer that is not Minted or Refunded (`sink_void_order`). It moves no funds. A refund still requires proof of the void on Solana and confirmation by reporters.
 - `MsgResolveTransfer { authority, id, decision, observation, reason }` resolves a hold or stalled vote. `RESTART` returns the transfer to pending. `CONFIRM_MINT` and `CONFIRM_VOID` require a matching observation. `CONFIRM_VOID` starts a new challenge window and leaves any refund subject to the refund switch and cap. A Minted or Refunded transfer cannot change. Every decision starts a new round and clears the votes and the hold (`sink_resolved`).
 - `MsgUpdateParams { authority, params }` replaces the whole parameter set. It is the only way to turn deposits or refunds on, or to set the guardian.
 
@@ -353,14 +353,14 @@ The mint policy has `per_transfer_max`, `daily_mint_cap` and up to 16 `vaults`, 
 | `guardian_pause`                                            | Pause guardian               | Turns minting off. It can never turn it on                                                                      |
 | `repin_light_client(chain_id)`                              | Upgrade authority, any time  | Pins another active ICS07 deployment without reading the old client, so a broken client cannot block the change |
 | `create_proof_buffer`, `append_proof`, `close_proof_buffer` | Anyone, for their own buffer | Upload a proof in chunks and reclaim the rent afterwards                                                        |
-| `mint_transfer(record, proof_height)`                       | Anyone                       | Proves `transfer/{id}`, then mints or voids                                                                     |
-| `void_transfer(id, proof_height)`                           | Anyone                       | Proves `void/{id}`, then voids                                                                                  |
+| `mint_transfer(record, proof_height)`                       | Anyone                       | Proves the transfer record, then mints or voids                                                                 |
+| `void_transfer(id, proof_height)`                           | Anyone                       | Proves the void order, then voids                                                                               |
 
 **`mint_transfer`**
 
 1. It must be a top-level instruction, and only ComputeBudget instructions may come before it in the transaction. This keeps the `TransferResolved` event visible to reporters. Minting must be enabled.
 2. It checks that the pinned light client uses the expected program and PDAs, matches the chain ID, and is not frozen. The latest consensus state must be within the trusting period, with a timestamp no later than the clock plus the allowed drift. `proof_height` must have a stored consensus state at or below the latest height, and the record's height must be between 1 and `proof_height`.
-3. It builds the path `["sink", "transfer/{id}"]` and the 77-byte value from the record, and calls `verify_membership` on the pinned client with the uploaded proof.
+3. It builds the path (`sink`, then the transfer key for the record's ID) and the 77-byte value from the record, and calls `verify_membership` on the pinned client with the uploaded proof.
 4. It checks the recipient. A nonzero on-curve key owned by the System Program passes, whether or not the account exists. So does a key in `vaults`. Executables, token-program accounts, the zero key and the mint-authority PDA never pass, even if listed. A recipient whose existing AKT token account has been reassigned to another owner does not pass.
 5. If the recipient fails, it writes `Voided / InvalidRecipient`. Nothing is minted and no token account is created.
 6. If the recipient passes, it checks `amount <= per_transfer_max` and that the day's total stays within `daily_mint_cap`, creates the recipient's associated token account if needed, mints `amount` and writes `Minted`.
@@ -368,7 +368,7 @@ The mint policy has `per_transfer_max`, `daily_mint_cap` and up to 16 `vaults`, 
 
 If a cap, pause, light-client error or invalid proof causes the transaction to fail, nothing is written and the record can be retried.
 
-**`void_transfer`** proves `void/{id}` equals `[1, id]` with the same light-client checks and writes `Voided / Governance`. It works while minting is paused and fails if the record already has a status.
+**`void_transfer`** proves that the void key for `id` holds `[1, id]` with the same light-client checks and writes `Voided / Governance`. It works while minting is paused and fails if the record already has a status.
 
 Mint and void create the same `TransferStatus` account, so each record ID is resolved once: minted or voided, never both. A status cannot be closed or reset, including through re-pinning.
 
