@@ -37,21 +37,21 @@
 | [74](spec/aep-74) | Console - Auto Credit Reload | 2025-12-31 | Minor |
 | [34](spec/aep-34) | Workload Log Forwarding via Akash Console | 2026-02-28 | Minor |
 | [37](spec/aep-37) | Lease control API via GRPC | 2026-02-28 | Minor |
-| [39](spec/aep-39) | Lease Termination Reasons | 2026-03-15 | Minor |
 | [76](spec/aep-76) | Burn Mint Equilibrium On Akash | 2026-03-23 | Major |
 | [78](spec/aep-78) | Enable CosmWasm Smart Contracts on Akash Network | 2026-03-23 | Major |
 | [80](spec/aep-80) | On-Chain Oracle Module | 2026-03-23 | Major |
 | [81](spec/aep-81) | Pyth Price feed Integration | 2026-03-23 | Major |
 | [60](spec/aep-60) | Akash HomeNode - MVP | 2026-04-30 | Major |
 | [35](spec/aep-35) | Realtime Pricing In Akash Console | 2026-05-15 | Minor |
-| [29](spec/aep-29) | Hardware Verification using Trusted Execution | 2026-05-30 | Major |
 | [59](spec/aep-59) | Provider Notifications | 2026-05-31 | Major |
 | [73](spec/aep-73) | Console - New Product Announcement feature | 2026-05-31 | Minor |
+| [39](spec/aep-39) | Lease Termination Reasons | 2026-06-10 | Minor |
 | [82](spec/aep-82) | Resource Reclamation | 2026-06-11 | Major |
 | [40](spec/aep-40) | Continuous Provider Audits | 2026-06-15 | Minor |
 | [50](spec/aep-50) | Secrets Management | 2026-06-30 | Minor |
 | [66](spec/aep-66) | Custom Domain Certificates | 2026-06-30 | Major |
 | [43](spec/aep-43) | Workload Utilization Metrics | 2026-07-15 | Minor |
+| [29](spec/aep-29) | Hardware Verification using Trusted Execution | 2026-07-17 | Major |
 | [67](spec/aep-67) | Console Bid Screening | 2026-07-17 | Major |
 | [83](spec/aep-83) | Confidential Compute via Kata Containers | 2026-07-17 | Major |
 | [84](spec/aep-84) | Console Split: Managed Platform and Self-Custodial Air | 2026-07-21 | Major |
@@ -64,9 +64,11 @@
 | [49](spec/aep-49) | Virtual Machines | 2026-08-30 | Major |
 | [52](spec/aep-52) | Rollover Provider | 2026-08-30 | Minor |
 | [45](spec/aep-45) | Offchain Compute Inventory | 2026-08-31 | Minor |
+| [91](spec/aep-91) | Console: Escrow Abstraction and Auto-Funding | 2026-09-09 | Major |
 | [85](spec/aep-85) | Console: Buildpacks-Powered Deployments | 2026-09-30 | Major |
-| [91](spec/aep-91) | Console: Escrow Abstraction and Auto-Funding | 2026-09-30 | Major |
 | [89](spec/aep-89) | Unified Akash Command-Line Interface | 2026-10-08 | Major |
+| [94](spec/aep-94) | Console: Organizations and Projects | 2026-10-27 | Major |
+| [93](spec/aep-93) | Console: Async Actions & Notification Center | 2026-10-28 | Minor |
 | [44](spec/aep-44) | Reserved Instances | 2026-10-31 | Minor |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-11-15 | Minor |
 | [11](spec/aep-11) | Managed Services Market | 2026-12-15 | Major |
@@ -77,5 +79,3 @@
 | [53](spec/aep-53) | Onchain Provider Incentives | 2026-12-31 | Major |
 | [79](spec/aep-79) | Akash on Shared Security | 2026-12-31 | Major |
 | [92](spec/aep-92) | Console: Data Persistence and Secrets | 2026-12-31 | Major |
-| [93](spec/aep-93) | Console: Async Actions & Notification Center | 2026-12-31 | Minor |
-| [94](spec/aep-94) | Console: Organizations and Projects | 2027-03-31 | Major |
