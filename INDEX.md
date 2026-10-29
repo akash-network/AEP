@@ -28,7 +28,7 @@
 | [26](spec/aep-26) | Provider Incentives Pilot (PIP) | Final | Meta | 2024-01-08 | 2024-02-09 |  |
 | [27](spec/aep-27) | Opensource Praetor with a Merger | Final | Meta | 2024-03-28 | 2024-04-12 |  |
 | [28](spec/aep-28) | Auto Deployment from VCS | Final | Standard/Interface | 2024-05-01 | 2024-11-04 |  |
-| [29](spec/aep-29) | Hardware Verification using Trusted Execution | Final | Standard/Core | 2024-06-27 |  | 2026-05-30 |
+| [29](spec/aep-29) | Hardware Verification using Trusted Execution | Final | Standard/Core | 2024-06-27 | 2026-07-17 |  |
 | [30](spec/aep-30) | Cosmos SDK v0.53 Migration | Final | Standard/Core | 2024-08-29 | 2025-10-28 |  |
 | [31](spec/aep-31) | Credit Card Payments In Console | Final | Standard/Interface | 2024-08-29 | 2024-11-04 |  |
 | [32](spec/aep-32) | Akash Provider Console 1.0 | Final | Standard/Interface | 2024-12-01 | 2025-02-18 |  |
@@ -38,7 +38,7 @@
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | Draft | Standard/Interface | 2024-12-01 |  | 2026-11-15 |
 | [37](spec/aep-37) | Lease control API via GRPC | Draft | Standard/Core | 2024-12-01 |  | 2026-02-28 |
 | [38](spec/aep-38) | Provider Content Moderation | Draft | Standard/Interface | 2024-12-01 |  | 2026-12-31 |
-| [39](spec/aep-39) | Lease Termination Reasons | Draft | Standard/Interface | 2024-12-01 |  | 2026-03-15 |
+| [39](spec/aep-39) | Lease Termination Reasons | Final | Standard/Interface | 2024-12-01 | 2026-06-10 |  |
 | [40](spec/aep-40) | Continuous Provider Audits | Draft | Standard/Interface | 2024-12-01 |  | 2026-06-15 |
 | [41](spec/aep-41) | Standard Provider Attributes | Draft | Standard/Interface | 2024-12-01 |  | 2026-07-31 |
 | [42](spec/aep-42) | Workload Logs on Decentralized Storage | Draft | Standard/Interface | 2024-12-01 |  | 2026-12-31 |
@@ -60,7 +60,7 @@
 | [58](spec/aep-58) | Per Node Resources in Console | Draft | Standard/Interface | 2024-01-05 |  | 2026-07-31 |
 | [59](spec/aep-59) | Provider Notifications | Draft | Standard/Interface | 2024-01-05 |  | 2026-05-31 |
 | [60](spec/aep-60) | Akash HomeNode - MVP | Final | Meta | 2024-12-01 | 2026-04-30 |  |
-| [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | Last Call | Standard/Core | 2025-01-30 | 2025-03-12 |  |
+| [61](spec/aep-61) | Enhanced Read Performance Onchain Queries | Final | Standard/Core | 2025-01-30 | 2025-03-12 |  |
 | [62](spec/aep-62) | Provider Console - Node Manager | Final | Standard/Interface | 2024-03-15 | 2025-04-17 |  |
 | [63](spec/aep-63) | Console API for Managed Wallet Users - v1 | Final | Standard/Interface | 2024-03-14 | 2025-05-28 |  |
 | [64](spec/aep-64) | JWT Authentication for Provider API | Final | Standard/Core | 2025-04-03 | 2025-10-28 |  |
@@ -88,8 +88,8 @@
 | [88](spec/aep-88) | Pyth Router-Based Price Feed Contracts | Draft | Standard/Core | 2026-08-17 |  |  |
 | [89](spec/aep-89) | Unified Akash Command-Line Interface | Final (Core) | Standard/Interface | 2026-08-14 | 2026-10-08 |  |
 | [90](spec/aep-90) | Compute Offers | Draft | Standard/Core | 2026-08-24 |  |  |
-| [91](spec/aep-91) | Console: Escrow Abstraction and Auto-Funding | Draft | Standard/Interface | 2026-09-04 |  | 2026-09-30 |
+| [91](spec/aep-91) | Console: Escrow Abstraction and Auto-Funding | Final | Standard/Interface | 2026-09-04 | 2026-09-09 |  |
 | [92](spec/aep-92) | Console: Data Persistence and Secrets | Draft | Standard/Interface | 2026-09-04 |  | 2026-12-31 |
-| [93](spec/aep-93) | Console: Async Actions & Notification Center | Draft | Standard/Interface | 2026-09-04 |  | 2026-12-31 |
-| [94](spec/aep-94) | Console: Organizations and Projects | Draft | Standard/Interface | 2026-09-04 |  | 2027-03-31 |
+| [93](spec/aep-93) | Console: Async Actions & Notification Center | Final | Standard/Interface | 2026-09-04 | 2026-10-28 |  |
+| [94](spec/aep-94) | Console: Organizations and Projects | Final | Standard/Interface | 2026-09-04 | 2026-10-27 |  |
 | [95](spec/aep-95) | One-Way AKT Sink to Solana | Draft | Standard/Core | 2026-10-27 |  |  |

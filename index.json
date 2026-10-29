@@ -262,7 +262,7 @@
     "category": "Core",
     "created": "2024-06-27T00:00:00.000Z",
     "updated": "2025-10-09T00:00:00.000Z",
-    "estimated-completion": "2026-05-30T00:00:00.000Z",
+    "completed": "2026-07-17T00:00:00.000Z",
     "roadmap": "major"
   },
   {
@@ -398,12 +398,12 @@
     "aep": 39,
     "title": "Lease Termination Reasons",
     "author": "Artur Troian (@troian) Anil Murty (@anilmurty)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2024-12-01T00:00:00.000Z",
     "updated": "2025-07-07T00:00:00.000Z",
-    "estimated-completion": "2026-03-15T00:00:00.000Z",
+    "completed": "2026-06-10T00:00:00.000Z",
     "roadmap": "minor"
   },
   {
@@ -697,7 +697,7 @@
     "aep": 61,
     "title": "Enhanced Read Performance Onchain Queries",
     "author": "Artur Troian (@troian)",
-    "status": "Last Call",
+    "status": "Final",
     "type": "Standard",
     "category": "Core",
     "created": "2025-01-30T00:00:00.000Z",
@@ -1107,11 +1107,11 @@
       "threshold-based credit reload and one account-level balance view"
     ],
     "author": "Maxime Beauchamp (@baktun14)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2026-09-04T00:00:00.000Z",
-    "estimated-completion": "2026-09-30T00:00:00.000Z",
+    "completed": "2026-09-09T00:00:00.000Z",
     "discussions-to": "https://github.com/orgs/akash-network/discussions",
     "roadmap": "major",
     "requires": [
@@ -1149,11 +1149,11 @@
       "in an in-app notification center instead of a blocking modal"
     ],
     "author": "Maxime Beauchamp (@baktun14)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2026-09-04T00:00:00.000Z",
-    "estimated-completion": "2026-12-31T00:00:00.000Z",
+    "completed": "2026-10-28T00:00:00.000Z",
     "discussions-to": "https://github.com/orgs/akash-network/discussions",
     "roadmap": "minor",
     "requires": [
@@ -1169,11 +1169,11 @@
       "with projects as the grouping and permission boundary for shared team workloads"
     ],
     "author": "Maxime Beauchamp (@baktun14)",
-    "status": "Draft",
+    "status": "Final",
     "type": "Standard",
     "category": "Interface",
     "created": "2026-09-04T00:00:00.000Z",
-    "estimated-completion": "2027-03-31T00:00:00.000Z",
+    "completed": "2026-10-27T00:00:00.000Z",
     "discussions-to": "https://github.com/orgs/akash-network/discussions",
     "roadmap": "major",
     "requires": [
