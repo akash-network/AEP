@@ -70,6 +70,7 @@
 | [94](spec/aep-94) | Console: Organizations and Projects | 2026-10-27 | Major |
 | [93](spec/aep-93) | Console: Async Actions & Notification Center | 2026-10-28 | Minor |
 | [44](spec/aep-44) | Reserved Instances | 2026-10-31 | Minor |
+| [95](spec/aep-95) | One-Way AKT Sink to Solana | 2026-11-06 | Major |
 | [36](spec/aep-36) | Custom Domain Configuration via Akash Console | 2026-11-15 | Minor |
 | [11](spec/aep-11) | Managed Services Market | 2026-12-15 | Major |
 | [54](spec/aep-54) | NextGen AMD GPU support | 2026-12-15 | Minor |
