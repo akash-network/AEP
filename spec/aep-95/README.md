@@ -2,11 +2,12 @@
 aep: 95
 title: "One-Way AKT Sink to Solana"
 author: Artur Troian (@troian), Joseph Chalabi (@chalabi2)
-status: Draft
+status: Final (core)
 type: Standard
 category: Core
 created: 2026-10-27
-updated: 2026-11-04
+updated: 2026-11-25
+completed: 2026-11-06
 discussions-to: https://github.com/orgs/akash-network/discussions
 roadmap: major
 requires: 79
